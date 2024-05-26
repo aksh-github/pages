@@ -4,32 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akshay's Space</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <style>
+      body {
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
     <h1>Akshay's Space</h1>
 
-    <script>
-      // 404 hack:
-      // https://www.smashingmagazine.com/2016/08/sghpa-single-page-app-hack-github-pages/
-      // github: https://github.com/csuwildcat/sghpa
-      (function () {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect);
-          // REMOVE THIS - just showing the redirect route in the UI
-          // document.body.setAttribute(
-          //   "message",
-          //   "This page was redirected by 404.html, from the route: " + redirect
-          // );
-        } else {
-          // REMOVE THIS - just showing the redirect route in the UI
-          // document.body.setAttribute(
-          //   "message",
-          //   "This page was loaded directly from the index.html file"
-          // );
-        }
-      })();
-    </script>
+    <div id="body-overlay"></div>
+    <nav class="real-menu" role="navigation">
+      <ul>
+        <li><a href="/tp.html">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </nav>
+    <button id="btn-menu-toggle">></button>
+    <script src="/js/sidemenu.js"></script>
+    <script src="/js/404hack.js"></script>
   </body>
 </html>
