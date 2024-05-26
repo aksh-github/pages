@@ -4,7 +4,7 @@ const fetchData = (_url) => {
     "/Git": { type: "md" },
     "/sample": { type: "md" },
   };
-  const url = "/data" + _url + "." + globObj[_url].type;
+  const url = "./data" + _url + "." + globObj[_url].type;
   console.log(url);
 
   if (!converter) converter = new showdown.Converter();
