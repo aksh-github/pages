@@ -32,11 +32,38 @@
   height: 100%;
   padding: 0.5rem 1rem;
   box-shadow: 0 6px 12px rgba(107, 82, 82, 0.3);
-  background-color: white;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   transition: ease 0.2s all;
+  background-color: rgb(68, 72, 87);
+  color: #fff;
+}
+
+.real-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.real-menu li {
+  list-style: none;
+  padding: 0.5em;
+  color: #fff;
+}
+
+.real-menu .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  padding: 1em;
 }
 
 body {

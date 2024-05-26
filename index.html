@@ -14,6 +14,30 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
     <style>
       body {
         font-size: 16px;
+        max-width: 42em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      main {
+        padding: 0.5em 1em;
+      }
+      pre {
+        background-color: lightgray;
+        padding: 1em;
+        text-wrap: wrap;
+        /* overflow-x: scroll; */
+      }
+      @media (max-width: 500px) {
+        /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        pre {
+          overflow-x: scroll;
+        }
+      }
+      ul {
+        padding: 0px;
+      }
+      li {
+        margin-left: 1em; /* same as main */
       }
     </style>
   </head>
@@ -22,14 +46,29 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
 
     <div id="body-overlay"></div>
     <nav class="real-menu" role="navigation">
-      <ul>
-        <li><a href="/tp.html">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
+      <button type="button" class="collapsible">Code</button>
+      <ul class="list hide">
+        <li><a href="/Git">Git</a></li>
+        <li><a href="/sample">Sample.md</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+      <button type="button" class="collapsible">Sanskrit</button>
+      <ul class="list hide">
+        <li><a href="/Git">Git</a></li>
+        <li><a href="/sample">Sample.md</a></li>
         <li><a href="#">Item 3</a></li>
       </ul>
     </nav>
+    <main>Some main</main>
     <button id="btn-menu-toggle">></button>
     <script src="/js/sidemenu.js"></script>
     <script src="/js/404hack.js"></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+      integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
