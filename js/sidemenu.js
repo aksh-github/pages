@@ -1,7 +1,7 @@
 let converter;
 const fetchData = (_url, type) => {
-  // const
-  const url = "../data" + _url + "." + type;
+  // const startPath = location.host === "localhost" ? "../" : "./";
+  const url = "/data" + _url + "." + type;
   console.log(url);
 
   if (!converter) converter = new showdown.Converter();
@@ -61,7 +61,7 @@ const fetchData = (_url, type) => {
 
   //Add event from js the keep the marup clean
   function init() {
-    getMenuJson("./data/menu.json").then((res) => {
+    getMenuJson("/data/menu.json").then((res) => {
       const { list } = res;
       const ul = document.createElement("ul");
       ul.classList.add("list");
