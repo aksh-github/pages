@@ -2,12 +2,23 @@
   "list": [
     {
       "text": "Code",
+      "rootPath": "",
       "list": [
         { "text": "Git", "href": "/Git", "type": "md" },
         { "text": "Sample", "href": "/sample", "type": "md" },
-        { "text": "React", "href": "/React", "type": "md" }
+        { "text": "React", "href": "/React", "type": "md" },
+        { "text": "CSS Page Layout", "href": "/css-page-layout", "type": "md" }
       ]
     },
-    { "text": "Sanskrit", "href": "/sank", "type": "md" }
+    {
+      "text": "Sanskrit",
+      "rootPath": "",
+      "list": [{ "text": "Sank", "href": "/sank", "type": "md" }]
+    },
+    {
+      "text": "इतिहास",
+      "rootPath": "/other",
+      "list": [{ "text": "शिवपुर्व", "href": "/pre-shivaji", "type": "md" }]
+    }
   ]
 }

@@ -1,6 +1,5 @@
 let converter;
 const fetchData = (_url, type) => {
-  // const startPath = location.host === "localhost" ? "../" : "./";
   const url = "./data" + _url + "." + type;
   console.log(url);
 
@@ -41,7 +40,7 @@ const fetchData = (_url, type) => {
       });
   }
 
-  function buildList(list) {
+  function buildList(list, rootPath) {
     const ul = document.createElement("ul");
     ul.classList.add("list");
     ul.classList.add("hide");
@@ -49,7 +48,7 @@ const fetchData = (_url, type) => {
     list?.forEach((item) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.href = item.href;
+      a.href = rootPath + item.href;
       a.textContent = item.text;
       a.dataset.type = item.type;
       li.appendChild(a);
@@ -75,7 +74,7 @@ const fetchData = (_url, type) => {
         if (item.list) {
           li.textContent = item.text + " >";
           li.classList.add("collapsible");
-          li.appendChild(buildList(item.list));
+          li.appendChild(buildList(item.list, item.rootPath));
         } else {
           // li.textContent = item.text;
           const a = document.createElement("a");
@@ -93,7 +92,7 @@ const fetchData = (_url, type) => {
       // //   menu handler
       document.querySelectorAll(".real-menu ul li").forEach((ele) => {
         ele.addEventListener("click", (e) => {
-          e.preventDefault();
+          // e.preventDefault();
           console.log(e.target);
 
           const url = e?.target?.getAttribute("href");

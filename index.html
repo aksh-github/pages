@@ -14,12 +14,15 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
     <style>
       body {
         font-size: 16px;
-        max-width: 42em;
-        margin-left: auto;
-        margin-right: auto;
+      }
+      .site-header {
+        text-align: center;
       }
       main {
         padding: 0.5em 1em;
+        max-width: 42em;
+        margin-left: auto;
+        margin-right: auto;
       }
       pre {
         background-color: lightgray;
@@ -28,7 +31,7 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
         /* overflow-x: scroll; */
       }
       @media (max-width: 500px) {
-        /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        /* CSS that should be displayed if width is equal to or less than 500px goes here */
         pre {
           overflow-x: scroll;
         }
@@ -42,7 +45,7 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
     </style>
   </head>
   <body class="menu-open">
-    <h1>Akshay's Space</h1>
+    <h2 class="site-header">Akshay's Space</h1>
 
     <div id="body-overlay"></div>
     <nav class="real-menu" role="navigation"></nav>
