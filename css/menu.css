@@ -3,7 +3,7 @@
   height: 100vh;
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 400;
   top: 0;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5);
@@ -18,6 +18,7 @@
   font-weight: bold;
   font-size: 2em;
   cursor: pointer;
+  z-index: 300;
 }
 
 /*Menu*/
@@ -26,7 +27,7 @@
   position: fixed;
   top: 0;
   left: -300px;
-  z-index: 4;
+  z-index: 400;
   width: 300px;
   max-width: 80%;
   height: 100%;
@@ -51,19 +52,19 @@
 
 .real-menu li {
   list-style: none;
-  padding: 0.5em;
+  padding: 1em;
   color: #fff;
 }
 
 .real-menu .collapsible {
-  background-color: #777;
+  /* background-color: #777; */
   color: white;
   cursor: pointer;
-  width: 100%;
+  width: inherit;
   border: none;
   text-align: left;
   outline: none;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 body {

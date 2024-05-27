@@ -36,29 +36,16 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
       ul {
         padding: 0px;
       }
-      li {
+      main li {
         margin-left: 1em; /* same as main */
       }
     </style>
   </head>
-  <body>
+  <body class="menu-open">
     <h1>Akshay's Space</h1>
 
     <div id="body-overlay"></div>
-    <nav class="real-menu" role="navigation">
-      <button type="button" class="collapsible">Code</button>
-      <ul class="list hide">
-        <li><a href="/Git">Git</a></li>
-        <li><a href="/sample">Sample.md</a></li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
-      <button type="button" class="collapsible">Sanskrit</button>
-      <ul class="list hide">
-        <li><a href="/Git">Git</a></li>
-        <li><a href="/sample">Sample.md</a></li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
-    </nav>
+    <nav class="real-menu" role="navigation"></nav>
     <main>Some main</main>
     <button id="btn-menu-toggle">></button>
     <script src="./js/sidemenu.js"></script>

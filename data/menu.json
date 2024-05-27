@@ -1,0 +1,13 @@
+{
+  "list": [
+    {
+      "text": "Code",
+      "list": [
+        { "text": "Git", "href": "/Git", "type": "md" },
+        { "text": "Sample", "href": "/sample", "type": "md" },
+        { "text": "React", "href": "/React", "type": "md" }
+      ]
+    },
+    { "text": "Sanskrit", "href": "/sank", "type": "md" }
+  ]
+}
