@@ -3,15 +3,15 @@ const fetchData = (_url, type) => {
   const url = "./data" + _url + "." + type;
   console.log(url);
 
-  if (!converter) converter = new showdown.Converter();
+  // if (!converter) converter = new showdown.Converter();
 
-  fetch(url)
-    .then((res) => res.text())
-    .then((res) => {
-      //   console.log(res);
+  // fetch(url)
+  //   .then((res) => res.text())
+  //   .then((res) => {
+  //     //   console.log(res);
 
-      document.querySelector("main").innerHTML = converter.makeHtml(res);
-    });
+  //     document.querySelector("main").innerHTML = converter.makeHtml(res);
+  //   });
 };
 
 (function () {
@@ -90,19 +90,19 @@ const fetchData = (_url, type) => {
       });
 
       // //   menu handler
-      document.querySelectorAll(".real-menu ul li").forEach((ele) => {
-        ele.addEventListener("click", (e) => {
-          // e.preventDefault();
-          console.log(e.target);
+      // document.querySelectorAll(".real-menu ul li").forEach((ele) => {
+      //   ele.addEventListener("click", (e) => {
+      //     // e.preventDefault();
+      //     console.log(e.target);
 
-          const url = e?.target?.getAttribute("href");
-          if (url) fetchData(url, e.target.dataset.type);
-        });
-      });
+      //     const url = e?.target?.getAttribute("href");
+      //     if (url) fetchData(url, e.target.dataset.type);
+      //   });
+      // });
 
       document.querySelectorAll(".real-menu .collapsible").forEach((ele) => {
         ele.addEventListener("click", (e) => {
-          e.preventDefault();
+          // e.preventDefault();
           const ul = e.target.firstElementChild;
           // if (ul?.style.display === "none") ul.style.display = "block";
           // else ul.style.display = "none";

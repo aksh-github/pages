@@ -17,8 +17,8 @@
     },
     {
       "text": "इतिहास",
-      "rootPath": "/other",
-      "list": [{ "text": "शिवपुर्व", "href": "/pre-shivaji", "type": "md" }]
+      "rootPath": "./data/history",
+      "list": [{ "text": "शिवपुर्व", "href": "?t=preshiv", "type": "md" }]
     }
   ]
 }
