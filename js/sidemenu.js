@@ -61,7 +61,7 @@ const fetchData = (_url, type) => {
 
   //Add event from js the keep the marup clean
   function init() {
-    getMenuJson("../data/menu.json").then((res) => {
+    getMenuJson("./data/menu.json").then((res) => {
       const { list } = res;
       const ul = document.createElement("ul");
       ul.classList.add("list");
