@@ -12,10 +12,10 @@
 }
 
 #btn-menu-toggle {
-  position: fixed;
+  /*position: fixed;
   top: 10px;
-  left: 0px;
-  background-color: rgb(68, 72, 87);
+  left: 0px;*/
+  /* background-color: rgb(68, 72, 87); */
   color: #fff;
   font-weight: bold;
   font-size: 2em;
