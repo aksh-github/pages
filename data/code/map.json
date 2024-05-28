@@ -1,8 +1,10 @@
 {
-  "git": ["Git.md"],
-  "react": ["React.md"],
-  "css-pg-lo": ["css-page-layout.md"],
   "list": [
+    {
+      "rootPath": "",
+      "text": "< Back to Home",
+      "href": "../../"
+    },
     {
       "rootPath": "",
       "text": "Code"
