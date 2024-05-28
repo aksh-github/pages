@@ -2,12 +2,25 @@ body {
   font-size: 16px;
   background: linear-gradient(rgba(255, 138, 0, 0.2), #fff);
   color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
-.site-header {
+
+header {
+  width: 100%;
   text-align: center;
 }
+
+footer {
+  padding: 1em;
+  background: gray;
+}
+
 main {
   display: flex;
+  flex-grow: 2;
   /* margin-left: auto;
   margin-right: auto; */
 }
@@ -22,7 +35,7 @@ blockquote {
   background-color: lightgray;
   padding: 1em;
   text-wrap: wrap;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
 }
 blockquote {
   margin: 0;

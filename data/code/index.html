@@ -14,7 +14,9 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
     <link rel="stylesheet" href="../../css/menu.css" />
   </head>
   <body class="">
-    <h2 class="site-header">Code</h2>
+    <header>
+      <h2 class="site-header">Code</h2>
+    </header>
     <button id="btn-menu-toggle">&gt;</button>
     <div id="body-overlay"></div>
     <main>
@@ -22,6 +24,7 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
       <!-- <section class="side-bar-section"></section> -->
       <section class="main-section"></section>
     </main>
+    <footer>some footer</footer>
     <script
       async
       src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
@@ -67,13 +70,14 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
                   return it?.href?.endsWith(topic);
                 });
                 // console.log(listItem);
-                fetchData("./" + listItem?.data?.[0]).then((markup) => {
-                  //   document.querySelector("main").innerHTML =
-                  //     markdownInst.makeHtml(markup);
-                  document.querySelector("main .main-section").innerHTML =
-                    markdownInst.makeHtml(markup);
-                  //   console.log(markdownInst.makeHtml(markup));
-                });
+                if (listItem)
+                  fetchData("./" + listItem?.data?.[0]).then((markup) => {
+                    //   document.querySelector("main").innerHTML =
+                    //     markdownInst.makeHtml(markup);
+                    document.querySelector("main .main-section").innerHTML =
+                      markdownInst.makeHtml(markup);
+                    //   console.log(markdownInst.makeHtml(markup));
+                  });
               });
           })();
         }

@@ -38,7 +38,7 @@ CSS to achieve
 
 /* header */
 
-.header {
+header {
   /* padding: 1em;
     background: #ddd; */
   width: 100%;
@@ -52,9 +52,8 @@ main {
 }
 
 /* footer */
-.footer {
-  width: 100%;
-  /* padding: 2em;
-    background: gray; */
+footer {
+  padding: 2em;
+  background: gray;
 }
 ```
