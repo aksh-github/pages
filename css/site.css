@@ -61,6 +61,12 @@ blockquote {
     overflow-x: scroll;
   }
 }
+@media (width < 768px) {
+  /* CSS that should be displayed if width is equal to or less than 500px goes here */
+  main {
+    display: block;
+  }
+}
 ul {
   padding: 0px;
 }
