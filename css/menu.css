@@ -12,10 +12,6 @@
 }
 
 #btn-menu-toggle {
-  /*position: fixed;
-  top: 10px;
-  left: 0px;*/
-  /* background-color: rgb(68, 72, 87); */
   color: #fff;
   font-weight: bold;
   font-size: 2em;
@@ -77,12 +73,12 @@
 .real-menu li {
   list-style: none;
   padding: 1em;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .real-menu .collapsible {
   /* background-color: #777; */
-  color: white;
+  /* color: white; */
   cursor: pointer;
   width: inherit;
   border: none;
