@@ -2,18 +2,17 @@
   "list": [
     {
       "text": "Code",
-      "rootPath": "",
+      "rootPath": "./data/code",
       "list": [
-        { "text": "Git", "href": "/Git", "type": "md" },
-        { "text": "Sample", "href": "/sample", "type": "md" },
-        { "text": "React", "href": "/React", "type": "md" },
-        { "text": "CSS Page Layout", "href": "/css-page-layout", "type": "md" }
+        { "text": "Git", "href": "?t=git", "type": "md" },
+        { "text": "React", "href": "?t=react", "type": "md" },
+        { "text": "CSS Page Layout", "href": "?t=css-pg-lo", "type": "md" }
       ]
     },
     {
       "text": "Sanskrit",
-      "rootPath": "",
-      "list": [{ "text": "Sank", "href": "/sank", "type": "md" }]
+      "rootPath": "./data/sanskrit",
+      "list": [{ "text": "Sank", "href": "?t=intro", "type": "md" }]
     },
     {
       "text": "इतिहास",
