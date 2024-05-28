@@ -11,10 +11,17 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/site.css" />
+    <link rel="stylesheet" href="../../css/menu.css" />
   </head>
-  <body class="menu-open">
+  <body class="">
     <h2 class="site-header">संस्कृतम्</h2>
-    <main>Loading...</main>
+    <button id="btn-menu-toggle">&gt;</button>
+    <div id="body-overlay"></div>
+    <main>
+      <nav class="real-menu" role="navigation"></nav>
+      <!-- <section class="side-bar-section"></section> -->
+      <section class="main-section"></section>
+    </main>
     <script
       async
       src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
@@ -54,13 +61,16 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
             fetch("./map.json")
               .then((res) => res.json())
               .then((map) => {
-                // console.log(map, map[topic]);
-                // document.querySelector("main").innerHTML =
-                //   markdownInst.makeHtml(map[topic]);
-                fetchData("./" + map[topic][0]).then((markup) => {
+                console.log(map, map[topic]);
+                const listItem = map?.list?.find((it) => {
+                  // console.log(it);
+                  return it?.href?.endsWith(topic);
+                });
+                // console.log(listItem);
+                fetchData("./" + listItem?.data?.[0]).then((markup) => {
                   //   document.querySelector("main").innerHTML =
                   //     markdownInst.makeHtml(markup);
-                  document.querySelector("main").innerHTML =
+                  document.querySelector("main .main-section").innerHTML =
                     markdownInst.makeHtml(markup);
                   //   console.log(markdownInst.makeHtml(markup));
                 });
@@ -69,5 +79,6 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
         }
       });
     </script>
+    <script src="../../js/sidemenu.js"></script>
   </body>
 </html>

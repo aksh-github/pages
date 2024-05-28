@@ -1,3 +1,14 @@
 {
-  "preshiv": ["pre-shivaji.md"]
+  "list": [
+    {
+      "rootPath": "",
+      "text": "Sanskrit"
+    },
+    {
+      "rootPath": "",
+      "text": "शिवपुर्व",
+      "href": "?t=preshiv",
+      "data": ["pre-shivaji.md"]
+    }
+  ]
 }

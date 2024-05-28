@@ -1,3 +1,20 @@
 {
-  "intro": ["intro.md"]
+  "list": [
+    {
+      "rootPath": "",
+      "text": "Sanskrit"
+    },
+    {
+      "rootPath": "",
+      "text": "Intro",
+      "href": "?t=intro",
+      "data": ["intro.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "Rupas",
+      "href": "?t=rupas",
+      "data": ["rup.md"]
+    }
+  ]
 }

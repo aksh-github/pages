@@ -1,3 +1,5 @@
+/* sidebar */
+
 #body-overlay {
   width: 100vw;
   height: 100vh;
@@ -39,6 +41,28 @@
   transition: ease 0.2s all;
   background-color: rgb(68, 72, 87);
   color: #fff;
+}
+
+/* sidebar for tab and above */
+@media (width >= 768px) {
+  main .real-menu {
+    display: block;
+    position: inherit;
+    width: 100%;
+    max-width: revert;
+    background-color: inherit;
+    /* color: #000;   */
+    box-shadow: none;
+    max-width: 16em;
+  }
+
+  main .real-menu ul li {
+    color: #000;
+  }
+
+  #btn-menu-toggle {
+    display: none;
+  }
 }
 
 .real-menu a {

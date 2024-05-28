@@ -1,14 +1,21 @@
 body {
   font-size: 16px;
+  background: linear-gradient(rgba(255, 138, 0, 0.2), #fff);
+  color: #000;
 }
 .site-header {
   text-align: center;
 }
 main {
+  display: flex;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+main .main-section {
   padding: 0.5em 1em;
   max-width: 42em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 pre,
 blockquote {
@@ -31,4 +38,8 @@ ul {
 }
 main li {
   margin-left: 1em; /* same as main */
+}
+
+img {
+  width: 100%;
 }

@@ -6,4 +6,4 @@
 
 <div>any html is possible here</div>
 
-![नटराजराज](./nataraj.jpg)
+![नटराजराज](./nataraj2.jpg)

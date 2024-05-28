@@ -60,7 +60,16 @@ const fetchData = (_url, type) => {
 
   //Add event from js the keep the marup clean
   function init() {
-    getMenuJson("./data/menu.json").then((res) => {
+    const path = window.location.pathname;
+    let mapJsonUrl = null;
+
+    if (path === "/" || path?.endsWith("pages/")) {
+      mapJsonUrl = "./data/map.json";
+    } else {
+      mapJsonUrl = "./map.json";
+    }
+
+    getMenuJson(mapJsonUrl).then((res) => {
       const { list } = res;
       const ul = document.createElement("ul");
       ul.classList.add("list");
@@ -117,10 +126,10 @@ const fetchData = (_url, type) => {
     });
     document
       .getElementById("btn-menu-toggle")
-      .addEventListener("click", toggleMenu);
+      ?.addEventListener("click", toggleMenu);
     document
       .getElementById("body-overlay")
-      .addEventListener("click", toggleMenu);
+      ?.addEventListener("click", toggleMenu);
   }
 
   //The actual fuction
