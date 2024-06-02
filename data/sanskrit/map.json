@@ -20,6 +20,12 @@
       "text": "Rupas",
       "href": "?t=rupas",
       "data": ["rup.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "Time",
+      "href": "?t=time",
+      "data": ["time.md"]
     }
   ]
 }

@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid;
+  padding: 1em;
+}
+
+.container p {
+  margin: 0;
+}
+
+@media (width < 768px) {
+  .container {
+    display: block;
+    border-top: unset;
+    margin: 0.5em;
+  }
+
+  .in-container {
+    display: flex;
+  }
+
+  .in-container p {
+    padding: 0 1em;
+  }
+
+  .container div {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.container > div {
+  &::before {
+    content: "|";
+    position: relative;
+    top: -1.2em;
+    left: 2em;
+  }
+}
