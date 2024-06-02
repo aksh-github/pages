@@ -36,12 +36,12 @@ footer {
 main {
   display: flex;
   flex-grow: 2;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin: 0 auto;
 }
 
 main .main-section {
   padding: 0.5em 1em;
+  width: 42em;
   max-width: 42em;
   margin: 0 auto;
 }
@@ -65,6 +65,10 @@ blockquote {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
   main {
     display: block;
+  }
+
+  main .main-section {
+    width: inherit;
   }
 }
 ul {
