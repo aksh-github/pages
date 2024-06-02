@@ -1,11 +1,12 @@
 body {
   font-size: 16px;
   background: linear-gradient(rgba(255, 138, 0, 0.2), #fff);
-  color: #000;
+  color: brown;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  font-family: math;
 }
 
 header {
@@ -51,6 +52,8 @@ blockquote {
   padding: 1em;
   text-wrap: wrap;
   overflow-x: scroll;
+  border: 1px solid gray;
+  border-radius: 2px;
 }
 blockquote {
   margin: 0;
@@ -65,6 +68,7 @@ blockquote {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
   main {
     display: block;
+    margin: inherit;
   }
 
   main .main-section {
