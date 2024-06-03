@@ -164,3 +164,12 @@ git pull
 ```
 git branch
 ```
+
+### 10. Merge branch
+
+This will merge feat/abc branch into master
+
+```
+git checkout master
+git merge feat/abc
+```
