@@ -1,0 +1,14 @@
+{
+  "name": "aksh.github.io",
+  "version": "1.0.0",
+  "description": "Static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshay B",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}

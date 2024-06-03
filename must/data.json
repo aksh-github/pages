@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "file": "./",
+      "title": "Akshay's Space",
+      "normalieCss": "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css",
+      "cssFiles": ["../../css/site.css", "../../css/menu.css"],
+      "jsFiles": [
+        "../../js/sidemenu.js",
+        "../../js/404hack.js",
+        "../../js/content-load.js"
+      ],
+      "markdownJs": {
+        "src": "https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js",
+        "integrity": "sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer"
+      }
+    },
+    {
+      "file": "./data/sanskrit/",
+      "title": "संस्कृतम् नमो नमः",
+      "cssFiles": ["./time.css"]
+    },
+    {
+      "file": "./data/code/",
+      "title": "Code"
+    },
+    {
+      "file": "./data/history/",
+      "title": "इतिहास"
+    }
+  ]
+}

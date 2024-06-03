@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>इतिहास</title>
+    <title>{{{title}}}</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      href="{{{normalieCss}}}"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../css/site.css" />
-    <link rel="stylesheet" href="../../css/menu.css" />
+    {{#cssFiles}}
+    <link rel="stylesheet" href="{{{.}}}" />
+    {{/cssFiles}}
   </head>
   <body class="">
     <header>
@@ -26,15 +27,15 @@
       <section class="main-section"></section>
     </main>
     <footer>some footer</footer>
-    <script src="../../js/sidemenu.js"></script>
-    <script src="../../js/404hack.js"></script>
-    <script src="../../js/content-load.js"></script>
+    {{#jsFiles}}
+    <script src="{{{.}}}"></script>
+    {{/jsFiles}}
     <script
       async
-      src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
-      integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      src="{{{markdownJs.src}}}"
+      integrity="{{{markdownJs.integrity}}}"
+      crossorigin="{{{markdownJs.crossorigin}}}"
+      referrerpolicy="{{{markdownJs.referrerpolicy}}}"
     ></script>
   </body>
 </html>
