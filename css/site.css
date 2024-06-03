@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  background: linear-gradient(rgba(255, 138, 0, 0.2), #fff);
+  background: linear-gradient(rgba(255, 138, 0, 0.3), rgba(255, 138, 0, 0.1));
   color: brown;
   display: flex;
   flex-direction: column;
@@ -51,9 +51,6 @@ blockquote {
   background-color: lightgray;
   padding: 1em;
   text-wrap: wrap;
-  overflow-x: scroll;
-  border: 1px solid gray;
-  border-radius: 2px;
 }
 blockquote {
   margin: 0;
