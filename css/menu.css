@@ -72,7 +72,7 @@
 
 .real-menu li {
   list-style: none;
-  padding: 1em;
+  padding: 1em 0;
   /* color: #fff; */
 }
 

@@ -15,19 +15,22 @@ if (Array.isArray(json?.data)) {
   const arr = json.data;
 
   json.data.forEach((datum, i) => {
-    const htmlContent =
-      i === 0
-        ? mustache.render(baseTemp, datum)
-        : mustache.render(baseTemp, {
-            ...json.data[0],
-            ...datum,
-            cssFiles: datum?.cssFiles
-              ? [...json.data[0].cssFiles, ...datum?.cssFiles]
-              : json.data[0].cssFiles,
-            jsFiles: datum?.jsFiles
-              ? [...json.data[0].jsFiles, ...datum?.jsFiles]
-              : json.data[0].jsFiles,
-          });
+    let htmlContent = null;
+
+    if (i === 0) {
+      htmlContent = mustache.render(baseTemp, datum);
+    } else {
+      htmlContent = mustache.render(baseTemp, {
+        ...json.data[0],
+        ...datum,
+        cssFiles: datum?.cssFiles
+          ? [...json.data[0].cssFiles, ...datum?.cssFiles]
+          : json.data[0].cssFiles,
+        jsFiles: datum?.jsFiles
+          ? [...json.data[0].jsFiles, ...datum?.jsFiles]
+          : json.data[0].jsFiles,
+      });
+    }
     // console.log(htmlContent);
     fs.writeFile(`${datum.file}index.html`, htmlContent, (err) => {
       if (err) {

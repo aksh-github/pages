@@ -3,21 +3,17 @@
     {
       "text": "Code",
       "rootPath": "./data/code",
-      "list": [
-        { "text": "Git", "href": "?t=git", "type": "md" },
-        { "text": "React", "href": "?t=react", "type": "md" },
-        { "text": "CSS Page Layout", "href": "?t=css-pg-lo", "type": "md" }
-      ]
+      "href": "./data/code"
     },
     {
       "text": "Sanskrit",
       "rootPath": "./data/sanskrit",
-      "list": [{ "text": "Sank", "href": "?t=intro", "type": "md" }]
+      "href": "./data/sanskrit"
     },
     {
       "text": "इतिहास",
       "rootPath": "./data/history",
-      "list": [{ "text": "शिवपुर्व", "href": "?t=preshiv", "type": "md" }]
+      "href": "./data/history"
     }
   ]
 }

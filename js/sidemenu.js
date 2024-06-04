@@ -86,11 +86,15 @@ const fetchData = (_url, type) => {
           li.appendChild(buildList(item.list, item.rootPath));
         } else {
           // li.textContent = item.text;
-          const a = document.createElement("a");
-          a.href = item.href;
-          a.textContent = item.text;
-          a.dataset.type = item.type;
-          li.appendChild(a);
+          if (item.href) {
+            const a = document.createElement("a");
+            a.href = item.href;
+            a.textContent = item.text;
+            // a.dataset.type = item.type;
+            li.appendChild(a);
+          } else {
+            li.textContent = item.text;
+          }
         }
 
         // console.log(li);
