@@ -125,3 +125,56 @@ const enum Sizes {
 	Large=120
 }
 ```
+
+### Advanced Types
+1. Type aliases
+2. Unions and intersections
+3. Type narrowing
+
+**Type aliases**
+
+```js
+type Employee = {
+  id: number,
+  name: string,
+  getDate: ()=>Date
+}
+```
+
+**Union**
+
+When you want to say either 1 of them.
+let unit: null | string;
+
+
+**Intersection**
+
+When you want to say all of them.
+```js
+type Draggable = {
+ drag: ()=> void
+}
+
+type Draggable = {
+ resize: ()=> void
+}
+
+type UIWidget = Draggable & Resizable;
+
+let textBox: UIWidget = {
+  drag: ()=>{},
+  resize: ()=>{}
+}
+```
+
+**Literal Types**
+
+Allows you to set variable to some very specific values.
+```js
+type Quantity = 'cm' | 'inch';
+let q: Quantity = 'cm';
+```
+
+**Utility Types**
+
+https://www.typescriptlang.org/docs/handbook/utility-types.html#handbook-content
