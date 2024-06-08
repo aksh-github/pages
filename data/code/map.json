@@ -26,6 +26,12 @@
       "text": "Css Page Layout",
       "href": "?t=cspglo",
       "data": ["css-page-layout.md"]
+    },
+{
+      "rootPath": "",
+      "text": "Typescript",
+      "href": "?t=ts",
+      "data": ["ts.md"]
     }
   ]
 }
