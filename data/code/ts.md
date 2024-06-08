@@ -22,3 +22,27 @@ you can verify it my running following command
 ```
 tsc -v
 ```
+
+Now you can start using typescript for your project.
+
+1. Start with empty dir.
+2. Do npm init, git init etc usual commands as requied.
+3. Create index.ts file with some simple code.
+
+```js
+console.log("hello world");
+
+```
+4. You can try to compile this file with tsc by using following command.
+```
+tsc index.ts
+```
+
+5. If compilation is successful, it will generate corresponding js output file (index.js).
+6. You can run that file as
+```
+node index.js
+```
+
+Next we will setup the project for Typescript properly.
+
