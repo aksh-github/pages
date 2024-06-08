@@ -78,7 +78,7 @@ Some of the important we need to be aware of:
 **Type Checking**
 
 - strict: Set it to true. Very important.
-
+- noImplicitReturns: Set it to true. Important for function return values.
 
 ### Datatypes / Features
 
