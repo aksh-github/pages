@@ -159,6 +159,16 @@ git pull updates your current local working branch with the remote changes.
 git pull
 ```
 
+it is a combination of get fetch and get merge.
+
+```
+Downloads all history from the remote tracking branches.
+git fetch
+
+Combines remote tracking branches into current local branch.
+git merge
+```
+
 ### 9. Show all git branches repos
 
 ```
