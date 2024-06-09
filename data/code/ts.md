@@ -31,15 +31,17 @@ Now you can start using typescript for your project.
 
 ```js
 console.log("hello world");
-
 ```
+
 4. You can try to compile this file with tsc by using following command.
+
 ```
 tsc index.ts
 ```
 
 5. If compilation is successful, it will generate corresponding js output file (index.js).
 6. You can run that file as
+
 ```
 node index.js
 ```
@@ -57,14 +59,13 @@ It is big file with multiple settings.
 Some of the important we need to be aware of:
 
 **Language and Environ.**
-- target: Specifies the JS output level its going to generate.
 
+- target: Specifies the JS output level its going to generate.
 
 **Modules**
 
-- module: 
+- module:
 - rootDir: Represent the dir for our source files. Typically set it to ./src
-
 
 **Emit**
 
@@ -73,7 +74,6 @@ Some of the important we need to be aware of:
 - removeComments: Enable this to remove comments from compiled code.
 
 - noEmmitOnError: Enable this to prevent tsc from generating the build when our code has errors.
-
 
 **Type Checking**
 
@@ -96,8 +96,8 @@ Its fixed length array which is used to store related values (key, value) etc.
 e.g.
 let user = [1, 'Dev']
 
-
 **enum**
+
 - Used to represent list of related consts.
 - It can hold values of any type.
 
@@ -110,11 +110,12 @@ const enum Sizes {
 	Large
 }
 ```
+
 - const is not required but it generates more optimized code.
 - By default 1st will have value of 0, next one will have 1 and so on.
 
 - If you want to start with specific value, you can do
-Small=50
+  Small=50
 
 - If you want non sequencial values
 
@@ -127,6 +128,7 @@ const enum Sizes {
 ```
 
 ### Advanced Types
+
 1. Type aliases
 2. Unions and intersections
 3. Type narrowing
@@ -137,8 +139,8 @@ const enum Sizes {
 type Employee = {
   id: number,
   name: string,
-  getDate: ()=>Date
-}
+  getDate: () => Date,
+};
 ```
 
 **Union**
@@ -146,35 +148,36 @@ type Employee = {
 When you want to say either 1 of them.
 let unit: null | string;
 
-
 **Intersection**
 
 When you want to say all of them.
+
 ```js
 type Draggable = {
- drag: ()=> void
-}
+  drag: () => void,
+};
 
 type Draggable = {
- resize: ()=> void
-}
+  resize: () => void,
+};
 
 type UIWidget = Draggable & Resizable;
 
 let textBox: UIWidget = {
-  drag: ()=>{},
-  resize: ()=>{}
-}
+  drag: () => {},
+  resize: () => {},
+};
 ```
 
 **Literal Types**
 
 Allows you to set variable to some very specific values.
+
 ```js
-type Quantity = 'cm' | 'inch';
-let q: Quantity = 'cm';
+type Quantity = "cm" | "inch";
+let q: Quantity = "cm";
 ```
 
 **Utility Types**
 
-https://www.typescriptlang.org/docs/handbook/utility-types.html#handbook-content
+[Documentation](https://www.typescriptlang.org/docs/handbook/utility-types.html#handbook-content)
