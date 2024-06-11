@@ -183,3 +183,14 @@ This will merge feat/abc branch into master
 git checkout master
 git merge feat/abc
 ```
+
+### 11. Delete remote branch
+
+```
+git push reomote-name --delete br-name
+
+In most cases remote name is origin.
+e.g.
+
+git push origin --delete master-v2
+```
