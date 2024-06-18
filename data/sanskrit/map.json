@@ -11,7 +11,7 @@
     },
     {
       "rootPath": "",
-      "text": "Intro",
+      "text": "प्रस्तावना",
       "href": "?t=intro",
       "data": ["intro.md"]
     },
@@ -23,7 +23,7 @@
     },
     {
       "rootPath": "",
-      "text": "Time",
+      "text": "काल:",
       "href": "?t=time",
       "data": ["time.md"]
     },
