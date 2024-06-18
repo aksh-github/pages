@@ -29,6 +29,12 @@
     },
     {
       "rootPath": "",
+      "text": "सङ्ख्या",
+      "href": "?t=numbers",
+      "data": ["numbers.md"]
+    },
+    {
+      "rootPath": "",
       "text": "ण त्व",
       "href": "?t=natva",
       "data": ["natva.md"]
