@@ -4,7 +4,7 @@ html {
 
 body {
   font-size: 16px;
-  background: cornsilk;
+  /* background: ; */
   color: brown;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   padding: 1em 0;
+  background-color: cornsilk;
 }
 
 header h2 {
@@ -35,7 +36,7 @@ header h2 {
 
 footer {
   padding: 1em;
-  background: gray;
+  /* background: gray; */
 }
 
 main {
@@ -50,9 +51,12 @@ main .main-section {
   max-width: 42em;
   margin: 0 auto;
 }
+main .main-section h2 {
+  text-align: center;
+}
 pre,
 blockquote {
-  background-color: lightgray;
+  background-color: cornsilk;
   padding: 1em;
   text-wrap: wrap;
 }
