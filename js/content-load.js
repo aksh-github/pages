@@ -39,6 +39,7 @@ document.addEventListener("readystatechange", function () {
             fetchData("./" + listItem?.data?.[0]).then((markup) => {
               //   document.querySelector("main").innerHTML =
               //     markdownInst.makeHtml(markup);
+              document.title += " | " + topic;
               document.querySelector("main .main-section").innerHTML =
                 markdownInst.makeHtml(markup);
               //   console.log(markdownInst.makeHtml(markup));
