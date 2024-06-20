@@ -19,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   padding: 1em 0;
-  background-color: cornsilk;
+  background-color: burlywood;
 }
 
 header h2 {
@@ -54,6 +54,9 @@ main .main-section {
 main .main-section h2 {
   text-align: center;
 }
+main .main-section ul {
+  padding-left: 3em;
+}
 pre,
 blockquote {
   background-color: cornsilk;
@@ -78,6 +81,10 @@ blockquote {
 
   main .main-section {
     width: inherit;
+  }
+
+  main .main-section ul {
+    padding-left: 1.5em;
   }
 }
 ul {
