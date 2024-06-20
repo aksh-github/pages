@@ -18,7 +18,7 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  padding: 1em 0;
+  padding: 2em 0;
   background-color: burlywood;
 }
 
@@ -78,6 +78,9 @@ blockquote {
 }
 @media (width < 768px) {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
+  header {
+    padding: 1em 0;
+  }
   main {
     display: block;
     margin: inherit;
