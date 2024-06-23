@@ -81,6 +81,10 @@ blockquote {
   header {
     padding: 1em 0;
   }
+  header h2 {
+    margin: 0 1em;
+  }
+
   main {
     display: block;
     margin: inherit;
@@ -100,4 +104,17 @@ ul {
 
 img {
   width: 100%;
+}
+
+/* only for colors in sanskrit */
+
+.colorbox {
+  background-color: white;
+  margin: 2em 0;
+}
+
+.color {
+  width: 4em;
+  height: 4em;
+  border: 1px solid burlywood;
 }
