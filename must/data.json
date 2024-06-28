@@ -2,7 +2,7 @@
   "data": [
     {
       "file": "./",
-      "title": "Akshay's Space",
+      "title": "Knowledge",
       "normalieCss": "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css",
       "cssFiles": ["../../css/site.css", "../../css/menu.css"],
       "jsFiles": [

@@ -4,7 +4,7 @@ html {
 
 body {
   font-size: 16px;
-  background: cornsilk;
+  /* background: ; */
   color: brown;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,8 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  padding: 1em 0;
+  padding: 2em 0;
+  background-color: burlywood;
 }
 
 header h2 {
@@ -35,7 +36,11 @@ header h2 {
 
 footer {
   padding: 1em;
-  background: gray;
+  /* background: gray; */
+}
+
+hr {
+  opacity: 0.4;
 }
 
 main {
@@ -50,9 +55,15 @@ main .main-section {
   max-width: 42em;
   margin: 0 auto;
 }
+main .main-section h2 {
+  text-align: center;
+}
+main .main-section ul {
+  padding-left: 3em;
+}
 pre,
 blockquote {
-  background-color: lightgray;
+  background-color: cornsilk;
   padding: 1em;
   text-wrap: wrap;
 }
@@ -67,6 +78,13 @@ blockquote {
 }
 @media (width < 768px) {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
+  header {
+    padding: 1em 0;
+  }
+  header h2 {
+    margin: 0 1em;
+  }
+
   main {
     display: block;
     margin: inherit;
@@ -75,6 +93,10 @@ blockquote {
   main .main-section {
     width: inherit;
   }
+
+  main .main-section ul {
+    padding-left: 1.5em;
+  }
 }
 ul {
   padding: 0px;
@@ -82,4 +104,17 @@ ul {
 
 img {
   width: 100%;
+}
+
+/* only for colors in sanskrit */
+
+.colorbox {
+  background-color: white;
+  margin: 2em 0;
+}
+
+.color {
+  width: 4em;
+  height: 4em;
+  border: 1px solid burlywood;
 }

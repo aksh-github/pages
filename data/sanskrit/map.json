@@ -17,7 +17,7 @@
     },
     {
       "rootPath": "",
-      "text": "समास",
+      "text": "समास:",
       "href": "?t=samaas",
       "data": ["samaas.md"]
     },
@@ -32,6 +32,12 @@
       "text": "सङ्ख्या",
       "href": "?t=numbers",
       "data": ["numbers.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "रङ्गा:",
+      "href": "?t=colors",
+      "data": ["colors.md"]
     },
     {
       "rootPath": "",
