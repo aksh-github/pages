@@ -50,7 +50,7 @@
 
 #### षोडश संस्कारा:
 
-१४ चतुर्दश ज्ञानांश: - [सङ्केत स्थल (fb)](https://www.facebook.com/share/p/puE1vxcvhWE1SUa8/?mibextid=oFDknk)
+१४ चतुर्दश संस्कार: विवाह: - [सङ्केत स्थलम् (fb)](https://www.facebook.com/share/p/puE1vxcvhWE1SUa8/?mibextid=oFDknk)
 
 
 
