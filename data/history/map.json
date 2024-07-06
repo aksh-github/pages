@@ -14,6 +14,19 @@
       "text": "शिवपुर्व",
       "href": "?t=preshiv",
       "data": ["pre-shivaji.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "शिवोत्तर",
+      "href": "?t=postshiv",
+      "data": ["post-shivaji.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "हिंदू साम्राज्य",
+      "href": "?t=hindu-kd",
+      "data": ["hindu.md"]
     }
+
   ]
 }
