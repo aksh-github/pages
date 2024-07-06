@@ -29,6 +29,10 @@
     {
       "file": "./data/history/",
       "title": "इतिहास"
+    },
+    {
+      "file": "./data/dharm/",
+      "title": "धर्म:"
     }
   ]
 }
