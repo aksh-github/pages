@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "rootPath": "",
+      "text": "< Back to Home",
+      "href": "../../"
+    },
+    {
+      "rootPath": "",
+      "text": "धर्म:"
+    },
+    {
+      "rootPath": "",
+      "text": "प्रस्तावना",
+      "href": "?t=dharm",
+      "data": ["intro.md"]
+    }
+  ]
+}
