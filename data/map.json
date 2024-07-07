@@ -14,6 +14,11 @@
       "text": "इतिहास",
       "rootPath": "./data/history",
       "href": "./data/history"
+    },
+{
+      "text": "धर्मः",
+      "rootPath": "./data/dharm",
+      "href": "./data/dharm"
     }
   ]
 }
