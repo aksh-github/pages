@@ -6,16 +6,16 @@
       "href": "./data/code"
     },
     {
-      "text": "Sanskrit",
+      "text": "संस्कृतम्",
       "rootPath": "./data/sanskrit",
       "href": "./data/sanskrit"
     },
     {
-      "text": "इतिहास",
+      "text": "इतिहास:",
       "rootPath": "./data/history",
       "href": "./data/history"
     },
-{
+    {
       "text": "धर्मः",
       "rootPath": "./data/dharm",
       "href": "./data/dharm"

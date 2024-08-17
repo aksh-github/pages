@@ -40,7 +40,7 @@
 }
 
 /* sidebar for tab and above */
-@media (width >= 768px) {
+@media (width > 768px) {
   main .real-menu {
     display: block;
     position: inherit;
