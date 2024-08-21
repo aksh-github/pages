@@ -14,6 +14,12 @@
       "text": "प्रस्तावना",
       "href": "?t=dharm",
       "data": ["intro.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "युग",
+      "href": "?t=yug",
+      "data": ["yug.md"]
     }
   ]
 }
