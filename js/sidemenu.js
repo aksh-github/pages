@@ -1,18 +1,18 @@
 let converter;
-const fetchData = (_url, type) => {
-  const url = "./data" + _url + "." + type;
-  console.log(url);
+// const fetchData = (_url, type) => {
+//   const url = "./data" + _url + "." + type;
+//   console.log(url);
 
-  // if (!converter) converter = new showdown.Converter();
+//   // if (!converter) converter = new showdown.Converter();
 
-  // fetch(url)
-  //   .then((res) => res.text())
-  //   .then((res) => {
-  //     //   console.log(res);
+//   // fetch(url)
+//   //   .then((res) => res.text())
+//   //   .then((res) => {
+//   //     //   console.log(res);
 
-  //     document.querySelector("main").innerHTML = converter.makeHtml(res);
-  //   });
-};
+//   //     document.querySelector("main").innerHTML = converter.makeHtml(res);
+//   //   });
+// };
 
 (function () {
   console.log("got it");

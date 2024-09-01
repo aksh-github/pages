@@ -70,6 +70,20 @@ blockquote {
 blockquote {
   margin: 0;
 }
+
+.tabular {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: cornsilk;
+  padding: 1em;
+  gap: 1em;
+}
+
+.tabular > div {
+  min-width: 5em;
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
   pre {
