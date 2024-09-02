@@ -1,4 +1,5 @@
 const modifyFormat = () => {
+  // 1. tabular
   const $tableContainers = document.querySelectorAll(".tabular");
 
   $tableContainers?.forEach(($cont) => {
@@ -13,6 +14,23 @@ const modifyFormat = () => {
     });
 
     $cont.append(df);
+  });
+
+  // 2. tab
+  const $tabs = document.querySelectorAll(".tab");
+
+  $tabs?.forEach(($tab) => {
+    const tabDiv = $tab?.querySelectorAll("& > div");
+    tabDiv?.forEach((d, idx) => {
+      let csclss;
+      if (idx % 2 === 0) {
+        csclss = "left";
+      } else {
+        csclss = "right";
+      }
+
+      d.classList.add("column", csclss);
+    });
   });
 };
 
