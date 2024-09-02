@@ -84,6 +84,23 @@ blockquote {
   text-align: center;
 }
 
+.tab {
+  /* background-color: cornsilk; */
+}
+
+.tab .column {
+  float: left;
+  /* background-color: cornsilk; */
+}
+
+.tab .left {
+  width: 25%;
+}
+
+.tab .right {
+  width: 75%;
+}
+
 @media (max-width: 500px) {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
   pre {
