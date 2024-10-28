@@ -20,6 +20,8 @@
 
 साभार: डॉ. उदय कुलकर्णी स्रोत: [youtube](https://www.youtube.com/watch?v=gHCwplqaqAM)
 
+![week days](./peshwa-f-tree.png)
+
 - **पंजाब** - १७५८-५९
 - 
 - **दिल्ली** - १७१९-३७ (प. बाजीराव होता)
