@@ -47,6 +47,12 @@
     },
     {
       "rootPath": "",
+      "text": "क्रियापदम्",
+      "href": "?t=verb",
+      "data": ["verb.md"]
+    },
+    {
+      "rootPath": "",
       "text": "ण त्व",
       "href": "?t=natva",
       "data": ["natva.md"]
