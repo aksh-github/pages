@@ -71,6 +71,7 @@ blockquote {
   margin: 0;
 }
 
+/* For multiple columns  */
 .tabular {
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +85,7 @@ blockquote {
   text-align: center;
 }
 
+/* For multiple columns (based on %) */
 .tab {
   /* background-color: cornsilk; */
 }
