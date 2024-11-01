@@ -71,7 +71,7 @@ blockquote {
   margin: 0;
 }
 
-/* For multiple columns  */
+/* Table for multiple columns  */
 .tabular {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +85,7 @@ blockquote {
   text-align: center;
 }
 
-/* For multiple columns (based on %) */
+/* Table for 2 columns (based on %) */
 .tab {
   /* background-color: cornsilk; */
 }
@@ -102,6 +102,22 @@ blockquote {
 .tab .right {
   width: 75%;
 }
+
+/* Table based on flexbox  */
+/* Container element */
+.two-column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Optional gap between columns */
+}
+
+/* Column elements */
+.three-column {
+  flex-basis: 30%; /* Adjust width of each column */
+}
+
+/* media queries  */
+
 
 @media (max-width: 500px) {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
@@ -131,6 +147,14 @@ blockquote {
     padding-left: 1.5em;
   }
 }
+
+/* Optional: Make layout responsive */
+@media (max-width: 200px) {
+  .three-column {
+    flex-basis: 100%; /* Stack columns on smaller screens */
+  }
+}
+
 ul {
   padding: 0px;
 }
