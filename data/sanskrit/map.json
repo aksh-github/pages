@@ -56,6 +56,12 @@
       "text": "ण त्व",
       "href": "?t=natva",
       "data": ["natva.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "उपसर्गा:",
+      "href": "?t=upasarg",
+      "data": ["upasarg.md"]
     }
   ]
 }
