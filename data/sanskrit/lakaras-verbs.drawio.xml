@@ -62,8 +62,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="FBhRZLdEo9-ousMjH1ph" name="Page-2">
-    <mxGraphModel dx="1100" dy="777" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="FBhRZLdEo9-ousMjH1ph" name="verbs-lakar">
+    <mxGraphModel dx="1312" dy="777" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -101,25 +101,25 @@
           <mxGeometry x="200" y="542" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-12" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;विधिर्लिङ्&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="117.5" y="701" width="120" height="60" as="geometry" />
+          <mxGeometry x="60" y="715" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-13" value="विधि: / आशी:&amp;nbsp;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="137.5" y="610" width="95" height="30" as="geometry" />
+          <mxGeometry x="80" y="624" width="95" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-14" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;आशीर्लिङ्&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="125" y="875" width="120" height="60" as="geometry" />
+          <mxGeometry x="67.5" y="889" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-15" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;लोट्&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="127" y="1039.5" width="120" height="60" as="geometry" />
+          <mxGeometry x="69.5" y="1053.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-16" value="&lt;ul style=&quot;box-sizing: border-box; padding-left: 2em; margin-top: 0px; margin-bottom: var(--base-size-16); text-align: start;&quot; dir=&quot;auto&quot;&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box;&quot;&gt;आज्ञा - स्थालिकां स्वच्छीकुर्याः !!&lt;/li&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box; margin-top: 0.25em;&quot;&gt;प्रश्न - (छात्रस्य प्रश्न:) अहं व्याकरणं पठानि वा?&lt;/li&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box; margin-top: 0.25em;&quot;&gt;प्रार्थना - (कृपया) दद्याः मे इदं पुस्तकम्&lt;/li&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box; margin-top: 0.25em;&quot;&gt;निमन्त्रणम् - (विकल्प: नास्ति)&lt;/li&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box; margin-top: 0.25em;&quot;&gt;आमन्त्रणम् - श्व: मन्दिरं आगच्छेः&lt;/li&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box; margin-top: 0.25em;&quot;&gt;पद्धति: - वनं एतेन मार्गेण गच्छतु&lt;/li&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box; margin-top: 0.25em;&quot;&gt;आशीर्वाद: - यशस्वी भव !&lt;/li&gt;&lt;li style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; box-sizing: border-box; margin-top: 0.25em;&quot;&gt;&lt;b&gt;हेतु - हेतुमद्भाव: - यदि सुवृष्टि:&amp;nbsp; भवेत् , तर्हि कृषीवला: आनन्दिता: भवेयु:&lt;/b&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin-top: 0.25em;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot; color=&quot;#1f2328&quot;&gt;&lt;b&gt;सम्भावना - अद्य वर्षा भवेत्&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="251" y="624" width="290" height="222" as="geometry" />
+          <mxGeometry x="193.5" y="638" width="290" height="222" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-17" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;लृङ्&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="388" y="875" width="120" height="60" as="geometry" />
+          <mxGeometry x="330.5" y="889" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-18" value="भूत / भविष्यत्" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="508" y="885" width="95" height="40" as="geometry" />
+          <mxGeometry x="450.5" y="899" width="95" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-19" value="(गच्छति)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="233.5" y="311" width="60" height="30" as="geometry" />
@@ -173,31 +173,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-34" value="यदि भवेत् , तर्हि वर्धेरन्" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="403" y="937" width="95" height="40" as="geometry" />
+          <mxGeometry x="345.5" y="951" width="95" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-35" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;rotation=90;" vertex="1" parent="1">
-          <mxGeometry x="169.25" y="997" width="31.5" height="10.5" as="geometry" />
+          <mxGeometry x="111.75" y="1011" width="31.5" height="10.5" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-38" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;वैदिकसंस्कृते&lt;br&gt;प्रामुख्येन&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="24.5" y="897" width="86" height="30" as="geometry" />
+          <mxGeometry x="-33" y="911" width="86" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-39" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="153" y="809" as="sourcePoint" />
-            <mxPoint x="212" y="809" as="targetPoint" />
+            <mxPoint x="95.5" y="823" as="sourcePoint" />
+            <mxPoint x="154.5" y="823" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-40" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="183.13" y="833" as="sourcePoint" />
-            <mxPoint x="183" y="782" as="targetPoint" />
+            <mxPoint x="125.63" y="847" as="sourcePoint" />
+            <mxPoint x="125.5" y="796" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-41" value="&lt;ul style=&quot;box-sizing: border-box; padding-left: 2em; margin-top: 0px; margin-bottom: var(--base-size-16); text-align: start;&quot; dir=&quot;auto&quot;&gt;&lt;li style=&quot;box-sizing: border-box;&quot;&gt;&lt;span style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; background-color: initial;&quot;&gt;हेतु - हेतुमद्भाव: ,&amp;nbsp;&lt;/span&gt;सम्भावना - एतयो: कृते न योजनीय:&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin-top: 0.25em;&quot;&gt;&lt;span style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; background-color: initial;&quot;&gt;अन्य विधि: + आशी:&amp;nbsp; भावनिर्देशाय प्रयोक्तुं शक्यते&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="251" y="1028" width="282" height="83" as="geometry" />
+          <mxGeometry x="193.5" y="1042" width="282" height="83" as="geometry" />
         </mxCell>
         <mxCell id="Njb9pvL0kE96F_7oRv-F-42" value="शुभं भूयात्&amp;nbsp;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="137.5" y="934" width="95" height="30" as="geometry" />
+          <mxGeometry x="80" y="948" width="95" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
