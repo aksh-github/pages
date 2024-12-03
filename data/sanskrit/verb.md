@@ -24,7 +24,7 @@
 - क्रियातिपत्ति - लृङ्
 - लेट्
 
-![kaal verbs](./imgs/bhaav-verbs.png)
+![bhav verbs](./imgs/bhav-verbs.png)
 
 ### वर्तमान - लट्-लकार:
 
