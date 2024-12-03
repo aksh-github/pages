@@ -39,8 +39,8 @@
   color: #fff;
 }
 
-/* sidebar for tab and above */
-@media (width > 768px) {
+/* sidebar for big screens */
+@media (width > 992px) {
   main .real-menu {
     display: block;
     position: inherit;
