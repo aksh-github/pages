@@ -8,7 +8,7 @@
 
 <div>any html is possible here</div>
 
-![नटराजराज](./nataraj2.jpg)
+![नटराजराज](./imgs/nataraj2.jpg)
 
 संस्कृते पदम् नाम भागद्वयं स्त:
 पदम् = प्रकृति: + प्रत्यय:
