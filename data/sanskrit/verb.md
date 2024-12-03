@@ -27,6 +27,7 @@
 ![bhav verbs](./imgs/bhav-verbs.png)
 
 ### वर्तमान - लट्-लकार:
+<hr />
 
 प्रत्यया:
 
