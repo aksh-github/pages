@@ -47,9 +47,15 @@
     },
     {
       "rootPath": "",
-      "text": "क्रियापदम्",
-      "href": "?t=verb",
+      "text": "क्रियापदम् - काल",
+      "href": "?t=verb-kaal",
       "data": ["verb-kaal.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "क्रियापदम् - भाव",
+      "href": "?t=verb-bhav",
+      "data": ["verb-bhav.md"]
     },
     {
       "rootPath": "",
