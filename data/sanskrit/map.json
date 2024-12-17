@@ -23,6 +23,12 @@
     },
     {
       "rootPath": "",
+      "text": "उच्चार-विशेष",
+      "href": "?t=pronci",
+      "data": ["pronounciation.md"]
+    },
+    {
+      "rootPath": "",
       "text": "समास:",
       "href": "?t=samaas",
       "data": ["samaas.md"]
