@@ -37,6 +37,7 @@
   transition: ease 0.2s all;
   background-color: rgb(68, 72, 87);
   color: #fff;
+  overflow-y: auto;
 }
 
 /* sidebar for big screens */

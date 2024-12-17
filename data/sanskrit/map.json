@@ -17,6 +17,12 @@
     },
     {
       "rootPath": "",
+      "text": "अक्षराणि",
+      "href": "?t=letters",
+      "data": ["letters.md"]
+    },
+    {
+      "rootPath": "",
       "text": "समास:",
       "href": "?t=samaas",
       "data": ["samaas.md"]
