@@ -20,6 +20,12 @@
       "text": "युग",
       "href": "?t=yug",
       "data": ["yug.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "Secularism",
+      "href": "?t=secular",
+      "data": ["secularism.md"]
     }
   ]
 }
