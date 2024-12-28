@@ -11,9 +11,21 @@
     },
     {
       "rootPath": "",
+      "text": "हिंदू साम्राज्य",
+      "href": "?t=hindu-kd",
+      "data": ["hindu.md"]
+    },
+    {
+      "rootPath": "",
       "text": "शिवपुर्व",
       "href": "?t=preshiv",
       "data": ["pre-shivaji.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "शिवपर्व",
+      "href": "?t=shiv",
+      "data": ["shivaji.md"]
     },
     {
       "rootPath": "",
@@ -23,9 +35,15 @@
     },
     {
       "rootPath": "",
-      "text": "हिंदू साम्राज्य",
-      "href": "?t=hindu-kd",
-      "data": ["hindu.md"]
+      "text": "पानिपत युद्ध",
+      "href": "?t=paanipat1n2",
+      "data": ["paanipat1.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत युद्ध ३",
+      "href": "?t=paanipat3",
+      "data": ["paanipat3.md"]
     }
 
   ]
