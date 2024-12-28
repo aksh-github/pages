@@ -17,6 +17,12 @@
     },
     {
       "rootPath": "",
+      "text": "शिवपर्व",
+      "href": "?t=shiv",
+      "data": ["shivaji.md"]
+    },
+    {
+      "rootPath": "",
       "text": "शिवोत्तर",
       "href": "?t=postshiv",
       "data": ["post-shivaji.md"]
