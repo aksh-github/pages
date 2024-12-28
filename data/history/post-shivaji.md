@@ -24,7 +24,7 @@
 
 साभार: डॉ. उदय कुलकर्णी स्रोत: [youtube](https://www.youtube.com/watch?v=gHCwplqaqAM)
 
-![week days](./peshwa-f-tree.png)
+![peshve family tree](./peshwa-f-tree.png)
 
 ### पहिले बाजीराव 
 जन्म: १७०० - १७४० (रावरखेड मध्यप्रदेश)
@@ -55,3 +55,7 @@
 
 -   **तंजावर, तामिळनाडू येथील काही भाग** - १६७७-९८, १७४०-४३, १७५७-५९
 -   
+
+[पानिपत १ व २ ](./paanipat1n2)
+
+[पानिपत ३](./paanipat3)
