@@ -64,9 +64,9 @@ let converter;
     let mapJsonUrl = null;
 
     if (path === "/" || path?.endsWith("pages/")) {
-      mapJsonUrl = "./data/map.json";
+      mapJsonUrl = "./data/map.json?" + Date.now();
     } else {
-      mapJsonUrl = "./map.json";
+      mapJsonUrl = "./map.json?" + Date.now();
     }
 
     getMenuJson(mapJsonUrl).then((res) => {
