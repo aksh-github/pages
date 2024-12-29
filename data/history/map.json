@@ -11,6 +11,12 @@
     },
     {
       "rootPath": "",
+      "text": "प्रस्तावना",
+      "href": "?t=intro",
+      "data": ["index.md"]
+    },
+    {
+      "rootPath": "",
       "text": "हिंदू साम्राज्य",
       "href": "?t=hindu-kd",
       "data": ["hindu.md"]
