@@ -65,7 +65,7 @@ document.addEventListener("readystatechange", function () {
       const topic = search.split("=")?.[1];
       let allData;
       // console.log("get info for: ");
-      fetch("./map.json")
+      fetch("./map.json?" + Date.now())
         .then((res) => res.json())
         .then((map) => {
           console.log(map, map[topic]);
