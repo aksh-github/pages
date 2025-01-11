@@ -6,7 +6,6 @@
 
 - पतञ्जलिः 
 
-<div>any html is possible here</div>
 
 ![नटराजराज](./imgs/nataraj2.jpg)
 
