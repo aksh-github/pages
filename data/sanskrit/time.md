@@ -10,7 +10,7 @@
 
 <div id="days" class="tabular">रविवासर:, सोमवासर:, मङ्गलवासर:, बुधवासर:, गुरुवासर:, शुक्रवासर:, शनिवासर:</div>
 
-![week days](./days.png)
+![week days](./imgs/weekdays.png)
 
 **साप्ताहिक: (की, कम्)** - साप्ताहिक - weekly
 
