@@ -10,7 +10,7 @@
 
 <div id="days" class="tabular">रविवासर:, सोमवासर:, मङ्गलवासर:, बुधवासर:, गुरुवासर:, शुक्रवासर:, शनिवासर:</div>
 
-![week days](./days.png)
+![week days](./imgs/weekdays.png)
 
 **साप्ताहिक: (की, कम्)** - साप्ताहिक - weekly
 
@@ -18,7 +18,7 @@
 
 **दिननिर्देश:**
 
-![indicate day](./dayindi.png)
+![indicate day](./imgs/daysindi.png)
 
 <div class="container">
   <div class="in-container">
@@ -85,17 +85,19 @@
 
 <div id="months" class="tabular">चैत्र:, वैशाख:, ज्येष्टः, आषाढ:, श्रावण:,भाद्रपद:, आश्विन:, कार्तिक:, मार्गशीर्ष:, पौष:, माघ:, फाल्गुन:</div>
 
+![week days](./imgs/months.png)
+
 <hr />
 
 **षड् ऋतव: - ऋतु - seasons**
 
 <div class="container">
-  <div>ग्रीष्म: ज्येष्टः, आषाढ:</div>
   <div>वसन्त: चैत्र:, वैशाख:,</div>
-  <div>शरद् आश्विन:, कार्तिक:</div>
+  <div>ग्रीष्म: ज्येष्टः, आषाढ:</div>
   <div>वर्षा श्रावण:,भाद्रपद:</div>
-  <div>शिशिर: माघ:, फाल्गुन:</div>
+  <div>शरद् आश्विन:, कार्तिक:</div>
   <div>हेमन्त: मार्गशीर्ष:, पौष:</div>
+  <div>शिशिर: माघ:, फाल्गुन:</div>
 </div>
 
 <hr />
