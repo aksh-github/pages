@@ -18,7 +18,7 @@
 
 **दिननिर्देश:**
 
-![indicate day](./imgs/dayindi.png)
+![indicate day](./imgs/daysindi.png)
 
 <div class="container">
   <div class="in-container">
