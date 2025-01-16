@@ -50,7 +50,12 @@
       "text": "पानिपत युद्ध ३",
       "href": "?t=paanipat3",
       "data": ["paanipat3.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत पश्चात",
+      "href": "?t=post-paanipat",
+      "data": ["post-paanipat.md"]
     }
-
   ]
 }
