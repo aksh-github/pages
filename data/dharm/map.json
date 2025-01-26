@@ -26,6 +26,12 @@
       "text": "Secularism",
       "href": "?t=secular",
       "data": ["secularism.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "आदि शंकराचार्य",
+      "href": "?t=adishankar",
+      "data": ["adishankar.md"]
     }
   ]
 }
