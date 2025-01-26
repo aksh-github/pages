@@ -7,7 +7,8 @@
 
 कार्य: अद्वैत वेदांत तत्त्वज्ञान, पंचायतन पूजा पद्धती
 
-स्रोत: [सुजीत भोगले आदि शंकराचार्य फेबु]((https://www.facebook.com/share/p/1DM34b4xRe/))
+स्रोत: [सुजीत भोगले आदि शंकराचार्य फेबु]((https://www.facebook.com/share/p/1DM34b4xRe/)) , 
+[Jio Talks with Sri Abhinava Shankara Bharati MahaSwami](https://www.youtube.com/watch?v=cjZhdSDXqmQ)
 
 ```
 
