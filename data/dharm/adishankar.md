@@ -3,6 +3,6 @@
 ```
 
 
-स्रोत: [सुजीत भोगले आदि शंकराचार्य फेबु](https://www.facebook.com/share/p/1DM34b4xRe/)
+स्रोत: [सुजीत भोगले आदि शंकराचार्य फेबु]((https://www.facebook.com/share/p/1DM34b4xRe/))
 
 ```
