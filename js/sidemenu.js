@@ -86,7 +86,7 @@ let converter;
           li.appendChild(buildList(item.list, item.rootPath));
         } else {
           // li.textContent = item.text;
-          if (item.href) {
+          if (item?.href && !item?.innerLink) {
             const a = document.createElement("a");
             a.href = item.href;
             a.textContent = item.text;
