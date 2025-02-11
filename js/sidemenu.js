@@ -93,6 +93,7 @@ let converter;
             // a.dataset.type = item.type;
             li.appendChild(a);
           } else {
+            if(!item?.innerLink)
             li.textContent = item.text;
           }
         }
