@@ -44,6 +44,27 @@
       "text": "पानिपत",
       "href": "?t=paanipat",
       "data": ["paanipat.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत युद्ध १ व २",
+      "href": "?t=paanipat1n2",
+      "innerLink": true,
+      "data": ["paanipat1.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत युद्ध ३",
+      "href": "?t=paanipat3",
+      "innerLink": true,
+      "data": ["paanipat3.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत पश्चात",
+      "href": "?t=post-paanipat",
+      "innerLink": true,
+      "data": ["post-paanipat.md"]
     }
   ]
 }
