@@ -17,6 +17,12 @@
     },
     {
       "rootPath": "",
+      "text": "हिन्दुधर्म:",
+      "href": "?t=hindu",
+      "data": ["hindu.md"]
+    },
+    {
+      "rootPath": "",
       "text": "युग",
       "href": "?t=yug",
       "data": ["yug.md"]
