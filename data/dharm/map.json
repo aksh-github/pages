@@ -23,9 +23,9 @@
     },
     {
       "rootPath": "",
-      "text": "युग",
-      "href": "?t=yug",
-      "data": ["yug.md"]
+      "text": "हिन्दुधर्म व इतर",
+      "href": "?t=hindu-vs-other",
+      "data": ["hindu-vs-other.md"]
     },
     {
       "rootPath": "",
@@ -38,6 +38,12 @@
       "text": "आदि शंकराचार्य",
       "href": "?t=adishankar",
       "data": ["adishankar.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "युग",
+      "href": "?t=yug",
+      "data": ["yug.md"]
     }
   ]
 }
