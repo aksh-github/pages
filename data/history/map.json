@@ -65,6 +65,13 @@
       "href": "?t=post-paanipat",
       "innerLink": true,
       "data": ["post-paanipat.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "मराठे इतर",
+      "href": "?t=marathe-other",
+      "innerLink": true,
+      "data": ["marathe-other.md"]
     }
   ]
 }
