@@ -99,6 +99,7 @@ let converter;
         }
 
         // console.log(li);
+        if(!item?.innerLink)
         ul.appendChild(li);
         document.querySelector(".real-menu").appendChild(ul);
       });
