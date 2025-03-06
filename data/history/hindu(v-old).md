@@ -16,6 +16,7 @@
 - ८. ४९००० - यमुनेचे विलगीकरण चालू झाले
 - ९. ५६००० - परशुराम
 - १०. ६३००० - अभिजित आणि अगस्त्य (२ ध्रुव तारे)
+- ११. ७२००० - टोबा विस्फोट [Toba explosion / eruption](https://en.wikipedia.org/wiki/Youngest_Toba_eruption#Toba_catastrophe_theory)
 
 
 Cholas. चोला             : 2100 Yrs 
