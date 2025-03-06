@@ -2,12 +2,12 @@
 
 स्रोत: [An Antiquity of The Indian Civilization | नीलेश ओक](https://www.youtube.com/watch?v=9b3oiGhoPow)
 
-सामान्य काळ (इसवी सन) = ०
+सामान्य काळ (साका) = ०
 
 हे सर्व काळ साधारण आहेत.
 
-- १. ७००० (साका २०२५) - ५५२५  महाभारत युद्ध
-- २. १४०००  - रामायण
+- १. ७००० (साका २०२५) - ५५६१ महाभारत युद्ध
+- २. १४०००  - १२२०९  रामायण
 - ३. २१०००  LGM (Last Glacial Maximum) - अधिकतम हिम व्याप्ती (२०००० ते २६००० ) [Last Glacial Maximum](https://en.wikipedia.org/wiki/Last_Glacial_Maximum)
 - ४. २१००० च्या आधी ऋग्वेद (बराचसा भाग)
 - ५. २८००० - नक्षत्र आधारित कालमापन
