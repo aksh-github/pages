@@ -17,9 +17,9 @@
     },
     {
       "rootPath": "",
-      "text": "हिंदू साम्राज्य",
-      "href": "?t=hindu-kd",
-      "data": ["hindu.md"]
+      "text": "हिंदू सामान्य काळ पूर्व",
+      "href": "?t=hindu-BCE",
+      "data": ["hindu-BCE.md"]
     },
     {
       "rootPath": "",
