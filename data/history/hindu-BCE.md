@@ -2,15 +2,19 @@
 
 स्रोत: [युटू An Antiquity of The Indian Civilization | नीलेश ओक](https://www.youtube.com/watch?v=9b3oiGhoPow) , [Summary of the projects ।  नीलेश ओक WP ब्लॉग](https://nileshoak.wordpress.com/2020/09/09/summary-of-the-projects-accomplished-2011-2020/)
 
+```
+[सामान्य काळ रेखा](https://nileshoak.wordpress.com/wp-content/uploads/2021/09/bhaty-timeline-july-2021-1.jpg)
+```
+
 सामान्य काळ (साका) = ०
 
 हे सर्व काळ साधारण आहेत.
 
 - ७००० (साका २०२५) + ५५६१ महाभारत युद्ध
 - ८००० - सुश्रुत (आयुर्वेद, शल्य विशारद)
-- १४०००  - १२२०९  रामायण
+- १४००० - १२२०९  रामायण
 - २१०००  LGM (Last Glacial Maximum) - अधिकतम हिम व्याप्ती (२०००० ते २६००० ) [Last Glacial Maximum](https://en.wikipedia.org/wiki/Last_Glacial_Maximum)
-- २१००० च्या आधी ऋग्वेद (सुरुवातीचा भाग ते महाभारत काळ (व्यास))
+- २१००० - च्या आधी ऋग्वेद (सुरुवातीचा भाग ते महाभारत काळ (व्यास))
 - २८००० - नक्षत्र आधारित कालमापन
 - ३५००० - बृहद्-रथ
 - ४२००० - यमुना सरस्वती पासून विलग होऊन गंगेला मिळाली
