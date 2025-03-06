@@ -8,7 +8,7 @@
 
 - १. ~ ७००० (साका २०२५) - ५५२५  महाभारत युद्ध
 - २. १४०००  - रामायण
-- ३. २१०००  LGM (Last Glacial Maximum) - 
+- ३. २१०००  LGM (Last Glacial Maximum) - अधिकतम हिम व्याप्ती (२०००० ते २६००० ) [Last Glacial Maximum](https://en.wikipedia.org/wiki/Last_Glacial_Maximum)
 
 
 
