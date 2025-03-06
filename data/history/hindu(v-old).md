@@ -1,4 +1,14 @@
-## हिंदू राज्ये
+## हिंदू अति प्राचीन इतिहास
+
+स्रोत: [An Antiquity of The Indian Civilization | नीलेश ओक](https://www.youtube.com/watch?v=9b3oiGhoPow)
+
+सामान्य काळ (इसवी सन) = ०
+
+हे सर्व काळ साधारण आहेत.
+
+- १. ~ ७००० (साका २०२५) - ५५२५  महाभारत युद्ध
+- २. १४०००  - रामायण
+- ३. २१०००  LGM (Last Glacial Maximum) - 
 
 
 
