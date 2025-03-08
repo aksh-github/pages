@@ -24,6 +24,7 @@
 - ४९००० - यमुनेचे विलगीकरण चालू झाले
 - ५६००० - परशुराम
 - ६३००० - ब्रह्मर्षी वा अभिजित आणि अगस्त्य (२ ध्रुव तारे)
+    स्वयंभू मनु, उत्तानपाद - (सुरुची, सुमती, ध्रुव मुलगा)
 - ७२००० - टोबा विस्फोट [Toba explosion / eruption](https://en.wikipedia.org/wiki/Youngest_Toba_eruption#Toba_catastrophe_theory)
 
 
