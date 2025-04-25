@@ -80,6 +80,12 @@
       "text": "उपसर्गा:",
       "href": "?t=upasarg",
       "data": ["upasarg.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "उपसर्गा:",
+      "href": "?t=avyay",
+      "data": ["avyay.md"]
     }
   ]
 }
