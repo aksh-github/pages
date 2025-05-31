@@ -44,6 +44,12 @@
       "text": "युग",
       "href": "?t=yug",
       "data": ["yug.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "अधिक मास",
+      "href": "?t=adhik-maas",
+      "data": ["adhik-maas.md"]
     }
   ]
 }
