@@ -71,6 +71,12 @@
       "text": "मराठे इतर",
       "href": "?t=marathe-other",
       "data": ["marathe-other.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "लचित आसाम",
+      "href": "?t=lachit-assam",
+      "data": ["Lachit-assam.md"]
     }
   ]
 }
