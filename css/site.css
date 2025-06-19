@@ -15,6 +15,7 @@ body {
 
 a {
   color: brown;
+  background: bisque;
   &:visited: {
     color: #a65555;
   }
