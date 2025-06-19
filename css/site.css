@@ -13,6 +13,13 @@ body {
   font-family: math;
 }
 
+a {
+  color: brown;
+  &:visited: {
+    color: #a65555;
+  }
+}
+
 header {
   width: 100%;
   text-align: center;
