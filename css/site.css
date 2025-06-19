@@ -15,10 +15,10 @@ body {
 
 a {
   color: brown;
-  background: bisque;
+  /*background: bisque;
   &:visited: {
     color: #a65555;
-  }
+  }*/
 }
 
 header {
