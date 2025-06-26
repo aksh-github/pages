@@ -50,6 +50,12 @@
       "text": "अधिक मास",
       "href": "?t=adhik-maas",
       "data": ["adhik-maas.md"]
+    },
+{
+      "rootPath": "",
+      "text": "गोत्र",
+      "href": "?t=gotra",
+      "data": ["gotra.md"]
     }
   ]
 }
