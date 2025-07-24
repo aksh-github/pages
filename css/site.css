@@ -73,7 +73,8 @@ pre,
 blockquote {
   background-color: cornsilk;
   padding: 1em;
-  text-wrap: wrap;
+/*   text-wrap: wrap; */
+  overflow: auto;
 }
 blockquote {
   margin: 0;
