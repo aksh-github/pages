@@ -74,6 +74,12 @@
     },
     {
       "rootPath": "",
+      "text": "टिपू",
+      "href": "?t=tipu",
+      "data": ["tipu.md"]
+    },
+    {
+      "rootPath": "",
       "text": "लचित आसाम",
       "href": "?t=lachit-assam",
       "data": ["Lachit-assam.md"]
