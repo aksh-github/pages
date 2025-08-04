@@ -102,6 +102,7 @@ let converter;
         if(!item?.innerLink)
         ul.appendChild(li);
         document.querySelector(".real-menu").appendChild(ul);
+        document.querySelector(".real-menu")?.addEventListener("click", toggleMenu);
       });
 
       // //   menu handler

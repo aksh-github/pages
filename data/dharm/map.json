@@ -23,6 +23,12 @@
     },
     {
       "rootPath": "",
+      "text": "हिन्दुधर्म उत्सव",
+      "href": "?t=utsav",
+      "data": ["utsav.md"]
+    },
+    {
+      "rootPath": "",
       "text": "हिन्दुधर्म व इतर",
       "href": "?t=hindu-vs-other",
       "data": ["hindu-vs-other.md"]
