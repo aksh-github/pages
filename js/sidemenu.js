@@ -102,7 +102,7 @@ let converter, body=document.body;
         if(!item?.innerLink)
         ul.appendChild(li);
         document.querySelector(".real-menu").appendChild(ul);
-        document.querySelector(".real-menu")?.addEventListener("click", toggleMenu);
+        document.querySelector(".real-menu")?.addEventListener("click", ()=> {removeClass(body, "menu-open");});
       });
 
       // //   menu handler
