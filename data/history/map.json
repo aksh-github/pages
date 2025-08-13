@@ -41,6 +41,12 @@
     },
     {
       "rootPath": "",
+      "text": "पेशवे इतर",
+      "href": "?t=peshwe-other",
+      "data": ["peshwe-other.md"]
+    },
+    {
+      "rootPath": "",
       "text": "पानिपत",
       "href": "?t=paanipat",
       "data": ["paanipat.md"]
