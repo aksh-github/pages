@@ -1,4 +1,4 @@
-let converter;
+let converter, body=document.body;
 // const fetchData = (_url, type) => {
 //   const url = "./data" + _url + "." + type;
 //   console.log(url);
@@ -141,11 +141,11 @@ let converter;
 
   //The actual fuction
   function toggleMenu() {
-    var ele = document.getElementsByTagName("body")[0];
-    if (!hasClass(ele, "menu-open")) {
-      addClass(ele, "menu-open");
+    
+    if (!hasClass(body, "menu-open")) {
+      addClass(body, "menu-open");
     } else {
-      removeClass(ele, "menu-open");
+      removeClass(body, "menu-open");
     }
   }
 
