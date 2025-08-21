@@ -17,9 +17,15 @@
     },
     {
       "rootPath": "",
-      "text": "हिंदू सामान्य काळ पूर्व",
+      "text": "सामान्य काळ पूर्व",
       "href": "?t=hindu-BCE",
       "data": ["hindu-BCE.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "सप्तर्षी",
+      "href": "?t=saptarshee",
+      "data": ["saptarshee.md"]
     },
     {
       "rootPath": "",
