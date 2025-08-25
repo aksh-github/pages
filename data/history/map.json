@@ -23,6 +23,18 @@
     },
     {
       "rootPath": "",
+      "text": "महाभारत",
+      "href": "?t=mahabharat",
+      "data": ["mahabharat.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "रामायण",
+      "href": "?t=ramayan",
+      "data": ["ramayan.md"]
+    },
+    {
+      "rootPath": "",
       "text": "सप्तर्षी",
       "href": "?t=saptarshee",
       "data": ["saptarshi.md"]
