@@ -22,7 +22,7 @@
     },
     {
       "rootPath": "",
-      "text": "अक्षराणि",
+      "text": "वर्णा: (अक्षराणि)",
       "href": "?t=letters",
       "data": ["letters.md"]
     },
@@ -91,6 +91,18 @@
       "text": "अव्ययानि",
       "href": "?t=avyay",
       "data": ["avyay.md"]
-    }
+    },
+    {
+      "rootPath": "",
+      "text": "वाक्य-रचना +",
+      "href": "?t=vaakya",
+      "data": ["vaakya.md"]
+    },
+    {
+      "rootPath": "",
+      "text": "यावद्",
+      "href": "?t=yavad",
+      "data": ["yavad.md"]
+    },
   ]
 }
