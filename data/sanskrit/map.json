@@ -40,6 +40,12 @@
     },
     {
       "rootPath": "",
+      "text": "सन्धि:",
+      "href": "?t=sandhi",
+      "data": ["sandhi.md"]
+    },
+    {
+      "rootPath": "",
       "text": "काल:",
       "href": "?t=time",
       "data": ["time.md"]
