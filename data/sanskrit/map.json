@@ -102,6 +102,7 @@
       "rootPath": "",
       "text": "यावद्",
       "href": "?t=yavad",
+      "innerLink": true,
       "data": ["yavad.md"]
     }
   ]
