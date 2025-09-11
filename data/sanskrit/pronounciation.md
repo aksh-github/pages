@@ -69,6 +69,14 @@
 पौत्रा: श्याला: = पौत्राश् 
 ```
 
+#### ह् - उच्चार: (ब्राह्मण वा ब्राम्हण)
+
+[Sanskrit Bhasha Bodha - Brahma pronunciation](https://www.youtube.com/watch?v=5Pplpi2kcug)
+
+
+
+
+
 
 वर्णमाला द्रष्टव्या
 
