@@ -98,5 +98,11 @@
       "href": "?t=vaakya",
       "data": ["vaakya.md"]
     },
+    {
+      "rootPath": "",
+      "text": "यावद्",
+      "href": "?t=yavad",
+      "data": ["yavad.md"]
+    },
   ]
 }
