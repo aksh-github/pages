@@ -91,6 +91,12 @@
       "text": "अव्ययानि",
       "href": "?t=avyay",
       "data": ["avyay.md"]
-    }
+    },
+    {
+      "rootPath": "",
+      "text": "यावद्-तावद्",
+      "href": "?t=yavad",
+      "data": ["yavad.md"]
+    },
   ]
 }
