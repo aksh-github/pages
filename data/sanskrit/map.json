@@ -94,9 +94,9 @@
     },
     {
       "rootPath": "",
-      "text": "यावद्-तावद्",
-      "href": "?t=yavad",
-      "data": ["yavad.md"]
+      "text": "वाक्य-रचना +",
+      "href": "?t=vaakya",
+      "data": ["vaakya.md"]
     },
   ]
 }
