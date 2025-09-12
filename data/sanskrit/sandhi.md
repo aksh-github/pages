@@ -2,6 +2,8 @@
 
 स्त्रोत: [Laghu Siddhanta Kaumudi Part 1 - Samjna and Sandhi](https://www.youtube.com/watch?v=Z_FLFm0bYn4&list=PLmozlYyYE-EQyN06EzYJlnRRjE_qSJ-wc&index=35)
 
+२ [अन्य](https://ubcsanskrit.ca/lesson3/sandhirules.html)
+
 - वर्णानां एकत्रीकरणम् सन्धि: इति
 - यदि संहिता (वर्णयो: सामीप्यं) अस्ति, तर्हि सन्धि: शक्य: ( न आवश्यकं )
 - यत्र वर्ण-विकार: (परिवर्तनं) अस्ति, तत्र एव सन्धि: भवति |
