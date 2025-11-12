@@ -4,11 +4,11 @@
       "file": "./",
       "title": "Knowledge",
       "normalieCss": "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css",
-      "cssFiles": ["../../css/site.css", "../../css/menu.css"],
+      "cssFiles": ["/pages/css/site.css", "/pages/css/menu.css"],
       "jsFiles": [
-        "../../js/sidemenu.js",
-        "../../js/404hack.js",
-        "../../js/content-load.js"
+        "/pages/js/sidemenu.js",
+        "/pages/js/404hack.js",
+        "/pages/js/content-load.js"
       ],
       "markdownJs": {
         "src": "https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js",
