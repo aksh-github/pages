@@ -7,31 +7,23 @@
     },
     {
       "rootPath": "",
-      "text": "Code"
-    },
-    {
-      "rootPath": "/pages",
-      "text": "Git",
-      "href": "/data/code/git.html",
-      "data": ["git.md"]
+      "text": "css-page-layout",
+      "href": "./css-page-layout.html"
     },
     {
       "rootPath": "",
-      "text": "React",
-      "href": "?t=react",
-      "data": ["react.md"]
+      "text": "git",
+      "href": "./git.html"
     },
     {
       "rootPath": "",
-      "text": "Css Page Layout",
-      "href": "?t=cspglo",
-      "data": ["css-page-layout.md"]
+      "text": "react",
+      "href": "./react.html"
     },
     {
       "rootPath": "",
-      "text": "Typescript",
-      "href": "?t=ts",
-      "data": ["ts.md"]
+      "text": "ts",
+      "href": "./ts.html"
     }
   ]
 }

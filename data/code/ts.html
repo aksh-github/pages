@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/css/site.css">
+    <link rel="stylesheet" href="/pages/css/menu.css">
+  </head>
+  <body class="">
+    <header>
+      <div id="btn-menu-toggle">
+        <span class="hberger"></span><span class="hberger"></span><span class="hberger"></span>
+      </div>
+      <h2 class="site-header">Code</h2>
+    </header>
+
+    <div id="body-overlay"></div>
+    <main>
+      <nav class="real-menu" role="navigation"></nav>
+      <section class="main-section"><h2>Typescript</h2>
+<ul>
+<li>MS developed a laguage to overcome shortcomings of Javascript.</li>
+<li>Typescript is a super set of JavaScript.</li>
+<li>The biggest advantage of typescript is static typing.</li>
+<li>When we introduce static typing, we get a lot of features like most of the bugs we can find at compile time rather than crashing the application at run time, from editors like cold completion, refractoring etc.</li>
+</ul>
+<p><strong>Drawbacks</strong></p>
+<ul>
+<li>when you use Typescript, there is a compilation step. In larger projects it can take a bit to generate the final code. The reason is most runtime systems browsers etc don't understand typescript.</li>
+</ul>
+<h3>Setting up typescript</h3>
+<p>typescript is a node package. you can install it globally by running following command.</p>
+<pre><code>npm i -g typescript
+</code></pre>
+<p>you can verify it my running following command</p>
+<pre><code>tsc -v
+</code></pre>
+<p>Now you can start using typescript for your project.</p>
+<ol>
+<li>Start with empty dir.</li>
+<li>Do npm init, git init etc usual commands as requied.</li>
+<li>Create index.ts file with some simple code.</li>
+</ol>
+<pre><code class="language-js">console.log("hello world");
+</code></pre>
+<ol start="4">
+<li>You can try to compile this file with tsc by using following command.</li>
+</ol>
+<pre><code>tsc index.ts
+</code></pre>
+<ol start="5">
+<li>If compilation is successful, it will generate corresponding js output file (index.js).</li>
+<li>You can run that file as</li>
+</ol>
+<pre><code>node index.js
+</code></pre>
+<p>Next we will setup the project for Typescript properly. In project dir, rum command</p>
+<pre><code>tsc --init
+</code></pre>
+<p>It will generate config file tsconfig.json</p>
+<p>It is big file with multiple settings.</p>
+<p>Some of the important we need to be aware of:</p>
+<p><strong>Language and Environ.</strong></p>
+<ul>
+<li>target: Specifies the JS output level its going to generate.</li>
+</ul>
+<p><strong>Modules</strong></p>
+<ul>
+<li>module:</li>
+<li>rootDir: Represent the dir for our source files. Typically set it to ./src</li>
+</ul>
+<p><strong>Emit</strong></p>
+<ul>
+<li><p>outDir: Represent the dir for placing the compiled code. Typically set it to ./dist or ./build etc.</p>
+</li>
+<li><p>removeComments: Enable this to remove comments from compiled code.</p>
+</li>
+<li><p>noEmmitOnError: Enable this to prevent tsc from generating the build when our code has errors.</p>
+</li>
+</ul>
+<p><strong>Type Checking</strong></p>
+<ul>
+<li>strict: Set it to true. Very important.</li>
+<li>noImplicitReturns: Set it to true. Important for function return values.</li>
+</ul>
+<h3>Datatypes / Features</h3>
+<p>Along with JS types, TS supports following additional.</p>
+<ul>
+<li>any - Avoid this as much as possible, else we lose benefits of TS.</li>
+<li>unknown - Its better than any</li>
+<li>never</li>
+<li>enum</li>
+<li>tuple</li>
+</ul>
+<p><strong>tuple</strong>
+Its fixed length array which is used to store related values (key, value) etc.</p>
+<p>e.g.
+let user = [1, 'Dev']</p>
+<p><strong>enum</strong></p>
+<ul>
+<li>Used to represent list of related consts.</li>
+<li>It can hold values of any type.</li>
+</ul>
+<p>e.g.</p>
+<pre><code class="language-js">const enum Sizes {
+	Small,
+	Medium,
+	Large
+}
+</code></pre>
+<ul>
+<li><p>const is not required but it generates more optimized code.</p>
+</li>
+<li><p>By default 1st will have value of 0, next one will have 1 and so on.</p>
+</li>
+<li><p>If you want to start with specific value, you can do
+Small=50</p>
+</li>
+<li><p>If you want non sequencial values</p>
+</li>
+</ul>
+<pre><code class="language-js">const enum Sizes {
+	Small=50,
+	Medium=100,
+	Large=120
+}
+</code></pre>
+<h3>Advanced Types</h3>
+<ol>
+<li>Type aliases</li>
+<li>Unions and intersections</li>
+<li>Type narrowing</li>
+</ol>
+<p><strong>Type aliases</strong></p>
+<pre><code class="language-js">type Employee = {
+  id: number,
+  name: string,
+  getDate: () =&gt; Date,
+};
+</code></pre>
+<p><strong>Union</strong></p>
+<p>When you want to say either 1 of them.
+let unit: null | string;</p>
+<p><strong>Intersection</strong></p>
+<p>When you want to say all of them.</p>
+<pre><code class="language-js">type Draggable = {
+  drag: () =&gt; void,
+};
+
+type Draggable = {
+  resize: () =&gt; void,
+};
+
+type UIWidget = Draggable &amp; Resizable;
+
+let textBox: UIWidget = {
+  drag: () =&gt; {},
+  resize: () =&gt; {},
+};
+</code></pre>
+<p><strong>Literal Types</strong></p>
+<p>Allows you to set variable to some very specific values.</p>
+<pre><code class="language-js">type Quantity = "cm" | "inch";
+let q: Quantity = "cm";
+</code></pre>
+<p><strong>Utility Types</strong></p>
+<p><a href="https://www.typescriptlang.org/docs/handbook/utility-types.html#handbook-content">Documentation</a></p>
+</section>
+    </main>
+    <footer>Akshay B</footer>
+    <script src="/pages/js/sidemenu.js"></script>
+    <script src="/pages/js/404hack.js"></script>
+    <script src="/pages/js/content-load.js"></script>
+    <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+</body></html>

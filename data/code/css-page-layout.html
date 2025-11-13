@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/css/site.css">
+    <link rel="stylesheet" href="/pages/css/menu.css">
+  </head>
+  <body class="">
+    <header>
+      <div id="btn-menu-toggle">
+        <span class="hberger"></span><span class="hberger"></span><span class="hberger"></span>
+      </div>
+      <h2 class="site-header">Code</h2>
+    </header>
+
+    <div id="body-overlay"></div>
+    <main>
+      <nav class="real-menu" role="navigation"></nav>
+      <section class="main-section"><h1>CSS Page layout</h1>
+<p>This includes header, body, footer (if body content is very small, it will properly stick to bottom and if body content is more it will properly come after).</p>
+<p>This layout uses Flexbox technique.</p>
+<h4>- Consider app or root div under body.</h4>
+<h4>- Under this all header, footer markup will be defined like below.</h4>
+<pre><code class="language-html">&lt;div class="app"&gt;
+  &lt;!--header--&gt;
+  &lt;div class="header"&gt;
+    &lt;nav class="main-nav" aria-label="Main menu"&gt;
+      &lt;ul class="main-menu"&gt;
+        &lt;li class="top-level-entry-container "&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;!--main--&gt;
+  &lt;main&gt;&lt;div&gt;Hello to React World&lt;/div&gt;&lt;/main&gt;
+  &lt;!--footer--&gt;
+  &lt;div class="footer"&gt;some footer&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>CSS to achieve</p>
+<pre><code class="language-css">/* body or root div */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* header */
+
+header {
+  /* padding: 1em;
+    background: #ddd; */
+  width: 100%;
+}
+
+/* main */
+
+main {
+  flex-grow: 2;
+  /* margin: 2em; */
+}
+
+/* footer */
+footer {
+  padding: 2em;
+  background: gray;
+}
+</code></pre>
+</section>
+    </main>
+    <footer>Akshay B</footer>
+    <script src="/pages/js/sidemenu.js"></script>
+    <script src="/pages/js/404hack.js"></script>
+    <script src="/pages/js/content-load.js"></script>
+    <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+</body></html>
