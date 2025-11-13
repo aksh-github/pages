@@ -3,110 +3,92 @@
     {
       "rootPath": "",
       "text": "< Back to Home",
-      "href": "../../"
+      "href": "/pages"
     },
     {
       "rootPath": "",
-      "text": "इतिहास"
+      "text": "Lachit-assam",
+      "href": "./Lachit-assam.html"
     },
     {
       "rootPath": "",
-      "text": "प्रस्तावना",
-      "href": "?t=intro",
-      "data": ["index.md"]
+      "text": "hindu-BCE",
+      "href": "./hindu-BCE.html"
     },
     {
       "rootPath": "",
-      "text": "सामान्य काळ पूर्व",
-      "href": "?t=hindu-BCE",
-      "data": ["hindu-BCE.md"]
+      "text": "index",
+      "href": "./index.html"
     },
     {
       "rootPath": "",
-      "text": "महाभारत",
-      "href": "?t=mahabharat",
-      "data": ["mahabharat.md"]
+      "text": "links",
+      "href": "./links.html"
     },
     {
       "rootPath": "",
-      "text": "रामायण",
-      "href": "?t=ramayan",
-      "data": ["ramayan.md"]
+      "text": "mahabharat",
+      "href": "./mahabharat.html"
     },
     {
       "rootPath": "",
-      "text": "सप्तर्षी",
-      "href": "?t=saptarshee",
-      "data": ["saptarshi.md"]
+      "text": "marathe-other",
+      "href": "./marathe-other.html"
     },
     {
       "rootPath": "",
-      "text": "शिवपुर्व",
-      "href": "?t=preshiv",
-      "data": ["pre-shivaji.md"]
+      "text": "paanipat",
+      "href": "./paanipat.html"
     },
     {
       "rootPath": "",
-      "text": "शिवपर्व",
-      "href": "?t=shivaji",
-      "data": ["shivaji.md"]
+      "text": "paanipat1",
+      "href": "./paanipat1.html"
     },
     {
       "rootPath": "",
-      "text": "शिवोत्तर (पेशवे)",
-      "href": "?t=postshiv",
-      "data": ["post-shivaji.md"]
+      "text": "paanipat3",
+      "href": "./paanipat3.html"
     },
     {
       "rootPath": "",
-      "text": "पेशवे इतर",
-      "href": "?t=peshwe-other",
-      "data": ["peshwe-other.md"]
+      "text": "peshwe-other",
+      "href": "./peshwe-other.html"
     },
     {
       "rootPath": "",
-      "text": "पानिपत",
-      "href": "?t=paanipat",
-      "data": ["paanipat.md"]
+      "text": "post-paanipat",
+      "href": "./post-paanipat.html"
     },
     {
       "rootPath": "",
-      "text": "पानिपत युद्ध १ व २",
-      "href": "?t=paanipat1n2",
-      "innerLink": true,
-      "data": ["paanipat1.md"]
+      "text": "post-shivaji",
+      "href": "./post-shivaji.html"
     },
     {
       "rootPath": "",
-      "text": "पानिपत युद्ध ३",
-      "href": "?t=paanipat3",
-      "innerLink": true,
-      "data": ["paanipat3.md"]
+      "text": "pre-shivaji",
+      "href": "./pre-shivaji.html"
     },
     {
       "rootPath": "",
-      "text": "पानिपत पश्चात",
-      "href": "?t=post-paanipat",
-      "innerLink": true,
-      "data": ["post-paanipat.md"]
+      "text": "ramayan",
+      "href": "./ramayan.html"
     },
     {
       "rootPath": "",
-      "text": "मराठे इतर",
-      "href": "?t=marathe-other",
-      "data": ["marathe-other.md"]
+      "text": "saptarshi",
+      "href": "./saptarshi.html"
     },
     {
       "rootPath": "",
-      "text": "टिपू",
-      "href": "?t=tipu",
-      "data": ["tipu.md"]
+      "text": "shivaji",
+      "href": "./shivaji.html"
     },
     {
       "rootPath": "",
-      "text": "लछीत आसाम",
-      "href": "?t=lachit-assam",
-      "data": ["Lachit-assam.md"]
+      "text": "tipu",
+      "href": "./tipu.html"
     }
   ]
 }
