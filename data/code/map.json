@@ -3,16 +3,16 @@
     {
       "rootPath": "",
       "text": "< Back to Home",
-      "href": "../../"
+      "href": "/pages"
     },
     {
       "rootPath": "",
       "text": "Code"
     },
     {
-      "rootPath": "",
+      "rootPath": "/pages",
       "text": "Git",
-      "href": "?t=git",
+      "href": "/data/code/git.html",
       "data": ["git.md"]
     },
     {
@@ -27,7 +27,7 @@
       "href": "?t=cspglo",
       "data": ["css-page-layout.md"]
     },
-{
+    {
       "rootPath": "",
       "text": "Typescript",
       "href": "?t=ts",
