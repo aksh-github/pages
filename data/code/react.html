@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/css/site.css">
+    <link rel="stylesheet" href="/pages/css/menu.css">
+  </head>
+  <body class="">
+    <header>
+      <div id="btn-menu-toggle">
+        <span class="hberger"></span><span class="hberger"></span><span class="hberger"></span>
+      </div>
+      <h2 class="site-header">Code</h2>
+    </header>
+
+    <div id="body-overlay"></div>
+    <main>
+      <nav class="real-menu" role="navigation"></nav>
+      <section class="main-section"><h1>React and Most widely used things</h1>
+<ul>
+<li>Its a <strong>View</strong> library from Facebook for building User Interfaces</li>
+<li>Its declarative means it specifies what will be done but not how it will be done.</li>
+<li>Component based</li>
+</ul>
+<h3>Installation</h3>
+<h3><code>npm i react react-dom</code></h3>
+<h3>Code</h3>
+<pre><code class="language-js">
+import React from "react";
+
+
+
+// for React version = 18
+import ReactDOM from "react-dom/client";
+
+ReactDOM.createRoot(document.getElementById("root")).render(&lt;App /&gt;);
+
+// Sample App FC
+
+const App = () =&gt; {
+    return &lt;div&gt;Hello React&lt;/div&gt;
+}
+
+// for React version &lt;= 17
+
+import ReactDOM from "react-dom";
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById("root"));
+
+</code></pre>
+<h1>Redux</h1>
+<h3>Installation</h3>
+<h3><code>npm i redux react-redux</code></h3>
+<pre><code class="language-js">// all relevant React imports
+import { createStore } from 'redux';
+import rootReducer from './reducer';
+
+const store = createStore(rootReducer);
+
+
+ReactDOM.createRoot(document.getElementById("root"))
+    .render(&lt;Provider store={store}&gt;
+            &lt;App /&gt;
+        &lt;/Provider&gt;);
+
+
+//reducer.js
+
+const initialState = {
+    counter: 0
+}
+
+const rootReducer = (state = initialState, action) =&gt; {
+   switch (action.type) {
+      case 'INCR':
+         return {
+            ...state,
+            counter: state.couter + 1
+         }
+      default:
+         return state;
+   }
+}
+
+export default rootReducer;
+
+
+//App.js
+
+import { useDispatch, useSelector } from "react-redux";
+
+
+const App = () =&gt; {
+
+    const dispatch = useDispatch();
+    const counter = useSelector(state=&gt;state.counter)
+
+    const increment = () =&gt; {
+        dispatch({
+            "INCR",
+            //payload if any
+        })
+    }
+
+    return &lt;div&gt;
+    Hello React {counter}
+    &lt;button onClick={increment}&gt; Increment &lt;/button&gt;
+    &lt;/div&gt;
+}
+
+</code></pre>
+<script src="https://gist.github.com/aksh-github/4d1e335deb41d3c5de074c8ffa925433.js"></script>
+</section>
+    </main>
+    <footer>Akshay B</footer>
+    <script src="/pages/js/sidemenu.js"></script>
+    <script src="/pages/js/404hack.js"></script>
+    <script src="/pages/js/content-load.js"></script>
+    <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+</body></html>

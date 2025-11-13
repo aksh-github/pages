@@ -62,6 +62,14 @@ async function content() {
     // path.resolve(basePath, "./sanskrit"),
   ];
 
+  const mapJson = [
+    {
+      rootPath: "",
+      text: "< Back to Home",
+      href: "/pages",
+    },
+  ];
+
   for (const inputDir of inputDirs) {
     let globfilepath = "";
 
@@ -99,9 +107,25 @@ async function content() {
         );
         fs.writeFileSync(outputFilePath, $.html(), "utf8");
 
+        mapJson.push({
+          rootPath: "",
+          text: path.parse(file).name,
+          href: "./" + path.parse(file).name + ".html",
+        });
+
         // fs.writeFileSync(path.join(outputDir, file), $.html(), 'utf8');
         console.log(`content written to ${outputFilePath}`);
       });
+
+      fs.writeFileSync(
+        path.join(outputDir, "map.json"),
+        JSON.stringify({ list: mapJson }, null, 2),
+        "utf8"
+      );
+      console.log(`map.json written to ${path.join(outputDir, "map.json")}`);
+
+      console.log(`Processed directory: ${inputDir}`);
+      console.log("================================");
     } catch (error) {
       console.log(
         `Error processing directory ${inputDir}: file: ${globfilepath}`,
@@ -109,6 +133,8 @@ async function content() {
       );
     }
   }
+
+  console.log("Content processing completed.");
 }
 
 // main();
