@@ -137,5 +137,5 @@ async function content() {
   console.log("Content processing completed.");
 }
 
-// main();
-content();
+main();
+// content();
