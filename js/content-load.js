@@ -80,8 +80,9 @@ document.addEventListener("readystatechange", function () {
               //   document.querySelector("main").innerHTML =
               //     markdownInst.makeHtml(markup);
               document.title += " | " + topic;
-              document.querySelector("main .main-section").innerHTML =
-                markdownInst.makeHtml(markup);
+
+              // document.querySelector("main .main-section").innerHTML =
+              //   markdownInst.makeHtml(markup);
               //   console.log(markdownInst.makeHtml(markup));
 
               // simple to div

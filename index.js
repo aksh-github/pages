@@ -2,6 +2,7 @@ const mustache = require("mustache");
 const fs = require("fs");
 const path = require("path");
 
+// except for main content
 function main() {
   const baseTemp = fs.readFileSync(
     path.resolve(__dirname, "./must/base.mustache"),
@@ -44,4 +45,71 @@ function main() {
   }
 }
 
-main();
+async function content() {
+  const fs = require("fs");
+  // const marked = await import("marked");
+  const { marked } = await import("marked");
+  const path = require("path");
+  const cheerio = require("cheerio");
+  const injectionSelector = "main .main-section"; // CSS selector for the injection point
+
+  const basePath = path.resolve(__dirname, "./data");
+  const inputDirs = [
+    // path.resolve(__dirname, "./data/html"),
+    path.resolve(basePath, "./code"),
+    // path.resolve(basePath, "./dharm"),
+    // path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./sanskrit"),
+  ];
+
+  for (const inputDir of inputDirs) {
+    let globfilepath = "";
+
+    try {
+      const inputDir = path.resolve(__dirname, "./data/code");
+      const outputDir = inputDir;
+      const indexHtmlPath = path.join(outputDir, "index.html");
+
+      console.log(inputDir, outputDir, indexHtmlPath);
+
+      // Read the existing index.html
+      const indexHtmlContent = fs.readFileSync(indexHtmlPath, "utf8");
+      const $ = cheerio.load(indexHtmlContent);
+
+      // Read all markdown files from the input directory
+      const files = fs
+        .readdirSync(inputDir)
+        .filter((file) => file.endsWith(".md"));
+
+      files.forEach((file) => {
+        const filePath = (globfilepath = path.join(inputDir, file));
+        const markdownContent = fs.readFileSync(filePath, "utf8");
+        const htmlContent = marked.parse(markdownContent);
+
+        // Create a container div for each markdown file's content
+        // const containerDiv = `<div class="markdown-content" id="${path.basename(file, '.md')}">\n${htmlContent}\n</div>`;
+
+        // Inject the HTML content into the specified section
+        $(injectionSelector).html(htmlContent);
+
+        // Write the modified HTML to corresponding html file
+        const outputFilePath = path.join(
+          outputDir,
+          path.parse(file).name + ".html"
+        );
+        fs.writeFileSync(outputFilePath, $.html(), "utf8");
+
+        // fs.writeFileSync(path.join(outputDir, file), $.html(), 'utf8');
+        console.log(`content written to ${outputFilePath}`);
+      });
+    } catch (error) {
+      console.log(
+        `Error processing directory ${inputDir}: file: ${globfilepath}`,
+        error
+      );
+    }
+  }
+}
+
+// main();
+content();

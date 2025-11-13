@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/css/site.css">
+    <link rel="stylesheet" href="/pages/css/menu.css">
+  </head>
+  <body class="">
+    <header>
+      <div id="btn-menu-toggle">
+        <span class="hberger"></span><span class="hberger"></span><span class="hberger"></span>
+      </div>
+      <h2 class="site-header">Code</h2>
+    </header>
+
+    <div id="body-overlay"></div>
+    <main>
+      <nav class="real-menu" role="navigation"></nav>
+      <section class="main-section"><h2>Git</h2>
+<ul>
+<li><strong>Distributed</strong> version control software / system</li>
+<li>Version control is a way to save changes over time without overwriting previous versions.</li>
+<li>Being distributed means that every developer working with a Git repository has a copy of that entire repository - every commit, every branch, every file. If you're used to working with centralized version control systems, this is a big difference!</li>
+<li>Branches are lightweight and cheap, so it's OK to have many of them
+Git stores changes in SHA hashes, which work by compressing text files. That makes Git a very good version control system (VCS) for software programming, but not so good for binary files like images or videos.</li>
+</ul>
+<h3>Installation</h3>
+<ul>
+<li>For Windows: Click <a href="https://gitforwindows.org/">Git for Windows</a></li>
+<li>For Ubuntu: Open command prompt and run:</li>
+</ul>
+<pre><code>sudo apt-get install git-all
+</code></pre>
+<p>To check whether its installed, Open command prompt and run:
+<code>git version</code></p>
+<h3>Configuration</h3>
+<p>Once you install next step is configuring username and email. Use following commands to do that.</p>
+<pre><code>git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+</code></pre>
+<h3>Getting Started</h3>
+<h3>1. init</h3>
+<p>If you don't have a remote repo already you can start with following command:</p>
+<pre><code>git init
+</code></pre>
+<p>Transform the current directory into a Git repository. When you run this command there is .git folder that will be created in the directory.</p>
+<h3>2. clone</h3>
+<p>If the repository already exists on a remote, you would choose to git clone. Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.</p>
+<p>Run the following command:</p>
+<pre><code>git clone https://github.com/username/reponame.git
+</code></pre>
+<p>If its a Git repo, it will ask you to put your username and <strong>password</strong>.</p>
+<p>Git has stopped accepting actual password for this. You need to use personal token to authenticate here.</p>
+<p>Follow the instructions here: <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">Git Personal Access Token</a></p>
+<p><strong>NOTE: Keep this token secure.</strong></p>
+<h3>3. status</h3>
+<p>This command shows you what branch you're on, what files are in the working or staging directory, and any other important information.</p>
+<pre><code>git status
+</code></pre>
+<h3>4. Connect local code to remote Git repo</h3>
+<ul>
+<li>Initialize the current folder as git local repo with <code>git init</code> command mentioned below.</li>
+<li>Go to <a href="https://github.com/">GitHub.com</a> and create a repo with appropriate name.</li>
+<li>Run below command to add remote</li>
+</ul>
+<pre><code>git remote add origin https://github.com/username/reponame.git
+
+git branch -M master 	master / main is branch name
+
+To push all the content of local and also publish the local branch to remote use below command.
+
+git push -u origin master	master / main is branch name
+</code></pre>
+<p>Show the associated remote repositories and their stored name, like origin.</p>
+<pre><code>git remote -v
+</code></pre>
+<h3>5. add and commit</h3>
+<p>Whenever you do any changes and want to push to repo (origin), there are couple of things (commands) you have to do. <strong>Following command will add all (add, update, delete) operations.</strong></p>
+<p>To add all the changed files (<strong>recursively</strong>) to <strong>"index / stage section"</strong></p>
+<pre><code>git add [*/.]
+</code></pre>
+<p>or to add specific files use</p>
+<pre><code>git add filename filename2
+</code></pre>
+<p>The next thing here is commit.</p>
+<pre><code>git commit -m "commit message to reflect in git history"
+</code></pre>
+<p>You can above 2 operations together using following command (skips the staging phase):</p>
+<pre><code>git commit -am "commit message"
+</code></pre>
+<p>You can also amend (update) the commit using following command. This is generally used when you forget to add some file or put wrong commit message.</p>
+<pre><code>git add forgottenfile
+
+git commit --amend "new commit message"
+</code></pre>
+<h3>6. reset</h3>
+<p>This is a flexible and powerful command. One of its many use cases is to move changes out of the staging area. To do this, use the "mixed" level of reset, which is the default.</p>
+<p><strong>Need to check further</strong></p>
+<pre><code>git reset
+</code></pre>
+<h3>7. push</h3>
+<p>Uploads all local branch commits to the corresponding remote branch.</p>
+<p>When pushing a branch for the first time, this type of push will configure the relationship between the remote and your local repository so that you can use git pull and git push with no additional options in the future.</p>
+<p>Publish the repo and Push the change</p>
+<pre><code>git push -u origin branchname
+</code></pre>
+<p>From next time onwards do only</p>
+<pre><code>git push
+</code></pre>
+<h3>8. pull</h3>
+<p>git pull updates your current local working branch with the remote changes.</p>
+<pre><code>git pull
+</code></pre>
+<p>it is a combination of get fetch and get merge.</p>
+<pre><code>Downloads all history from the remote tracking branches.
+git fetch
+
+Combines remote tracking branches into current local branch.
+git merge
+</code></pre>
+<h3>9. Show all git branches repos</h3>
+<pre><code>git branch
+</code></pre>
+<h3>10. Merge branch</h3>
+<p>This will merge feat/abc branch into master</p>
+<pre><code>git checkout master
+git merge feat/abc
+</code></pre>
+<h3>11. Delete remote branch</h3>
+<pre><code>git push reomote-name --delete br-name
+
+In most cases remote name is origin.
+e.g.
+
+git push origin --delete master-v2
+</code></pre>
+</section>
+    </main>
+    <footer>Akshay B</footer>
+    <script src="/pages/js/sidemenu.js"></script>
+    <script src="/pages/js/404hack.js"></script>
+    <script src="/pages/js/content-load.js"></script>
+    <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+</body></html>
