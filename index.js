@@ -56,8 +56,8 @@ async function content() {
   const basePath = path.resolve(__dirname, "./data");
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
-    path.resolve(basePath, "./code"),
-    // path.resolve(basePath, "./dharm"),
+    // path.resolve(basePath, "./code"),
+    path.resolve(basePath, "./dharm"),
     // path.resolve(basePath, "./history"),
     // path.resolve(basePath, "./sanskrit"),
   ];
@@ -74,7 +74,7 @@ async function content() {
     let globfilepath = "";
 
     try {
-      const inputDir = path.resolve(__dirname, "./data/code");
+      // const inputDir = path.resolve(__dirname, "./data/code");
       const outputDir = inputDir;
       const indexHtmlPath = path.join(outputDir, "index.html");
 

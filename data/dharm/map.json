@@ -3,65 +3,57 @@
     {
       "rootPath": "",
       "text": "< Back to Home",
-      "href": "../../"
+      "href": "/pages"
     },
     {
       "rootPath": "",
-      "text": "धर्म:"
+      "text": "adhik-maas",
+      "href": "./adhik-maas.html"
     },
     {
       "rootPath": "",
-      "text": "प्रस्तावना",
-      "href": "?t=dharm",
-      "data": ["intro.md"]
+      "text": "adishankar",
+      "href": "./adishankar.html"
     },
     {
       "rootPath": "",
-      "text": "हिन्दुधर्म:",
-      "href": "?t=hindu",
-      "data": ["hindu.md"]
+      "text": "gotra",
+      "href": "./gotra.html"
     },
     {
       "rootPath": "",
-      "text": "उत्सव",
-      "href": "?t=utsav",
-      "data": ["utsav.md"]
+      "text": "hindu-vs-other",
+      "href": "./hindu-vs-other.html"
     },
     {
       "rootPath": "",
-      "text": "हिन्दुधर्म व इतर",
-      "href": "?t=hindu-vs-other",
-      "data": ["hindu-vs-other.md"]
+      "text": "hindu",
+      "href": "./hindu.html"
     },
     {
       "rootPath": "",
-      "text": "Secularism",
-      "href": "?t=secular",
-      "data": ["secularism.md"]
+      "text": "intro",
+      "href": "./intro.html"
     },
     {
       "rootPath": "",
-      "text": "आदि शंकराचार्य",
-      "href": "?t=adishankar",
-      "data": ["adishankar.md"]
+      "text": "sanskar",
+      "href": "./sanskar.html"
     },
     {
       "rootPath": "",
-      "text": "युग",
-      "href": "?t=yug",
-      "data": ["yug.md"]
+      "text": "secularism",
+      "href": "./secularism.html"
     },
     {
       "rootPath": "",
-      "text": "अधिक मास",
-      "href": "?t=adhik-maas",
-      "data": ["adhik-maas.md"]
+      "text": "utsav",
+      "href": "./utsav.html"
     },
-{
+    {
       "rootPath": "",
-      "text": "गोत्र",
-      "href": "?t=gotra",
-      "data": ["gotra.md"]
+      "text": "yug",
+      "href": "./yug.html"
     }
   ]
 }
