@@ -3,113 +3,92 @@
     {
       "rootPath": "",
       "text": "< Back to Home",
-      "href": "../../"
+      "href": "/pages"
     },
     {
       "rootPath": "",
-      "text": "संस्कृतकोश:",
-      "href": "/pages/sansapp"
+      "text": "avyay",
+      "href": "./avyay.html"
     },
     {
       "rootPath": "",
-      "text": "संस्कृतम्"
+      "text": "colors",
+      "href": "./colors.html"
     },
     {
       "rootPath": "",
-      "text": "प्रस्तावना",
-      "href": "?t=intro",
-      "data": ["intro.md"]
+      "text": "intro",
+      "href": "./intro.html"
     },
     {
       "rootPath": "",
-      "text": "वर्णा: (अक्षराणि)",
-      "href": "?t=letters",
-      "data": ["letters.md"]
+      "text": "letters",
+      "href": "./letters.html"
     },
     {
       "rootPath": "",
-      "text": "उच्चार-विशेष",
-      "href": "?t=pronci",
-      "data": ["pronounciation.md"]
+      "text": "natva",
+      "href": "./natva.html"
     },
     {
       "rootPath": "",
-      "text": "समास:",
-      "href": "?t=samaas",
-      "data": ["samaas.md"]
+      "text": "numbers",
+      "href": "./numbers.html"
     },
     {
       "rootPath": "",
-      "text": "सन्धि:",
-      "href": "?t=sandhi",
-      "data": ["sandhi.md"]
+      "text": "pronounciation",
+      "href": "./pronounciation.html"
     },
     {
       "rootPath": "",
-      "text": "काल:",
-      "href": "?t=time",
-      "data": ["time.md"]
+      "text": "rup",
+      "href": "./rup.html"
     },
     {
       "rootPath": "",
-      "text": "सङ्ख्या",
-      "href": "?t=numbers",
-      "data": ["numbers.md"]
+      "text": "samaas",
+      "href": "./samaas.html"
     },
     {
       "rootPath": "",
-      "text": "रङ्गा:",
-      "href": "?t=colors",
-      "data": ["colors.md"]
+      "text": "sandhi",
+      "href": "./sandhi.html"
     },
     {
       "rootPath": "",
-      "text": "विभक्ति:",
-      "href": "?t=vibhakti",
-      "data": ["vibhakti.md"]
+      "text": "time",
+      "href": "./time.html"
     },
     {
       "rootPath": "",
-      "text": "क्रियापदम् - काल",
-      "href": "?t=verb-kaal",
-      "data": ["verb-kaal.md"]
+      "text": "upasarg",
+      "href": "./upasarg.html"
     },
     {
       "rootPath": "",
-      "text": "क्रियापदम् - भाव",
-      "href": "?t=verb-bhav",
-      "data": ["verb-bhav.md"]
+      "text": "vaakya",
+      "href": "./vaakya.html"
     },
     {
       "rootPath": "",
-      "text": "ण त्व",
-      "href": "?t=natva",
-      "data": ["natva.md"]
+      "text": "verb-bhav",
+      "href": "./verb-bhav.html"
     },
     {
       "rootPath": "",
-      "text": "उपसर्गा:",
-      "href": "?t=upasarg",
-      "data": ["upasarg.md"]
+      "text": "verb-kaal",
+      "href": "./verb-kaal.html"
     },
     {
       "rootPath": "",
-      "text": "अव्ययानि",
-      "href": "?t=avyay",
-      "data": ["avyay.md"]
+      "text": "vibhakti",
+      "href": "./vibhakti.html"
     },
     {
       "rootPath": "",
-      "text": "वाक्य-रचना +",
-      "href": "?t=vaakya",
-      "data": ["vaakya.md"]
-    },
-    {
-      "rootPath": "",
-      "text": "यावद्",
-      "href": "?t=yavad",
-      "innerLink": true,
-      "data": ["yavad.md"]
+      "text": "yavad",
+      "href": "./yavad.html"
     }
   ]
 }
