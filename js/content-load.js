@@ -59,7 +59,7 @@ const fetchData = (_url, type) => {
 document.addEventListener("readystatechange", function () {
   if (document.readyState === "complete") {
     (function () {
-      const markdownInst = createMarkdownObj().getInstance();
+      // const markdownInst = createMarkdownObj().getInstance();
       const search = window.location.search;
       // console.log(search, window.location);
       const topic = search.split("=")?.[1];
