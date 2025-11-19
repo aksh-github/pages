@@ -51,6 +51,7 @@ async function content() {
   const { marked } = await import("marked");
   const path = require("path");
   const cheerio = require("cheerio");
+
   const injectionSelector = "main .main-section"; // CSS selector for the injection point
 
   const basePath = path.resolve(__dirname, "./data");
@@ -62,16 +63,21 @@ async function content() {
     // path.resolve(basePath, "./sanskrit"),
   ];
 
-  const mapJson = [
-    {
-      rootPath: "",
-      text: "< Back to Home",
-      href: "/pages",
-    },
-  ];
+  // const mapJson = [
+  //   {
+  //     rootPath: "",
+  //     text: "< Back to Home",
+  //     href: "/pages",
+  //   },
+  // ];
 
   for (const inputDir of inputDirs) {
     let globfilepath = "";
+    const needToUpdateMapJson = false;
+    const mapJson = fs.existsSync(path.join(inputDir, "map.json"))
+      ? JSON.parse(fs.readFileSync(path.join(inputDir, "map.json"), "utf8"))
+          .list
+      : [];
 
     try {
       // const inputDir = path.resolve(__dirname, "./data/code");
@@ -107,22 +113,34 @@ async function content() {
         );
         fs.writeFileSync(outputFilePath, $.html(), "utf8");
 
-        mapJson.push({
-          rootPath: "",
-          text: path.parse(file).name,
-          href: "./" + path.parse(file).name + ".html",
-        });
+        if (fs.existsSync(outputFilePath)) {
+          // console.log(`File already exists: ${outputFilePath}`);
+        } else {
+          needToUpdateMapJson = true;
+          mapJson.push({
+            rootPath: "",
+            text: path.parse(file).name,
+            href: "./" + path.parse(file).name + ".html",
+          });
+        }
 
         // fs.writeFileSync(path.join(outputDir, file), $.html(), 'utf8');
         console.log(`content written to ${outputFilePath}`);
       });
 
-      fs.writeFileSync(
-        path.join(outputDir, "map.json"),
-        JSON.stringify({ list: mapJson }, null, 2),
-        "utf8"
-      );
-      console.log(`map.json written to ${path.join(outputDir, "map.json")}`);
+      // Update map.json if needed
+      if (needToUpdateMapJson) {
+        // fs.writeFileSync(
+        //   path.join(outputDir, "map.json"),
+        //   JSON.stringify({ list: [mapJson] }, null, 2),
+        //   "utf8"
+        // );
+        // console.log(
+        //   `map.json written / updated to ${path.join(outputDir, "map.json")}`
+        // );
+        console.log("Add / update map.json with:");
+        console.log(JSON.stringify(mapJson, null, 2));
+      }
 
       console.log(`Processed directory: ${inputDir}`);
       console.log("================================");
