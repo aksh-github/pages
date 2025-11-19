@@ -2,62 +2,67 @@
   "list": [
     {
       "rootPath": "",
-      "text": "< Back to Home",
+      "text": "< Back to Pages",
       "href": "/pages"
     },
     {
       "rootPath": "",
-      "text": "adhik-maas",
+      "text": "अधिक मास",
       "href": "./adhik-maas.html"
     },
     {
       "rootPath": "",
-      "text": "adishankar",
+      "text": "आदि शङ्कराचार्य",
       "href": "./adishankar.html"
     },
     {
       "rootPath": "",
-      "text": "gotra",
+      "text": "गायत्री",
+      "href": "./gayatri.html"
+    },
+    {
+      "rootPath": "",
+      "text": "गोत्र",
       "href": "./gotra.html"
     },
     {
       "rootPath": "",
-      "text": "hindu-vs-other",
+      "text": "हिंदू व इतर",
       "href": "./hindu-vs-other.html"
     },
     {
       "rootPath": "",
-      "text": "hindu",
+      "text": "हिंदू",
       "href": "./hindu.html"
     },
     {
       "rootPath": "",
-      "text": "intro",
+      "text": "परिचय",
       "href": "./intro.html"
     },
     {
       "rootPath": "",
-      "text": "sanskar",
+      "text": "संस्कार",
       "href": "./sanskar.html"
     },
     {
       "rootPath": "",
-      "text": "secularism",
+      "text": "धर्मनिरपेक्षता (Secularism)",
       "href": "./secularism.html"
     },
     {
       "rootPath": "",
-      "text": "utsav",
+      "text": "उत्सव",
       "href": "./utsav.html"
     },
     {
       "rootPath": "",
-      "text": "ved",
+      "text": "वेद",
       "href": "./ved.html"
     },
     {
       "rootPath": "",
-      "text": "yug",
+      "text": "युग",
       "href": "./yug.html"
     }
   ]
