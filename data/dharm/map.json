@@ -7,28 +7,8 @@
     },
     {
       "rootPath": "",
-      "text": "अधिक मास",
-      "href": "./adhik-maas.html"
-    },
-    {
-      "rootPath": "",
-      "text": "आदि शङ्कराचार्य",
-      "href": "./adishankar.html"
-    },
-    {
-      "rootPath": "",
-      "text": "गायत्री",
-      "href": "./gayatri.html"
-    },
-    {
-      "rootPath": "",
-      "text": "गोत्र",
-      "href": "./gotra.html"
-    },
-    {
-      "rootPath": "",
-      "text": "हिंदू व इतर",
-      "href": "./hindu-vs-other.html"
+      "text": "परिचय",
+      "href": "./intro.html"
     },
     {
       "rootPath": "",
@@ -37,9 +17,40 @@
     },
     {
       "rootPath": "",
-      "text": "परिचय",
-      "href": "./intro.html"
+      "text": "हिंदू व इतर",
+      "href": "./hindu-vs-other.html"
     },
+    {
+      "rootPath": "",
+      "text": "वेद",
+      "href": "./ved.html"
+    },
+    {
+      "rootPath": "",
+      "text": "गायत्री",
+      "href": "./gayatri.html"
+    },
+    {
+      "rootPath": "",
+      "text": "आदि शङ्कराचार्य",
+      "href": "./adishankar.html"
+    },
+    {
+      "rootPath": "",
+      "text": "उत्सव",
+      "href": "./utsav.html"
+    },
+    {
+      "rootPath": "",
+      "text": "अधिक मास",
+      "href": "./adhik-maas.html"
+    },
+    {
+      "rootPath": "",
+      "text": "गोत्र",
+      "href": "./gotra.html"
+    },
+
     {
       "rootPath": "",
       "text": "संस्कार",
@@ -49,16 +60,6 @@
       "rootPath": "",
       "text": "धर्मनिरपेक्षता (Secularism)",
       "href": "./secularism.html"
-    },
-    {
-      "rootPath": "",
-      "text": "उत्सव",
-      "href": "./utsav.html"
-    },
-    {
-      "rootPath": "",
-      "text": "वेद",
-      "href": "./ved.html"
     },
     {
       "rootPath": "",
