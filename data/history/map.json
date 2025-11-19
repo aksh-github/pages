@@ -2,93 +2,93 @@
   "list": [
     {
       "rootPath": "",
-      "text": "< Back to Home",
+      "text": "< मुख्यपृष्ठ",
       "href": "/pages"
     },
     {
       "rootPath": "",
-      "text": "Lachit-assam",
-      "href": "./Lachit-assam.html"
-    },
-    {
-      "rootPath": "",
-      "text": "hindu-BCE",
+      "text": "हिंदू-पूर्वकाल",
       "href": "./hindu-BCE.html"
     },
     {
       "rootPath": "",
-      "text": "index",
+      "text": "प्रस्तावना",
       "href": "./index.html"
     },
     {
       "rootPath": "",
-      "text": "links",
-      "href": "./links.html"
-    },
-    {
-      "rootPath": "",
-      "text": "mahabharat",
-      "href": "./mahabharat.html"
-    },
-    {
-      "rootPath": "",
-      "text": "marathe-other",
-      "href": "./marathe-other.html"
-    },
-    {
-      "rootPath": "",
-      "text": "paanipat",
-      "href": "./paanipat.html"
-    },
-    {
-      "rootPath": "",
-      "text": "paanipat1",
-      "href": "./paanipat1.html"
-    },
-    {
-      "rootPath": "",
-      "text": "paanipat3",
-      "href": "./paanipat3.html"
-    },
-    {
-      "rootPath": "",
-      "text": "peshwe-other",
-      "href": "./peshwe-other.html"
-    },
-    {
-      "rootPath": "",
-      "text": "post-paanipat",
-      "href": "./post-paanipat.html"
-    },
-    {
-      "rootPath": "",
-      "text": "post-shivaji",
-      "href": "./post-shivaji.html"
-    },
-    {
-      "rootPath": "",
-      "text": "pre-shivaji",
-      "href": "./pre-shivaji.html"
-    },
-    {
-      "rootPath": "",
-      "text": "ramayan",
+      "text": "रामायण",
       "href": "./ramayan.html"
     },
     {
       "rootPath": "",
-      "text": "saptarshi",
+      "text": "महाभारत",
+      "href": "./mahabharat.html"
+    },
+    {
+      "rootPath": "",
+      "text": "सप्तर्षि",
       "href": "./saptarshi.html"
     },
     {
       "rootPath": "",
-      "text": "shivaji",
+      "text": "मराठे-अन्य",
+      "href": "./marathe-other.html"
+    },
+    {
+      "rootPath": "",
+      "text": "पेशवे-अन्य",
+      "href": "./peshwe-other.html"
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत-उपरांत",
+      "href": "./post-paanipat.html"
+    },
+    {
+      "rootPath": "",
+      "text": "शिवाजी-उपरांत",
+      "href": "./post-shivaji.html"
+    },
+    {
+      "rootPath": "",
+      "text": "शिवाजी-पूर्व",
+      "href": "./pre-shivaji.html"
+    },
+    {
+      "rootPath": "",
+      "text": "शिवाजी",
       "href": "./shivaji.html"
     },
     {
       "rootPath": "",
-      "text": "tipu",
+      "text": "पानिपत",
+      "href": "./paanipat.html"
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत १",
+      "href": "./paanipat1.html"
+    },
+    {
+      "rootPath": "",
+      "text": "पानिपत ३",
+      "href": "./paanipat3.html"
+    },
+    {
+      "rootPath": "",
+      "text": "लाचित (आसाम)",
+      "href": "./Lachit-assam.html"
+    },
+    {
+      "rootPath": "",
+      "text": "टीपू",
       "href": "./tipu.html"
+    },
+    {
+      "rootPath": "",
+      "text": "संपर्क",
+      "href": "./links.html"
     }
   ]
 }
