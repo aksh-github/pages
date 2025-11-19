@@ -2,92 +2,92 @@
   "list": [
     {
       "rootPath": "",
-      "text": "< Back to Home",
+      "text": "< मुख्यपृष्ठ",
       "href": "/pages"
     },
     {
       "rootPath": "",
-      "text": "avyay",
+      "text": "अव्यय",
       "href": "./avyay.html"
     },
     {
       "rootPath": "",
-      "text": "colors",
+      "text": "रंग",
       "href": "./colors.html"
     },
     {
       "rootPath": "",
-      "text": "intro",
+      "text": "परिचय",
       "href": "./intro.html"
     },
     {
       "rootPath": "",
-      "text": "letters",
+      "text": "वर्ण",
       "href": "./letters.html"
     },
     {
       "rootPath": "",
-      "text": "natva",
+      "text": "ण-त्व",
       "href": "./natva.html"
     },
     {
       "rootPath": "",
-      "text": "numbers",
+      "text": "संख्या",
       "href": "./numbers.html"
     },
     {
       "rootPath": "",
-      "text": "pronounciation",
+      "text": "उच्चार",
       "href": "./pronounciation.html"
     },
     {
       "rootPath": "",
-      "text": "rup",
+      "text": "रूप",
       "href": "./rup.html"
     },
     {
       "rootPath": "",
-      "text": "samaas",
+      "text": "समास",
       "href": "./samaas.html"
     },
     {
       "rootPath": "",
-      "text": "sandhi",
+      "text": "सन्धि",
       "href": "./sandhi.html"
     },
     {
       "rootPath": "",
-      "text": "time",
+      "text": "काल",
       "href": "./time.html"
     },
     {
       "rootPath": "",
-      "text": "upasarg",
+      "text": "उपसर्ग",
       "href": "./upasarg.html"
     },
     {
       "rootPath": "",
-      "text": "vaakya",
+      "text": "वाक्य",
       "href": "./vaakya.html"
     },
     {
       "rootPath": "",
-      "text": "verb-bhav",
+      "text": "क्रिया-भाव",
       "href": "./verb-bhav.html"
     },
     {
       "rootPath": "",
-      "text": "verb-kaal",
+      "text": "क्रिया-काल",
       "href": "./verb-kaal.html"
     },
     {
       "rootPath": "",
-      "text": "vibhakti",
+      "text": "विभक्ति",
       "href": "./vibhakti.html"
     },
     {
       "rootPath": "",
-      "text": "yavad",
+      "text": "यावद्",
       "href": "./yavad.html"
     }
   ]
