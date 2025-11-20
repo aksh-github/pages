@@ -1,7 +1,7 @@
 ## पहिले बाजीराव
 
 स्रोत: [मंथन: १७३७ - बाजीराव पेशवे ह्यांची दिल्ली स्वारी](https://www.youtube.com/watch?v=XLmtkMf3J9U)
-[पेशवाई भाग २ - बाजीराव पेशेवे | कौस्तुभ कस्तुरे](https://www.youtube.com/watch?v=VZjFAbqEIsI)
+[पेशवाई भाग २ - बाजीराव पेशवे | कौस्तुभ कस्तुरे](https://www.youtube.com/watch?v=VZjFAbqEIsI)
 
 ```
 मूळ नाव: विश्वास // स्त्रोत:प्रतापसूर्य बाजीराव पेशवा - निनाद बेडेकर (https://youtu.be/HWyV-9LCDYg?t=2467)
