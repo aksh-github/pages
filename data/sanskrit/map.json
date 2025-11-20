@@ -7,6 +7,11 @@
     },
     {
       "rootPath": "",
+      "text": "संस्कृत कोष",
+      "href": "/pages/sanspp"
+    },
+    {
+      "rootPath": "",
       "text": "अव्यय",
       "href": "./avyay.html"
     },
@@ -72,12 +77,12 @@
     },
     {
       "rootPath": "",
-      "text": "क्रिया-भाव",
+      "text": "क्रियापद-भाव",
       "href": "./verb-bhav.html"
     },
     {
       "rootPath": "",
-      "text": "क्रिया-काल",
+      "text": "क्रियापद-काल",
       "href": "./verb-kaal.html"
     },
     {

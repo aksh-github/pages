@@ -58,8 +58,8 @@ async function content() {
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
     // path.resolve(basePath, "./code"),
-    path.resolve(basePath, "./dharm"),
-    // path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./dharm"),
+    path.resolve(basePath, "./history"),
     // path.resolve(basePath, "./sanskrit"),
   ];
 
@@ -73,11 +73,12 @@ async function content() {
 
   for (const inputDir of inputDirs) {
     let globfilepath = "";
-    const needToUpdateMapJson = false;
+    let needToUpdateMapJson = false;
     const mapJson = fs.existsSync(path.join(inputDir, "map.json"))
       ? JSON.parse(fs.readFileSync(path.join(inputDir, "map.json"), "utf8"))
           .list
       : [];
+    const newMapJson = [];
 
     try {
       // const inputDir = path.resolve(__dirname, "./data/code");
@@ -111,21 +112,28 @@ async function content() {
           outputDir,
           path.parse(file).name + ".html"
         );
-        fs.writeFileSync(outputFilePath, $.html(), "utf8");
+        // fs.writeFileSync(outputFilePath, $.html(), "utf8");
 
         if (fs.existsSync(outputFilePath)) {
           // console.log(`File already exists: ${outputFilePath}`);
+          const existContent = fs.readFileSync(outputFilePath, "utf8");
+          if (existContent !== $.html()) {
+            fs.writeFileSync(outputFilePath, $.html(), "utf8");
+            console.log("File updated: " + outputFilePath);
+          }
         } else {
           needToUpdateMapJson = true;
-          mapJson.push({
+          newMapJson.push({
             rootPath: "",
             text: path.parse(file).name,
             href: "./" + path.parse(file).name + ".html",
           });
+          fs.writeFileSync(outputFilePath, $.html(), "utf8");
+          console.log("New file added: " + outputFilePath);
         }
 
         // fs.writeFileSync(path.join(outputDir, file), $.html(), 'utf8');
-        console.log(`content written to ${outputFilePath}`);
+        // console.log(`content written to ${outputFilePath}`);
       });
 
       // Update map.json if needed
@@ -138,8 +146,8 @@ async function content() {
         // console.log(
         //   `map.json written / updated to ${path.join(outputDir, "map.json")}`
         // );
-        console.log("Add / update map.json with:");
-        console.log(JSON.stringify(mapJson, null, 2));
+        console.log("Update map.json with:");
+        console.log(newMapJson, JSON.stringify(newMapJson, null, 2));
       }
 
       console.log(`Processed directory: ${inputDir}`);
