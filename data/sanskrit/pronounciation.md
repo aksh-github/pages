@@ -71,7 +71,7 @@
 
 #### ह् - उच्चार: (ब्राह्मण वा ब्राम्हण)
 
-[Sanskrit Bhasha Bodha - Brahma pronunciation](https://www.youtube.com/watch?v=5Pplpi2kcug)
+स्त्रोत: [Sanskrit Bhasha Bodha - Brahma pronunciation](https://www.youtube.com/watch?v=5Pplpi2kcug)
 
 यदा ह् वर्णस्य निम्नवर्णै: सह सन्धि: भवति, तदा उरसः (छातीतून) उच्चारणीयम् |
 लेखनसमये ह् आदौ लेखनीय:
