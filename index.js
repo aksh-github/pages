@@ -57,9 +57,9 @@ async function content() {
   const basePath = path.resolve(__dirname, "./data");
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
-    // path.resolve(basePath, "./code"),
+    path.resolve(basePath, "./code"),
     // path.resolve(basePath, "./dharm"),
-    path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./history"),
     // path.resolve(basePath, "./sanskrit"),
   ];
 
@@ -106,6 +106,13 @@ async function content() {
 
         // Inject the HTML content into the specified section
         $(injectionSelector).html(htmlContent);
+
+        // Extract h2 tag content and update title
+        const subTitle = $("main .main-section h2").first().text();
+        const mainTitle = $("header .site-header").first().text();
+        if (mainTitle || subTitle) {
+          $("title").text(mainTitle + ": " + subTitle);
+        }
 
         // Write the modified HTML to corresponding html file
         const outputFilePath = path.join(

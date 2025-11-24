@@ -1,23 +1,17 @@
-# React and Most widely used things
+## React Basics
 
 - Its a **View** library from Facebook for building User Interfaces
 - Its declarative means it specifies what will be done but not how it will be done.
 - Component based
 
-
 ### Installation
 
 ### `npm i react react-dom`
 
-
 ### Code
 
-
 ```js
-
 import React from "react";
-
-
 
 // for React version = 18
 import ReactDOM from "react-dom/client";
@@ -27,22 +21,20 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // Sample App FC
 
 const App = () => {
-    return <div>Hello React</div>
-}
+  return <div>Hello React</div>;
+};
 
 // for React version <= 17
 
 import ReactDOM from "react-dom";
 
 ReactDOM.render(<App />, document.getElementById("root"));
-
-
 ```
-
 
 # Redux
 
 ### Installation
+
 ### `npm i redux react-redux`
 
 ```js
