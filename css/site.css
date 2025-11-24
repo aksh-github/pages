@@ -145,8 +145,11 @@ img {
   border: 1px solid burlywood;
 }
 
-/* media queries  */
+.gist {
+  width: 100%;
+}
 
+/* media queries  */
 
 @media (max-width: 500px) {
   /* CSS that should be displayed if width is equal to or less than 500px goes here */
