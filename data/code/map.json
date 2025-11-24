@@ -7,22 +7,27 @@
     },
     {
       "rootPath": "",
-      "text": "css-page-layout",
+      "text": "Css page Layout 100%",
       "href": "./css-page-layout.html"
     },
     {
       "rootPath": "",
-      "text": "git",
+      "text": "Git",
       "href": "./git.html"
     },
     {
       "rootPath": "",
-      "text": "react",
+      "text": "React",
       "href": "./react.html"
     },
     {
       "rootPath": "",
-      "text": "ts",
+      "text": "Node Js",
+      "href": "./nodejs.html"
+    },
+    {
+      "rootPath": "",
+      "text": "TypeScript",
       "href": "./ts.html"
     }
   ]
