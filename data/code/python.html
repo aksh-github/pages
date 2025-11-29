@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code: Python Virtual Environments (venv)</title>
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/css/site.css">
+    <link rel="stylesheet" href="/pages/css/menu.css">
+  </head>
+  <body class="">
+    <header>
+      <div id="btn-menu-toggle">
+        <span class="hberger"></span><span class="hberger"></span><span class="hberger"></span>
+      </div>
+      <h2 class="site-header">Code</h2>
+    </header>
+
+    <div id="body-overlay"></div>
+    <main>
+      <nav class="real-menu" role="navigation"></nav>
+      <section class="main-section"><h2>Python Virtual Environments (venv)</h2>
+<p>A Python virtual environment is a self-contained directory that contains a Python interpreter and a set of packages, allowing you to isolate your project's dependencies from the system Python environment.</p>
+<p><strong>Key Benefits:</strong></p>
+<p>Isolation: Manage dependencies for multiple projects without conflicts
+Portability: Easily replicate environments across different machines
+Version Management: Use different Python versions for different projects</p>
+<p>Common Commands:</p>
+<p>Linux / Mac (use python3 etc.)</p>
+<pre><code>
+python -m venv myenv: Create a new virtual environment
+source myenv/bin/activate: Activate the environment (Linux/Mac)
+</code></pre>
+<p>Windows</p>
+<pre><code>python -m venv myproject
+myproject\Scripts\activate
+</code></pre>
+<p><strong>Pacakge Install</strong></p>
+<pre><code>pip install package_name    #: Install packages
+
+OR
+
+pip install -r requirements.txt
+</code></pre>
+</section>
+    </main>
+    <footer>Akshay B</footer>
+    <script src="/pages/js/sidemenu.js"></script>
+    <script src="/pages/js/404hack.js"></script>
+    <script src="/pages/js/content-load.js"></script>
+  
+
+</body></html>

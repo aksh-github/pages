@@ -29,6 +29,11 @@
       "rootPath": "",
       "text": "TypeScript",
       "href": "./ts.html"
+    },
+    {
+      "rootPath": "",
+      "text": "Python",
+      "href": "./python.html"
     }
   ]
 }
