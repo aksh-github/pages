@@ -19,6 +19,11 @@
       "text": "धर्मः",
       "rootPath": "./data/dharm",
       "href": "./data/dharm/intro.html"
+    },
+{
+      "text": "संस्कृत-कोषः",
+      "rootPath": "",
+      "href": "/pages/sansapp/"
     }
   ]
 }
