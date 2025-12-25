@@ -58,8 +58,8 @@ async function content() {
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
     // path.resolve(basePath, "./code"),
-    path.resolve(basePath, "./dharm"),
-    // path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./dharm"),
+    path.resolve(basePath, "./history"),
     // path.resolve(basePath, "./sanskrit"),
   ];
 
