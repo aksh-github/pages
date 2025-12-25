@@ -57,10 +57,10 @@ async function content() {
   const basePath = path.resolve(__dirname, "./data");
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
-    path.resolve(basePath, "./code"),
+    // path.resolve(basePath, "./code"),
     // path.resolve(basePath, "./dharm"),
-    // path.resolve(basePath, "./history"),
-    path.resolve(basePath, "./sanskrit"),
+    path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./sanskrit"),
   ];
 
   // const mapJson = [

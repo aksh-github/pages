@@ -12,7 +12,7 @@
 - For Ubuntu: Open command prompt and run:
 
 ```
-sudo apt-get install git-all
+sudo apt install git
 ```
 
 To check whether its installed, Open command prompt and run:

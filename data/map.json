@@ -11,16 +11,16 @@
       "href": "./data/sanskrit/intro.html"
     },
     {
-      "text": "इतिहास:",
+      "text": "इतिहास",
       "rootPath": "./data/history",
       "href": "./data/history/?t=intro"
     },
     {
-      "text": "धर्मः",
+      "text": "धर्म",
       "rootPath": "./data/dharm",
       "href": "./data/dharm/intro.html"
     },
-{
+    {
       "text": "संस्कृत-कोषः",
       "rootPath": "",
       "href": "/pages/sansapp/"
