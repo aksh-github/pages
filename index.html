@@ -10,6 +10,35 @@
     />
     <link rel="stylesheet" href="/pages/css/site.css" />
     <link rel="stylesheet" href="/pages/css/menu.css" />
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .divrow {
+        padding: 10px;
+        margin: 10px;
+        width: 250px;
+        background: #fff8dc;
+        text-align: center;
+        animation: scrollanim linear;
+        color: brown;
+        height: 150px;
+      }
+      .search-result-borders {
+        border: 0.12em solid burlywood;
+        border-radius: 1em;
+      }
+      .divrow button,
+      a {
+        background-color: brown;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 0.5em;
+      }
+    </style>
   </head>
   <body class="">
     <header>
@@ -23,7 +52,35 @@
     <div id="body-overlay"></div>
     <main>
       <nav class="real-menu" role="navigation"></nav>
-      <section class="main-section"></section>
+      <section class="main-section">
+        <div class="row">
+          <div class="divrow search-result-borders">
+            <h2>Code</h2>
+            <button>
+              <a href="./data/code">Explore</a>
+            </button>
+          </div>
+          <div class="divrow search-result-borders">
+            <h2>संस्कृतम्</h2>
+
+            <button>
+              <a href="./data/sanskrit/intro.html">Explore</a>
+            </button>
+          </div>
+          <div class="divrow search-result-borders">
+            <h2>इतिहास</h2>
+            <button>
+              <a href="./data/history/?t=intro">Explore</a>
+            </button>
+          </div>
+          <div class="divrow search-result-borders">
+            <h2>धर्म</h2>
+            <button>
+              <a href="./data/code">Explore</a>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>Akshay B</footer>
     <script src="/pages/js/sidemenu.js"></script>
