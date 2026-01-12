@@ -1,3 +1,15 @@
+
+
+## Python Install
+
+To install Python on Ubuntu:
+
+```
+sudo apt install python3 python3-pip
+
+```
+
+
 ## Python Virtual Environments (venv)
 
 A Python virtual environment is a self-contained directory that contains a Python interpreter and a set of packages, allowing you to isolate your project's dependencies from the system Python environment.
