@@ -29,22 +29,9 @@
     <div id="body-overlay"></div>
     <footer>Akshay B</footer>
     <script>
-    function toggleMenu() {
-    const body = document.body;
-    body.classList.toggle("menu-open")
-    }
-    document.addEventListener("readystatechange", function () {
-    if (document.readyState === "complete") {
-      document
-      .getElementById("btn-menu-toggle")
-      ?.addEventListener("click", toggleMenu);
-    document
-      .getElementById("body-overlay")
-      ?.addEventListener("click", toggleMenu);
-    }
-  });
     
     </script>
     <script src="/pages/js/404hack.js"></script>
+    <script src="/pages/js/menuhandle.js"></script>
   </body>
 </html>
