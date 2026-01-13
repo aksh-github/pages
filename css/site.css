@@ -173,6 +173,7 @@ img {
 
   .main-layout {
     display: revert;
+    margin: revert;
   }
 
   main {
