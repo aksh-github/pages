@@ -76,9 +76,9 @@ async function content() {
   const basePath = path.resolve(__dirname, "./data");
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
-    path.resolve(basePath, "./code"),
+    // path.resolve(basePath, "./code"),
     // path.resolve(basePath, "./dharm"),
-    // path.resolve(basePath, "./history"),
+    path.resolve(basePath, "./history"),
     // path.resolve(basePath, "./sanskrit"),
   ];
 
@@ -229,5 +229,8 @@ function buildMenu(inputDir) {
   return List;
 }
 
+// 1. This allows us to build all secondary index htmls (based on base.mustache and also populates corresponding menus)
 main();
-// content();
+
+// 2.This allows us to build all content htmls based on markdown files. (also populates corresponding menus)
+content();
