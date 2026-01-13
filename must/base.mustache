@@ -20,11 +20,13 @@
       </div>
       <h2 class="site-header">{{{title}}}</h2>
     </header>
-    <nav class="real-menu" role="navigation"></nav>
+    <div class="main-layout">
+      <nav class="real-menu" role="navigation"></nav>
+      <main>      
+        <section class="main-section"></section>
+      </main>
+    </div>
     <div id="body-overlay"></div>
-    <main>      
-      <section class="main-section"></section>
-    </main>
     <footer>Akshay B</footer>
     {{#jsFiles}}
     <script src="{{{.}}}"></script>
