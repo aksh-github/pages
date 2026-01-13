@@ -1,4 +1,5 @@
 const mustache = require("mustache");
+const cheerio = require("cheerio");
 const fs = require("fs");
 const path = require("path");
 
@@ -19,6 +20,8 @@ function main() {
     json.data.forEach((datum, i) => {
       let htmlContent = null;
 
+      // console.log(datum, i);
+
       if (i === 0) {
         // htmlContent = mustache.render(baseTemp, datum);
       } else {
@@ -33,9 +36,23 @@ function main() {
             : json.data[0].jsFiles,
         });
       }
+
+      // console.log(htmlContent);
+      const $ = cheerio.load(htmlContent || "");
+
+      // build menu
+      if (i !== 0) {
+        const menuInjectionSelector = "nav.real-menu"; // for menu
+
+        const menulist = buildMenu(datum.file);
+        // console.log(menulist);
+        $(menuInjectionSelector).html(menulist);
+      }
+      // end menu
+
       // console.log(htmlContent);
       if (htmlContent) {
-        fs.writeFile(`${datum.file}index.html`, htmlContent, (err) => {
+        fs.writeFile(`${datum.file}index.html`, $.html(), (err) => {
           if (err) {
             console.log(`Probile while writing to ${datum.file}`);
             return;
@@ -52,7 +69,6 @@ async function content() {
   // const marked = await import("marked");
   const { marked } = await import("marked");
   const path = require("path");
-  const cheerio = require("cheerio");
 
   const injectionSelector = "main .main-section"; // CSS selector for the injection point
   const menuInjectionSelector = "nav.real-menu"; // for menu
@@ -192,14 +208,6 @@ function buildMenu(inputDir) {
   // const injectionSelector = "main .main-section"; // CSS selector for the injection point
 
   const basePath = path.resolve(__dirname, "./data");
-  const inputDirs = [
-    // path.resolve(__dirname, "./data/html"),
-    path.resolve(basePath, "./code"),
-    // path.resolve(basePath, "./dharm"),
-    // path.resolve(basePath, "./history"),
-    // path.resolve(basePath, "./sanskrit"),
-  ];
-
   let globfilepath = "";
   let needToUpdateMapJson = false;
   const mapJson = fs.existsSync(path.join(inputDir, "map.json"))
@@ -221,5 +229,5 @@ function buildMenu(inputDir) {
   return List;
 }
 
-// main();
-content();
+main();
+// content();
