@@ -51,6 +51,10 @@ hr {
   opacity: 0.4;
 }
 
+.main-layout {
+  display: flex;
+}
+
 main {
   display: flex;
   flex-grow: 2;
