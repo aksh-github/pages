@@ -28,6 +28,23 @@
     </div>
     <div id="body-overlay"></div>
     <footer>Akshay B</footer>
+    <script>
+    function toggleMenu() {
+    const body = document.body;
+    body.classList.toggle("menu-open")
+    }
+    document.addEventListener("readystatechange", function () {
+    if (document.readyState === "complete") {
+      document
+      .getElementById("btn-menu-toggle")
+      ?.addEventListener("click", toggleMenu);
+    document
+      .getElementById("body-overlay")
+      ?.addEventListener("click", toggleMenu);
+    }
+  });
+    
+    </script>
     {{#jsFiles}}
     <script src="{{{.}}}"></script>
     {{/jsFiles}}
