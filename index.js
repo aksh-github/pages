@@ -20,7 +20,7 @@ function main() {
       let htmlContent = null;
 
       if (i === 0) {
-        htmlContent = mustache.render(baseTemp, datum);
+        // htmlContent = mustache.render(baseTemp, datum);
       } else {
         htmlContent = mustache.render(baseTemp, {
           ...json.data[0],
@@ -34,13 +34,15 @@ function main() {
         });
       }
       // console.log(htmlContent);
-      fs.writeFile(`${datum.file}index.html`, htmlContent, (err) => {
-        if (err) {
-          console.log(`Probile while writing to ${datum.file}`);
-          return;
-        }
-        // console.log(err);
-      });
+      if (htmlContent) {
+        fs.writeFile(`${datum.file}index.html`, htmlContent, (err) => {
+          if (err) {
+            console.log(`Probile while writing to ${datum.file}`);
+            return;
+          }
+          // console.log(err);
+        });
+      }
     });
   }
 }
@@ -53,13 +55,14 @@ async function content() {
   const cheerio = require("cheerio");
 
   const injectionSelector = "main .main-section"; // CSS selector for the injection point
+  const menuInjectionSelector = "nav.real-menu"; // for menu
 
   const basePath = path.resolve(__dirname, "./data");
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
-    // path.resolve(basePath, "./code"),
+    path.resolve(basePath, "./code"),
     // path.resolve(basePath, "./dharm"),
-    path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./history"),
     // path.resolve(basePath, "./sanskrit"),
   ];
 
@@ -74,10 +77,7 @@ async function content() {
   for (const inputDir of inputDirs) {
     let globfilepath = "";
     let needToUpdateMapJson = false;
-    const mapJson = fs.existsSync(path.join(inputDir, "map.json"))
-      ? JSON.parse(fs.readFileSync(path.join(inputDir, "map.json"), "utf8"))
-          .list
-      : [];
+
     const newMapJson = [];
 
     try {
@@ -90,6 +90,15 @@ async function content() {
       // Read the existing index.html
       const indexHtmlContent = fs.readFileSync(indexHtmlPath, "utf8");
       const $ = cheerio.load(indexHtmlContent);
+
+      // build menu
+
+      // console.log(buildMenu(inputDir));
+
+      const menulist = buildMenu(inputDir);
+      $(menuInjectionSelector).html(menulist);
+
+      // end menu
 
       // Read all markdown files from the input directory
       const files = fs
@@ -168,6 +177,48 @@ async function content() {
   }
 
   console.log("Content processing completed.");
+}
+
+const Li = (item) => {
+  return `<li><a href="${item.rootPath + item.href}">${item.text}</a></li>`;
+};
+
+function buildMenu(inputDir) {
+  const fs = require("fs");
+  // const marked = await import("marked");
+
+  const path = require("path");
+  // const cheerio = require("cheerio");
+  // const injectionSelector = "main .main-section"; // CSS selector for the injection point
+
+  const basePath = path.resolve(__dirname, "./data");
+  const inputDirs = [
+    // path.resolve(__dirname, "./data/html"),
+    path.resolve(basePath, "./code"),
+    // path.resolve(basePath, "./dharm"),
+    // path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./sanskrit"),
+  ];
+
+  let globfilepath = "";
+  let needToUpdateMapJson = false;
+  const mapJson = fs.existsSync(path.join(inputDir, "map.json"))
+    ? JSON.parse(fs.readFileSync(path.join(inputDir, "map.json"), "utf8")).list
+    : [];
+
+  // console.log(mapJson);
+
+  let template = "";
+
+  for (let item of mapJson) {
+    template += Li(item);
+  }
+
+  const List = `<ul class="list">
+      ${template}
+    </ul>`;
+
+  return List;
 }
 
 // main();
