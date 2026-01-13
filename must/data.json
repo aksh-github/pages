@@ -4,7 +4,11 @@
       "file": "./",
       "title": "Knowledge",
       "normalieCss": "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css",
-      "cssFiles": ["/pages/css/site.css", "/pages/css/menu.css"],
+      "cssFiles": [
+        "/pages/css/site.css",
+        "/pages/css/menu.css",
+        "/pages/css/card.css"
+      ],
       "jsFiles": [
         "/pages/js/sidemenu.js",
         "/pages/js/404hack.js",

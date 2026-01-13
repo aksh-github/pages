@@ -5,6 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/pages/css/site.css">
     <link rel="stylesheet" href="/pages/css/menu.css">
+    <link rel="stylesheet" href="/pages/css/card.css">
   </head>
   <body class="">
     <header>
@@ -13,10 +14,10 @@
       </div>
       <h2 class="site-header">Code</h2>
     </header>
-    <nav class="real-menu" role="navigation"></nav>
-    <div id="body-overlay"></div>
-    <main>      
-      <section class="main-section"><h2>React Basics</h2>
+    <div class="main-layout">
+      <nav class="real-menu" role="navigation"></nav>
+      <main>      
+        <section class="main-section"><h2>React Basics</h2>
 <ul>
 <li>Its a <strong>View</strong> library from Facebook for building User Interfaces</li>
 <li>Its declarative means it specifies what will be done but not how it will be done.</li>
@@ -107,7 +108,9 @@ const App = () =&gt; {
 </code></pre>
 <script src="https://gist.github.com/aksh-github/4d1e335deb41d3c5de074c8ffa925433.js"></script>
 </section>
-    </main>
+      </main>
+    </div>
+    <div id="body-overlay"></div>
     <footer>Akshay B</footer>
     <script src="/pages/js/sidemenu.js"></script>
     <script src="/pages/js/404hack.js"></script>
