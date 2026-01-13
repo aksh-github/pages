@@ -43,7 +43,7 @@
 
 /* sidebar for big screens */
 @media (width > 992px) {
-  main .real-menu {
+  .real-menu {
     display: block;
     position: inherit;
     width: 100%;
@@ -54,7 +54,7 @@
     max-width: 16em;
   }
 
-  main .real-menu ul {
+  .real-menu ul {
     color: brown;
   }
 
