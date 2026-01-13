@@ -53,6 +53,7 @@ hr {
 
 .main-layout {
   display: flex;
+  margin: 0 auto;
 }
 
 main {
@@ -168,6 +169,10 @@ img {
   }
   header h2 {
     margin: 0 1em;
+  }
+
+  .main-layout {
+    display: revert;
   }
 
   main {
