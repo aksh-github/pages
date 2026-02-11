@@ -7,11 +7,11 @@ const path = require("path");
 function main() {
   const baseTemp = fs.readFileSync(
     path.resolve(__dirname, "./must/base.mustache"),
-    "utf8"
+    "utf8",
   );
 
   const json = JSON.parse(
-    fs.readFileSync(path.resolve(__dirname, "./must/data.json"))
+    fs.readFileSync(path.resolve(__dirname, "./must/data.json")),
   );
 
   if (Array.isArray(json?.data)) {
@@ -142,7 +142,7 @@ async function content() {
         // Write the modified HTML to corresponding html file
         const outputFilePath = path.join(
           outputDir,
-          path.parse(file).name + ".html"
+          path.parse(file).name + ".html",
         );
         // fs.writeFileSync(outputFilePath, $.html(), "utf8");
 
@@ -187,7 +187,7 @@ async function content() {
     } catch (error) {
       console.log(
         `Error processing directory ${inputDir}: file: ${globfilepath}`,
-        error
+        error,
       );
     }
   }
