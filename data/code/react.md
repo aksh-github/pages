@@ -6,7 +6,7 @@
 
 ### Installation
 
-### `npm i react react-dom`
+`npm i react react-dom`
 
 ### Code
 
@@ -98,4 +98,3 @@ const App = () => {
 
 ```
 
-<script src="https://gist.github.com/aksh-github/4d1e335deb41d3c5de074c8ffa925433.js"></script>
