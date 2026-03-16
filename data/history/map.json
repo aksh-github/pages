@@ -52,11 +52,6 @@
     },
     {
       "rootPath": "",
-      "text": "पानिपत-उपरांत",
-      "href": "./post-paanipat.html"
-    },
-    {
-      "rootPath": "",
       "text": "पेशवे",
       "href": "./post-shivaji.html"
     },
@@ -89,6 +84,11 @@
       "rootPath": "",
       "text": "पानिपत ३",
       "href": "./paanipat3.html"
+    },
+    {
+      "rootPath": "",
+      "text": "उत्तर-पानिपत",
+      "href": "./post-paanipat.html"
     },
     {
       "rootPath": "",
