@@ -7,7 +7,7 @@
     },
     {
       "rootPath": "",
-      "text": "हिंदू-पूर्वकाल",
+      "text": "सामान्यकाल-पूर्व",
       "href": "./hindu-BCE.html"
     },
     {
@@ -52,11 +52,6 @@
     },
     {
       "rootPath": "",
-      "text": "पानिपत-उपरांत",
-      "href": "./post-paanipat.html"
-    },
-    {
-      "rootPath": "",
       "text": "पेशवे",
       "href": "./post-shivaji.html"
     },
@@ -77,6 +72,11 @@
     },
     {
       "rootPath": "",
+      "text": "स्वा. सावरकर",
+      "href": "./savarkar.html"
+    },
+    {
+      "rootPath": "",
       "text": "पानिपत",
       "href": "./paanipat.html"
     },
@@ -89,6 +89,11 @@
       "rootPath": "",
       "text": "पानिपत ३",
       "href": "./paanipat3.html"
+    },
+    {
+      "rootPath": "",
+      "text": "उत्तर-पानिपत",
+      "href": "./post-paanipat.html"
     },
     {
       "rootPath": "",
