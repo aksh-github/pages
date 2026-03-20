@@ -4,11 +4,11 @@
 - Its declarative means it specifies what will be done but not how it will be done.
 - Component based
 
-### Installation
+**Installation**
 
 `npm i react react-dom`
 
-### Code
+**Code**
 
 ```js
 import React from "react";
@@ -31,11 +31,13 @@ import ReactDOM from "react-dom";
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
-# Redux
+**Redux**
 
-### Installation
+**Installation**
 
-### `npm i redux react-redux`
+```
+npm i redux react-redux
+```
 
 ```js
 // all relevant React imports
