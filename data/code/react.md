@@ -6,7 +6,9 @@
 
 **Installation**
 
-`npm i react react-dom`
+```
+npm i react react-dom
+```
 
 **Code**
 
