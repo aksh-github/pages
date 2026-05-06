@@ -53,6 +53,9 @@
     box-shadow: none;
     max-width: 16em;
     min-width: 14em;
+    min-height: 80dvh;
+    max-height: 80dvh;
+    scrollbar-color: #deb88740 #0000;
   }
 
   .real-menu ul {
