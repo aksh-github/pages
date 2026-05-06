@@ -28,6 +28,9 @@ Linux / Mac (use python3 etc.)
 python -m venv myenv: Create a new virtual environment
 source myenv/bin/activate: Activate the environment (Linux/Mac)
 
+# To deactivate from virtual environment
+deactivate
+
 ```
 
 Windows
