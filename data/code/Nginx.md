@@ -4,7 +4,7 @@
 
 
 
-### Enable auth for certain route (e.g. /chat)
+#### Enable auth for certain route (e.g. /chat)
 
 1. You need the htpasswd tool to create an encrypted password file.Run the following commands on your server terminal:
 
