@@ -12,7 +12,7 @@
 # Install the utility tools if you do not have them
 sudo apt-get install apache2-utils   # For Ubuntu/Debian
 
-# Create the password file and add a user (replace 'username' with your choice)
+# Create the password file and add a user (replace 'username' with your choice: e.g. nginxadmin)
 sudo htpasswd -c /etc/nginx/.htpasswd username
 ```
 
