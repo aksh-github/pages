@@ -56,3 +56,5 @@ sudo nginx -t
 # If successful, reload Nginx to apply changes
 sudo systemctl reload nginx
 ```
+
+> Important Security Note: Basic authentication sends credentials in plain text unless encrypted. Ensure your Nginx server uses HTTPS (SSL/TLS) so users' passwords stay secure over your VPC and the internet.
