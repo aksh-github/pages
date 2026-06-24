@@ -21,6 +21,8 @@ sudo htpasswd -c /etc/nginx/.htpasswd username
 
 Open your Nginx server block configuration file (usually located in /etc/nginx/sites-available/ or /etc/nginx/nginx.conf) and add the auth_basic directives inside the /chat location block.
 
+> for me settings are under /etc/nginx/sites-available default file. Always make copy of this so we can easily restore.
+
 ```bash
 
 server {
