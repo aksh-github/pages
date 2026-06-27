@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code: Nginx</title>
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/pages/css/site.css">
+    <link rel="stylesheet" href="/pages/css/menu.css">
+    <link rel="stylesheet" href="/pages/css/card.css">
+  </head>
+  <body class="">
+    <header>
+      <div id="btn-menu-toggle">
+        <span class="hberger"></span><span class="hberger"></span><span class="hberger"></span>
+      </div>
+      <h2 class="site-header">Code</h2>
+    </header>
+    <div class="main-layout">
+      <nav class="real-menu" role="navigation"><ul class="list">
+      <li><a href="/pages">&lt; Back to Home</a></li><li><a href="./css-page-layout.html">Css page Layout 100%</a></li><li><a href="./git.html">Git</a></li><li><a href="./react.html">React</a></li><li><a href="./nodejs.html">Node Js</a></li><li><a href="./ts.html">TypeScript</a></li><li><a href="./python.html">Python</a></li><li><a href="./nginx.html">Nginx</a></li>
+    </ul></nav>
+      <main>      
+        <section class="main-section"><h2>Nginx</h2>
+<p>nginx ("engine x") is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.</p>
+<h3>Installation</h3>
+<p>on Ubuntu</p>
+<p>Generally its convinient to install nginx directly on host instead of as docker instance. On a typical installation, your config file will be <code>default</code> that's stored under <code>/etc/nginx/sites-available</code></p>
+<blockquote>
+<p>It's always a good practice to take backup of this file before making new changes.</p>
+</blockquote>
+<pre><code class="language-bash">
+#Update packages:
+sudo apt update
+
+#Install Nginx:
+sudo apt install nginx -y
+
+#Allow firewall traffic:
+sudo ufw allow 'Nginx Full'
+</code></pre>
+<p><strong>Doing changes to config</strong></p>
+<pre><code class="language-bash"># Test the configuration
+sudo nginx -t
+
+# If successful, reload Nginx to apply changes
+sudo systemctl reload nginx
+</code></pre>
+<h4>Enable auth for certain route (e.g. /chat)</h4>
+<ol>
+<li>You need the htpasswd tool to create an encrypted password file.Run the following commands on your server terminal:</li>
+</ol>
+<pre><code class="language-bash"># Install the utility tools if you do not have them
+sudo apt-get install apache2-utils   # For Ubuntu/Debian
+
+# Create the password file and add a user (replace 'username' with your choice: e.g. nginxadmin)
+sudo htpasswd -c /etc/nginx/.htpasswd username
+</code></pre>
+<ol start="2">
+<li>Update Your Nginx Configuration</li>
+</ol>
+<p>Open your Nginx server block configuration file (usually located in /etc/nginx/sites-available/ or /etc/nginx/nginx.conf) and add the auth_basic directives inside the /chat location block.</p>
+<blockquote>
+<p>for me settings are under /etc/nginx/sites-available default file. Always make copy of this so we can easily restore.</p>
+</blockquote>
+<pre><code class="language-bash">
+server {
+    listen 80;
+    server_name yourdomain.com;
+
+    # Your existing root or proxy setup
+    location / {
+        # ... existing config ...
+    }
+
+    # Target the /chat path specifically
+    location /chat {
+        auth_basic "Restricted Access";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+
+        # Keep your existing application routing below, for example:
+        # proxy_pass http://localhost:5000;
+        # proxy_set_header Host $host;
+    }
+}
+</code></pre>
+<ol start="3">
+<li>Test and Reload Nginx</li>
+</ol>
+<p>Always test your configuration for syntax errors before restarting the service to avoid downtime.</p>
+<blockquote>
+<p>See the section above.</p>
+</blockquote>
+<blockquote>
+<p>Important Security Note: Basic authentication sends credentials in plain text unless encrypted. Ensure your Nginx server uses HTTPS (SSL/TLS) so users' passwords stay secure over your VPC and the internet.</p>
+</blockquote>
+</section>
+      </main>
+    </div>
+    <div id="body-overlay"></div>
+    <footer>Akshay B</footer>
+    <script src="/pages/js/404hack.js"></script>
+    <script src="/pages/js/menuhandle.js"></script>
+  
+
+</body></html>

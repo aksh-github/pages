@@ -1,8 +1,37 @@
-
-
 ## Nginx
 
+nginx ("engine x") is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.
 
+### Installation
+
+on Ubuntu
+
+Generally its convinient to install nginx directly on host instead of as docker instance. On a typical installation, your config file will be `default` that's stored under `/etc/nginx/sites-available`
+
+> It's always a good practice to take backup of this file before making new changes.
+
+```bash
+
+#Update packages:
+sudo apt update
+
+#Install Nginx:
+sudo apt install nginx -y
+
+#Allow firewall traffic:
+sudo ufw allow 'Nginx Full'
+
+```
+
+**Doing changes to config**
+
+```bash
+# Test the configuration
+sudo nginx -t
+
+# If successful, reload Nginx to apply changes
+sudo systemctl reload nginx
+```
 
 #### Enable auth for certain route (e.g. /chat)
 
@@ -15,7 +44,6 @@ sudo apt-get install apache2-utils   # For Ubuntu/Debian
 # Create the password file and add a user (replace 'username' with your choice: e.g. nginxadmin)
 sudo htpasswd -c /etc/nginx/.htpasswd username
 ```
-
 
 2. Update Your Nginx Configuration
 
@@ -40,7 +68,7 @@ server {
         auth_basic_user_file /etc/nginx/.htpasswd;
 
         # Keep your existing application routing below, for example:
-        # proxy_pass http://localhost:5000; 
+        # proxy_pass http://localhost:5000;
         # proxy_set_header Host $host;
     }
 }
@@ -51,12 +79,6 @@ server {
 
 Always test your configuration for syntax errors before restarting the service to avoid downtime.
 
-```bash
-# Test the configuration
-sudo nginx -t
-
-# If successful, reload Nginx to apply changes
-sudo systemctl reload nginx
-```
+> See the section above.
 
 > Important Security Note: Basic authentication sends credentials in plain text unless encrypted. Ensure your Nginx server uses HTTPS (SSL/TLS) so users' passwords stay secure over your VPC and the internet.
