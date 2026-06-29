@@ -76,9 +76,9 @@ async function content() {
   const basePath = path.resolve(__dirname, "./data");
   const inputDirs = [
     // path.resolve(__dirname, "./data/html"),
-    // path.resolve(basePath, "./code"),
+    path.resolve(basePath, "./code"),
     // path.resolve(basePath, "./dharm"),
-    path.resolve(basePath, "./history"),
+    // path.resolve(basePath, "./history"),
     // path.resolve(basePath, "./sanskrit"),
   ];
 
@@ -196,7 +196,7 @@ async function content() {
 }
 
 const Li = (item) => {
-  return `<li><a href="${item.rootPath + item.href}">${item.text}</a></li>`;
+  return `<li><a href="${item.rootPath + item.href.toLowerCase()}">${item.text}</a></li>`;
 };
 
 function buildMenu(inputDir) {
