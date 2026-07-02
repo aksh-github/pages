@@ -45,7 +45,7 @@
 @media (width > 992px) {
   .real-menu {
     display: block;
-    position: inherit;
+    position: sticky;
     width: 100%;
     max-width: revert;
     background-color: inherit;
@@ -53,8 +53,8 @@
     box-shadow: none;
     max-width: 16em;
     min-width: 14em;
-    min-height: 80dvh;
-    max-height: 80dvh;
+    /* min-height: 80dvh; */
+    max-height: 100dvh;
     scrollbar-color: #deb88740 #0000;
   }
 
