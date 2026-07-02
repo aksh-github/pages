@@ -196,7 +196,7 @@ async function content() {
 }
 
 const Li = (item) => {
-  return `<li><a href="${item.rootPath + item.href.toLowerCase()}">${item.text}</a></li>`;
+  return `<li><a href="${item.rootPath + item.href}">${item.text}</a></li>`;
 };
 
 function buildMenu(inputDir) {
