@@ -184,7 +184,15 @@ git checkout master
 git merge feat/abc
 ```
 
-### 11. Delete remote branch
+### 11. Rename branch
+
+This will rename the branch
+
+```
+git branch -m new-name
+```
+
+### 12. Delete remote branch
 
 ```
 git push reomote-name --delete br-name
