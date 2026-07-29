@@ -75,6 +75,11 @@ main .main-section h2 {
 main .main-section ul {
   padding-left: 3em;
 }
+
+pre {
+  max-height: 400px;
+}
+
 pre,
 blockquote {
   background-color: cornsilk;
@@ -153,6 +158,10 @@ img {
 
 .gist {
   width: 100%;
+
+  .gist-data {
+    max-height: 400px;
+  }
 }
 
 /* media queries  */
