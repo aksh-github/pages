@@ -78,6 +78,7 @@ main .main-section ul {
 
 pre {
   max-height: 400px;
+  overflow-y: auto;
 }
 
 pre,
@@ -85,6 +86,7 @@ blockquote {
   background-color: cornsilk;
   padding: 1em;
   text-wrap: wrap;
+  word-wrap: break-word;
 }
 blockquote {
   margin: 0;
