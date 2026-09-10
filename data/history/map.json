@@ -62,6 +62,11 @@
     },
     {
       "rootPath": "",
+      "text": "chanakya",
+      "href": "./chanakya.html"
+    },
+    {
+      "rootPath": "",
       "text": "शिवाजी-पूर्व (६वे - १६वे शतक)",
       "href": "./pre-shivaji.html"
     },
@@ -94,6 +99,11 @@
       "rootPath": "",
       "text": "उत्तर-पानिपत",
       "href": "./post-paanipat.html"
+    },
+    {
+      "rootPath": "",
+      "text": "ahilya",
+      "href": "./ahilya.html"
     },
     {
       "rootPath": "",
