@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ancient India — Lost Rivers &amp; Legendary Cities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #EEE4CB;
+    --paper-deep: #E5D9B9;
+    --ink: #3B2E1F;
+    --ink-soft: #6B5A42;
+    --land: #DCCBA0;
+    --land-edge: #7A5A34;
+    --saraswati: #1F6E75;
+    --indus: #2E4C7A;
+    --punjab: #6C7FB0;
+    --ganga: #1E6FA6;
+    --yamuna: #2B2F5E;
+    --maha: #8C2A32;
+    --mountain: #6E5A3D;
+    --rama: #A6791F;
+    --ivc: #B5533C;
+    --nw: #5B6B7A;
+    --akhand: #8C5A1F;
+    --line-faint: rgba(59,46,31,0.18);
+    --card-bg: #F6EFDC;
+    --shadow: 0 8px 24px rgba(59,46,31,0.28);
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-sizing: border-box;
+  }
+  *{box-sizing:border-box;}
+  html,body{ height:100%; margin:0; }
+  body{
+    background:
+      radial-gradient(ellipse at 20% 10%, rgba(255,255,255,0.25), transparent 55%),
+      radial-gradient(ellipse at 90% 90%, rgba(0,0,0,0.06), transparent 60%),
+      var(--paper);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    display:flex;
+    flex-direction:column;
+  }
+  body.lang-mr{ font-family: 'Noto Sans Devanagari', 'EB Garamond', serif; }
+  body.lang-mr h1, body.lang-mr .legend-label b, body.lang-mr .info-panel h3{
+    font-family: 'Noto Serif Devanagari', 'Cormorant Garamond', serif;
+  }
+  header{
+    padding: 20px 28px 12px;
+    border-bottom: 1px solid var(--line-faint);
+    flex-shrink:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:16px;
+    flex-wrap: wrap;
+  }
+  .header-text{ flex: 1 1 480px; min-width:0; }
+  h1{
+    font-family:'Cormorant Garamond', Georgia, serif;
+    font-weight:700;
+    font-size: clamp(24px, 3.2vw, 38px);
+    margin:0 0 4px;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+  }
+  header p{
+    margin:0;
+    font-size:15px;
+    color: var(--ink-soft);
+    font-style: italic;
+    max-width: 720px;
+    line-height:1.5;
+  }
+  body.lang-mr header p{ font-style: normal; }
+  .header-controls{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:10px;
+    flex-shrink:0;
+  }
+  .lang-switch{
+    display:inline-flex;
+    border: 1px solid var(--land-edge);
+    border-radius: 20px;
+    overflow:hidden;
+    background: var(--land);
+    flex-shrink:0;
+  }
+  .lang-switch button{
+    border:none;
+    background:transparent;
+    padding: 7px 16px;
+    font-family:'EB Garamond', serif;
+    font-size:14px;
+    color: var(--ink-soft);
+    cursor:pointer;
+  }
+  .lang-switch button[lang="mr"]{ font-family:'Noto Sans Devanagari', serif; }
+  .lang-switch button.active{
+    background: var(--ink);
+    color: var(--paper);
+    font-weight:600;
+  }
+  .legend-toggle{ display:none; }
+  .layout{ flex:1; display:flex; min-height:0; }
+  .legend{
+    width: 300px;
+    flex-shrink:0;
+    padding: 20px 20px 20px;
+    border-right: 1px solid var(--line-faint);
+    overflow-y:auto;
+  }
+  .legend h2{
+    font-family:'Cormorant Garamond', Georgia, serif;
+    font-size:15px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin: 0 0 12px;
+    font-weight:600;
+    border-bottom: 1px solid var(--line-faint);
+    padding-bottom: 8px;
+  }
+  body.lang-mr .legend h2{ text-transform:none; font-family:'Noto Sans Devanagari', serif; }
+  .legend-group{ margin-bottom: 20px; }
+  .legend-item{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    padding: 7px 6px;
+    border-radius: 6px;
+    cursor:pointer;
+    transition: background 0.15s ease;
+  }
+  .legend-item:hover{ background: rgba(59,46,31,0.06); }
+  .legend-item input{
+    margin-top: 4px;
+    width:16px; height:16px;
+    accent-color: var(--ink);
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  .swatch{ width:16px; height:16px; margin-top:3px; flex-shrink:0; display:inline-block; }
+  .swatch.line{ height:0; width:22px; margin-top:9px; border-top-width:3px; border-top-style: dashed; }
+  .swatch.dot{ border-radius:50%; border: 2px solid rgba(0,0,0,0.35); }
+  .swatch.area{ width:20px; height:14px; margin-top:4px; border: 1.6px dashed var(--akhand); background: rgba(140,90,31,0.14); }
+  .swatch.triangle{
+    width:0; height:0; margin-top:3px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid var(--mountain);
+  }
+  .legend-label{ display:flex; flex-direction:column; }
+  .legend-label b{ font-family:'Cormorant Garamond', Georgia, serif; font-size:16px; font-weight:600; line-height:1.25; }
+  .legend-label span{ font-size:12px; color: var(--ink-soft); line-height:1.35; margin-top:1px; }
+  .note{
+    font-size:12px; line-height:1.55; color: var(--ink-soft);
+    border-top: 1px solid var(--line-faint);
+    padding-top: 14px; margin-top: 4px;
+  }
+  .map-wrap{
+    flex:1; position:relative; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+    background: var(--paper-deep);
+  }
+  svg#map{ width:100%; height:100%; max-width: 900px; display:block; transition: none; cursor: grab; touch-action: none; }
+  svg#map.grabbing{ cursor: grabbing; }
+  .zoom-controls{
+    position:absolute;
+    left:18px;
+    bottom:18px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    z-index: 5;
+  }
+  .zoom-controls button{
+    width:34px; height:34px;
+    border-radius:8px;
+    border: 1px solid var(--land-edge);
+    background: var(--card-bg);
+    color: var(--ink);
+    font-size:18px;
+    line-height:1;
+    font-family: 'EB Garamond', serif;
+    cursor:pointer;
+    box-shadow: 0 2px 6px rgba(59,46,31,0.18);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    user-select:none;
+  }
+  .zoom-controls button:hover{ background: var(--land); }
+  .zoom-controls button#zoomResetBtn{ font-size:15px; }
+  .land{ fill: var(--land); stroke: var(--land-edge); stroke-width:1.6; stroke-linejoin: round; }
+  .river{ fill:none; stroke-linecap: round; stroke-linejoin: round; transition: opacity 0.25s ease; }
+  .river.saraswati{ stroke: var(--saraswati); stroke-width:4.2; stroke-dasharray: 1 9; }
+  .river.indus{ stroke: var(--indus); stroke-width:3.6; stroke-dasharray: 1 8; }
+  .river.punjab{ stroke: var(--punjab); stroke-width:2.2; stroke-dasharray: 1 7; opacity:0.9; }
+  .river.ganga{ stroke: var(--ganga); stroke-width:4.4; stroke-dasharray: none; }
+  .river.yamuna{ stroke: var(--yamuna); stroke-width:3; stroke-dasharray: none; }
+  .swatch.line.solid{ border-top-style: solid; }
+  .layer-group{ transition: opacity 0.25s ease; }
+  .layer-hidden{ opacity:0; pointer-events:none; }
+  .lanka-shape{ fill: rgba(166,121,31,0.14); stroke: var(--rama); stroke-width:1.2; stroke-dasharray: 3 3; }
+  .akhand-fill{ fill: rgba(140,90,31,0.10); stroke: var(--akhand); stroke-width:2.2; stroke-dasharray: 8 5; }
+  .akhand-label{
+    font-family:'Cormorant Garamond', Georgia, serif;
+    font-size: 40px;
+    font-weight:700;
+    letter-spacing: 0.12em;
+    fill: var(--akhand);
+    opacity: 0.32;
+    pointer-events:none;
+  }
+  body.lang-mr .akhand-label{ font-family:'Noto Serif Devanagari', serif; letter-spacing:0.04em; }
+  .city-dot{ cursor:pointer; }
+  .city-dot circle{ stroke: var(--card-bg); stroke-width: 1.6; transition: r 0.15s ease; }
+  .city-dot.maha circle{ fill: var(--maha); }
+  .city-dot.rama circle{ fill: var(--rama); }
+  .city-dot.ivc circle{ fill: var(--ivc); }
+  .city-dot.nw circle{ fill: var(--nw); }
+  .city-dot:hover circle{ r:7.5; }
+  .city-dot.selected circle{ r:8; stroke-width:2.4; }
+  .city-label{
+    font-family:'EB Garamond', serif; font-size: 11px; fill: var(--ink);
+    pointer-events:none; paint-order: stroke; stroke: var(--paper-deep);
+    stroke-width: 3px; stroke-linejoin: round;
+  }
+  body.lang-mr .city-label{ font-family:'Noto Sans Devanagari', serif; font-size:11.5px; }
+  .river-label{
+    font-family:'EB Garamond', serif; font-size: 10.5px; fill: var(--ink);
+    pointer-events:none; paint-order: stroke; stroke: var(--paper-deep);
+    stroke-width: 3px; stroke-linejoin: round; text-anchor:middle;
+  }
+  .river-label .old-name{ font-style: italic; font-size: 9.5px; fill: var(--ink-soft); }
+  body.lang-mr .river-label{ font-family:'Noto Sans Devanagari', serif; font-size:11px; }
+  body.lang-mr .river-label .old-name{ font-style: normal; font-size:10px; }
+  .mountain-peak{ fill: var(--mountain); stroke: #4A3B26; stroke-width:1; stroke-linejoin: round; opacity:0.88; }
+  .mountain-label{
+    font-family:'EB Garamond', serif; font-size: 12px; font-weight:600;
+    fill: #4A3B26; text-anchor:middle; pointer-events:none;
+    paint-order: stroke; stroke: var(--paper-deep); stroke-width: 3px; stroke-linejoin: round;
+  }
+  body.lang-mr .mountain-label{ font-family:'Noto Sans Devanagari', serif; font-weight:500; }
+  .outside-mark{ fill:none; stroke: var(--ink-soft); stroke-width:1; stroke-dasharray: 1.5 1.5; }
+
+  .info-panel{
+    position:absolute; right:18px; bottom:18px; width: 290px; max-width: calc(100% - 36px);
+    background: var(--card-bg); border: 1px solid var(--line-faint); border-radius: 8px;
+    box-shadow: var(--shadow); padding: 16px 18px;
+    transform: translateY(12px); opacity:0; pointer-events:none; transition: all 0.2s ease;
+  }
+  .info-panel.visible{ transform: translateY(0); opacity:1; pointer-events:auto; }
+  .info-panel .close-btn{ position:absolute; top:8px; right:10px; border:none; background:none; font-size:18px; line-height:1; color: var(--ink-soft); cursor:pointer; padding:4px; }
+  .info-panel .tag{ display:inline-block; font-size:10.5px; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 20px; margin-bottom:8px; color:#fff; }
+  body.lang-mr .info-panel .tag{ text-transform:none; }
+  .info-panel .tag.maha{ background: var(--maha); }
+  .info-panel .tag.rama{ background: var(--rama); }
+  .info-panel .tag.ivc{ background: var(--ivc); }
+  .info-panel .tag.nw{ background: var(--nw); }
+  .info-panel h3{ font-family:'Cormorant Garamond', Georgia, serif; font-size:22px; margin: 0 0 2px; }
+  .info-panel .loc{ font-size:12.5px; color: var(--ink-soft); font-style: italic; margin-bottom:8px; }
+  body.lang-mr .info-panel .loc{ font-style:normal; }
+  .info-panel p{ font-size:14px; line-height:1.5; margin:0; }
+
+  @media (max-width: 780px){
+    header{ padding: 14px 16px 8px; }
+    .header-controls{ align-items:flex-start; width:100%; flex-direction:row; justify-content:space-between; }
+    .layout{ flex-direction:column; }
+    .legend{ width:auto; border-right:none; border-bottom:1px solid var(--line-faint); max-height: 42vh; order:2; }
+    .map-wrap{ order:1; min-height: 320px; }
+    .legend-toggle{
+      display:inline-block; font-family:'EB Garamond', serif; font-size:13px;
+      background: var(--land); border: 1px solid var(--land-edge); color: var(--ink);
+      padding: 6px 12px; border-radius: 20px; cursor:pointer;
+    }
+    .legend.collapsed{ display:none; }
+    .info-panel{ left:12px; right:12px; width:auto; bottom:12px; }
+    .zoom-controls{ left:auto; right:12px; top:12px; bottom:auto; flex-direction:row; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-text">
+    <h1 data-i18n="title">Ancient India: Lost Rivers &amp; Legendary Cities</h1>
+    <p data-i18n="subtitle">A geographic reading of the Sarasvatī paleochannel, the Sapta Sindhu river system, and the cities of the Mahābhārata and Rāmāyaṇa, placed against their most widely accepted modern locations.</p>
+  </div>
+  <div class="header-controls">
+    <div class="lang-switch">
+      <button type="button" lang="en" class="active" data-lang="en">English</button>
+      <button type="button" lang="mr" data-lang="mr">मराठी</button>
+    </div>
+    <button class="legend-toggle" id="legendToggle" data-i18n="legendToggleBtn">Show / hide legend</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="legend" id="legendPanel">
+    <div class="legend-group">
+      <h2 data-i18n="legendRivers">Old River Courses</h2>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="ganga" checked>
+        <span class="swatch line solid" style="border-color:#1E6FA6;"></span>
+        <span class="legend-label">
+          <b data-i18n="gangaTitle">Ganga (Ganges)</b>
+          <span data-i18n="gangaDesc">India's principal sacred river, from Gangotri to the Bay of Bengal — central to both epics' geography</span>
+        </span>
+      </label>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="yamuna" checked>
+        <span class="swatch line solid" style="border-color:#2B2F5E;"></span>
+        <span class="legend-label">
+          <b data-i18n="yamunaTitle">Yamuna</b>
+          <span data-i18n="yamunaDesc">Krishna's river, past Delhi, Mathura &amp; Agra, joining the Ganga at Prayag</span>
+        </span>
+      </label>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="saraswati" checked>
+        <span class="swatch line" style="border-color:#1F6E75;"></span>
+        <span class="legend-label">
+          <b data-i18n="saraswatiTitle">Sarasvatī Paleochannel</b>
+          <span data-i18n="saraswatiDesc">Himalayan course through Kurukshetra &amp; the Thar, now dry (Ghaggar–Hakra)</span>
+        </span>
+      </label>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="indus" checked>
+        <span class="swatch line" style="border-color:#2E4C7A;"></span>
+        <span class="legend-label">
+          <b data-i18n="indusTitle">Indus (Sindhu)</b>
+          <span data-i18n="indusDesc">The Sindhu river of Vedic geography, from Ladakh to the Arabian Sea</span>
+        </span>
+      </label>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="punjab" checked>
+        <span class="swatch line" style="border-color:#6C7FB0;"></span>
+        <span class="legend-label">
+          <b data-i18n="punjabTitle">Punjab Rivers</b>
+          <span data-i18n="punjabDesc">Sutlej, Beas, Ravi, Chenab &amp; Jhelum — with the Sindhu, the Sapta Sindhu of Vedic texts</span>
+        </span>
+      </label>
+    </div>
+    <div class="legend-group">
+      <h2 data-i18n="legendMountains">Mountains</h2>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="mountains" checked>
+        <span class="swatch triangle"></span>
+        <span class="legend-label">
+          <b data-i18n="mountainsTitle">Himalaya, Vindhya &amp; Mahendragiri</b>
+          <span data-i18n="mountainsDesc">The great northern range, the central Vindhya range, and Mahendragiri — among the Kulaparvatas of Puranic geography</span>
+        </span>
+      </label>
+    </div>
+    <div class="legend-group">
+      <h2 data-i18n="legendCities">Legendary Cities</h2>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="maha" checked>
+        <span class="swatch dot" style="background:#8C2A32;"></span>
+        <span class="legend-label">
+          <b data-i18n="mahaTitle">Mahābhārata</b>
+          <span data-i18n="mahaDesc">Kingdoms and capitals of the epic — Hastinapur, Indraprastha, Dwarka…</span>
+        </span>
+      </label>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="rama" checked>
+        <span class="swatch dot" style="background:#A6791F;"></span>
+        <span class="legend-label">
+          <b data-i18n="ramaTitle">Rāmāyaṇa</b>
+          <span data-i18n="ramaDesc">Places of Rama's story — Ayodhya, Mithila, Kishkindha, Lanka…</span>
+        </span>
+      </label>
+    </div>
+    <div class="legend-group">
+      <h2 data-i18n="legendNW">Northwest Region</h2>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="nw" checked>
+        <span class="swatch dot" style="background:#5B6B7A;"></span>
+        <span class="legend-label">
+          <b data-i18n="nwTitle">Gandhara &amp; the Northwest</b>
+          <span data-i18n="nwDesc">Kingdoms of the epic's northwest frontier — Gandhara, Kamboja, Bahlika, Madra, Kekaya, Sindhu-Sauvira</span>
+        </span>
+      </label>
+    </div>
+    <div class="legend-group">
+      <h2 data-i18n="legendIVC">Indus Valley Civilization</h2>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="ivc" checked>
+        <span class="swatch dot" style="background:#B5533C;"></span>
+        <span class="legend-label">
+          <b data-i18n="ivcTitle">Sindhu Basin Cities</b>
+          <span data-i18n="ivcDesc">Bronze Age sites (c. 2600–1900 BCE) on the Indus &amp; Sarasvati plains — Harappa, Mohenjo-daro, Dholavira…</span>
+        </span>
+      </label>
+    </div>
+    <div class="legend-group">
+      <h2 data-i18n="legendExtent">Historical Extent</h2>
+      <label class="legend-item">
+        <input type="checkbox" data-layer="akhand" checked>
+        <span class="swatch area"></span>
+        <span class="legend-label">
+          <b data-i18n="akhandTitle">Akhand Bharat</b>
+          <span data-i18n="akhandDesc">Civilisational concept of an undivided subcontinent — a cultural-historical idea, not a statement of current international borders</span>
+        </span>
+      </label>
+
+    </div>
+    <p class="note" data-i18n="note">Marker positions follow the most common scholarly and traditional identifications; several sites are debated or purely legendary, and some (marked with a dashed ring) lie outside present-day India. The river courses are simplified from archaeological and geomorphological reconstructions and should be read as approximate. The Akhand Bharat outline is a civilisational-cultural concept found in some historical and political narratives — it is not a statement about current international borders, and it remains a matter of debate. Scroll or pinch to zoom, drag to pan, and use the +/− controls or double-click to reset. Click any city marker for details.</p>
+  </aside>
+
+  <div class="map-wrap">
+    <svg id="map" viewBox="-15 -15 850 900" xmlns="http://www.w3.org/2000/svg">
+      <g id="zoomPan">
+        <g id="akhandBharat" class="layer-group"></g>
+        <path class="land" id="indiaPath" d=""></path>
+        <g id="lankaShape" class="layer-group"></g>
+        <g id="riverSaraswati" class="layer-group"></g>
+        <g id="riverIndus" class="layer-group"></g>
+        <g id="riverGanga" class="layer-group"></g>
+        <g id="riverYamuna" class="layer-group"></g>
+        <g id="riverPunjab" class="layer-group"></g>
+        <g id="mountains" class="layer-group"></g>
+        <g id="citiesMaha" class="layer-group"></g>
+        <g id="citiesRama" class="layer-group"></g>
+        <g id="citiesNW" class="layer-group"></g>
+        <g id="citiesIVC" class="layer-group"></g>
+      </g>
+    </svg>
+
+    <div class="zoom-controls">
+      <button type="button" id="zoomInBtn" aria-label="Zoom in">+</button>
+      <button type="button" id="zoomOutBtn" aria-label="Zoom out">&minus;</button>
+      <button type="button" id="zoomResetBtn" aria-label="Reset zoom">&#8634;</button>
+    </div>
+
+    <div class="info-panel" id="infoPanel">
+      <button class="close-btn" id="infoClose">&times;</button>
+      <span class="tag" id="infoTag"></span>
+      <h3 id="infoName"></h3>
+      <div class="loc" id="infoLoc"></div>
+      <p id="infoDesc"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // ---- projection (equirectangular, matched to the pre-simplified India outline) ----
+  var lonMin = 68.0, latMax = 37.5;
+  var scaleX = 26.537415796340692, scaleY = 28.571428571428573;
+  function proj(lon, lat){ return [ (lon - lonMin) * scaleX, (latMax - lat) * scaleY ]; }
+  function pathFromPoints(points, close){
+    var d = points.map(function(p, i){
+      var xy = proj(p[0], p[1]);
+      return (i === 0 ? 'M ' : 'L ') + xy[0].toFixed(1) + ',' + xy[1].toFixed(1);
+    }).join(' ');
+    return d + (close ? ' Z' : '');
+  }
+  var svgns = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs){
+    var e = document.createElementNS(svgns, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
+
+  var VIEWBOX_COMPACT = "-15 -15 850 900";
+  var VIEWBOX_WIDE = "-210 -15 1070 930";
+  var mapSvg = document.getElementById('map');
+
+  // ---- zoom & pan ----
+  var zoomPan = document.getElementById('zoomPan');
+  var scale = 1, tx = 0, ty = 0;
+  var MIN_SCALE = 1, MAX_SCALE = 10;
+
+  function applyTransform(){
+    zoomPan.setAttribute('transform', 'translate(' + tx + ',' + ty + ') scale(' + scale + ')');
+  }
+  function resetZoom(){ scale = 1; tx = 0; ty = 0; applyTransform(); }
+
+  function svgPointFromClient(clientX, clientY){
+    var pt = mapSvg.createSVGPoint();
+    pt.x = clientX; pt.y = clientY;
+    var ctm = mapSvg.getScreenCTM();
+    if (!ctm) return {x:0, y:0};
+    var p = pt.matrixTransform(ctm.inverse());
+    return {x:p.x, y:p.y};
+  }
+
+  function zoomAt(px, py, factor){
+    var newScale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale * factor));
+    if (newScale === scale) return;
+    var contentX = (px - tx) / scale;
+    var contentY = (py - ty) / scale;
+    tx = px - newScale * contentX;
+    ty = py - newScale * contentY;
+    scale = newScale;
+    applyTransform();
+  }
+
+  function zoomAtViewportCenter(factor){
+    var rect = mapSvg.getBoundingClientRect();
+    var p = svgPointFromClient(rect.left + rect.width / 2, rect.top + rect.height / 2);
+    zoomAt(p.x, p.y, factor);
+  }
+
+  document.getElementById('zoomInBtn').addEventListener('click', function(){ zoomAtViewportCenter(1.4); });
+  document.getElementById('zoomOutBtn').addEventListener('click', function(){ zoomAtViewportCenter(1/1.4); });
+  document.getElementById('zoomResetBtn').addEventListener('click', resetZoom);
+
+  mapSvg.addEventListener('wheel', function(e){
+    e.preventDefault();
+    var p = svgPointFromClient(e.clientX, e.clientY);
+    var factor = e.deltaY < 0 ? 1.18 : 1/1.18;
+    zoomAt(p.x, p.y, factor);
+  }, {passive:false});
+
+  // drag to pan (mouse + touch, single pointer)
+  var justDragged = false;
+  var activePointers = {};
+  var panPointerId = null;
+  var panStartClientX, panStartClientY, panStartTx, panStartTy, panMoved;
+  // pinch-to-zoom (two touch pointers)
+  var pinchStartDist = null, pinchStartMid = null;
+
+  function dist(p1, p2){ return Math.hypot(p1.x - p2.x, p1.y - p2.y); }
+  function mid(p1, p2){ return {x:(p1.x+p2.x)/2, y:(p1.y+p2.y)/2}; }
+
+  mapSvg.addEventListener('pointerdown', function(e){
+    activePointers[e.pointerId] = {x:e.clientX, y:e.clientY};
+    var ids = Object.keys(activePointers);
+    if (ids.length === 1){
+      panPointerId = e.pointerId;
+      panStartClientX = e.clientX; panStartClientY = e.clientY;
+      panStartTx = tx; panStartTy = ty;
+      panMoved = false;
+    } else if (ids.length === 2){
+      panPointerId = null;
+      var pts = ids.map(function(id){ return activePointers[id]; });
+      pinchStartDist = dist(pts[0], pts[1]);
+      pinchStartMid = mid(pts[0], pts[1]);
+    }
+  });
+
+  mapSvg.addEventListener('pointermove', function(e){
+    if (!(e.pointerId in activePointers)) return;
+    activePointers[e.pointerId] = {x:e.clientX, y:e.clientY};
+    var ids = Object.keys(activePointers);
+
+    if (ids.length === 2){
+      var pts = ids.map(function(id){ return activePointers[id]; });
+      var newDist = dist(pts[0], pts[1]);
+      var newMid = mid(pts[0], pts[1]);
+      if (pinchStartDist){
+        var factor = newDist / pinchStartDist;
+        var p = svgPointFromClient(newMid.x, newMid.y);
+        zoomAt(p.x, p.y, factor);
+        pinchStartDist = newDist;
+      }
+      return;
+    }
+
+    if (panPointerId === e.pointerId){
+      var dx = e.clientX - panStartClientX, dy = e.clientY - panStartClientY;
+      if (!panMoved && (Math.abs(dx) > 6 || Math.abs(dy) > 6)){
+        panMoved = true;
+        mapSvg.setPointerCapture(e.pointerId);
+        mapSvg.classList.add('grabbing');
+      }
+      if (!panMoved) return;
+      var ctm = mapSvg.getScreenCTM();
+      var f = ctm ? ctm.a : 1;
+      tx = panStartTx + dx / f;
+      ty = panStartTy + dy / f;
+      applyTransform();
+    }
+  });
+
+  function endPointer(e){
+    delete activePointers[e.pointerId];
+    var ids = Object.keys(activePointers);
+    if (ids.length < 2) pinchStartDist = null;
+    if (e.pointerId === panPointerId){
+      panPointerId = null;
+      mapSvg.classList.remove('grabbing');
+      if (panMoved){
+        justDragged = true;
+        setTimeout(function(){ justDragged = false; }, 0);
+      }
+    }
+  }
+  mapSvg.addEventListener('pointerup', endPointer);
+  mapSvg.addEventListener('pointercancel', endPointer);
+  mapSvg.addEventListener('pointerleave', function(e){
+    if (e.pointerId === panPointerId) endPointer(e);
+  });
+
+  mapSvg.addEventListener('dblclick', function(e){
+    e.preventDefault();
+    var p = svgPointFromClient(e.clientX, e.clientY);
+    zoomAt(p.x, p.y, 1.8);
+  });
+
+
+  // ---- India outline (pre-computed, simplified from state boundary data) ----
+  document.getElementById('indiaPath').setAttribute('d',
+    "M 91.2,475.2 L 74.9,480.2 L 59.7,472.0 L 24.8,433.9 L 28.7,429.2 L 28.4,431.6 L 31.6,430.8 L 32.5,435.5 L 39.5,433.2 L 40.0,430.7 L 42.9,432.8 L 45.9,429.3 L 48.0,431.3 L 52.4,427.4 L 57.4,427.1 L 66.2,412.1 L 62.7,416.1 L 56.0,415.4 L 45.4,421.8 L 31.8,418.9 L 15.5,407.9 L 17.5,405.8 L 13.3,400.7 L 13.0,396.1 L 19.5,390.3 L 14.2,392.7 L 13.7,390.7 L 16.4,388.1 L 14.6,386.6 L 20.0,386.6 L 21.4,376.8 L 22.8,379.6 L 25.0,377.1 L 26.7,379.3 L 42.1,377.4 L 45.9,380.8 L 53.5,380.9 L 55.9,377.3 L 68.3,373.7 L 68.3,378.4 L 72.2,379.5 L 82.8,374.1 L 79.5,372.8 L 79.4,368.4 L 82.2,366.1 L 76.6,352.8 L 70.7,345.8 L 70.5,337.0 L 60.4,336.9 L 55.7,330.4 L 57.7,312.8 L 47.8,311.5 L 40.0,307.1 L 42.2,294.8 L 63.0,271.1 L 68.8,271.2 L 72.6,278.5 L 76.5,279.8 L 103.5,272.5 L 116.5,249.5 L 131.3,241.9 L 143.5,215.8 L 158.4,208.9 L 156.2,203.9 L 157.5,200.3 L 161.0,199.4 L 174.2,184.2 L 177.7,183.6 L 172.9,180.5 L 176.6,173.4 L 172.1,165.1 L 175.5,160.4 L 183.7,155.3 L 192.1,154.5 L 195.7,150.6 L 194.8,147.4 L 188.5,143.6 L 177.3,143.2 L 177.8,133.3 L 175.9,135.8 L 168.6,135.3 L 149.5,126.1 L 148.3,103.3 L 143.1,89.1 L 144.6,83.6 L 150.0,83.8 L 152.6,77.5 L 160.0,74.9 L 162.8,68.2 L 151.7,64.9 L 153.5,56.4 L 139.9,53.4 L 135.4,46.3 L 124.5,47.6 L 120.2,45.0 L 122.0,35.3 L 132.5,29.8 L 135.0,22.9 L 156.6,22.7 L 151.0,16.8 L 160.6,19.8 L 170.6,14.6 L 174.6,15.8 L 177.4,12.1 L 183.5,16.9 L 194.9,12.8 L 198.5,19.8 L 206.2,26.5 L 230.8,39.0 L 233.5,41.5 L 231.5,44.2 L 233.6,47.1 L 248.3,50.9 L 251.7,56.3 L 247.4,56.1 L 250.3,58.2 L 258.4,56.5 L 264.6,58.3 L 264.4,54.2 L 269.0,56.0 L 276.6,49.0 L 290.8,46.0 L 295.6,47.5 L 297.6,43.5 L 301.9,43.0 L 303.2,45.9 L 311.7,48.6 L 318.4,47.5 L 326.3,54.2 L 327.2,57.9 L 320.3,79.6 L 312.6,82.0 L 313.0,86.1 L 305.4,86.4 L 307.4,93.2 L 303.0,99.6 L 296.7,97.9 L 289.4,100.7 L 294.7,110.8 L 289.8,110.5 L 290.7,117.7 L 304.0,121.2 L 300.8,128.3 L 308.5,136.1 L 303.8,141.9 L 300.4,140.3 L 291.4,147.5 L 287.3,144.6 L 285.6,137.2 L 277.6,140.6 L 276.0,142.1 L 279.6,145.3 L 277.5,150.2 L 281.6,151.0 L 286.3,157.3 L 284.2,163.2 L 287.9,168.3 L 284.5,171.0 L 289.1,178.1 L 293.6,172.4 L 295.8,173.3 L 303.3,184.8 L 308.0,187.5 L 314.9,186.4 L 324.8,192.6 L 324.4,197.8 L 345.9,207.3 L 328.4,221.4 L 329.4,225.8 L 325.0,230.1 L 326.5,237.1 L 322.5,239.9 L 320.3,247.7 L 332.3,255.5 L 333.3,251.7 L 350.7,261.2 L 353.8,267.5 L 356.4,266.5 L 368.6,275.5 L 373.5,273.6 L 383.7,280.7 L 390.1,279.4 L 391.3,285.7 L 402.9,287.1 L 406.3,290.6 L 408.7,286.3 L 421.1,290.1 L 420.5,287.4 L 428.7,285.2 L 432.4,289.0 L 441.2,290.4 L 441.7,298.7 L 450.1,301.1 L 451.9,304.1 L 456.3,303.7 L 456.7,306.8 L 468.0,303.6 L 473.9,312.3 L 478.5,309.5 L 486.8,311.0 L 497.2,316.4 L 506.1,311.8 L 506.7,315.7 L 513.3,318.6 L 516.5,316.0 L 520.4,317.7 L 528.1,314.9 L 531.6,318.4 L 535.8,307.7 L 534.3,300.4 L 530.6,296.9 L 536.0,277.5 L 534.7,272.5 L 541.3,272.1 L 547.5,267.7 L 553.0,271.0 L 554.3,276.0 L 551.3,283.9 L 555.4,290.7 L 550.9,295.9 L 560.9,305.5 L 567.3,303.8 L 578.0,308.6 L 594.8,302.8 L 602.5,306.6 L 628.5,305.6 L 634.3,302.4 L 638.5,304.4 L 640.1,301.2 L 637.7,295.1 L 640.1,291.7 L 637.5,286.3 L 627.0,285.3 L 625.3,281.9 L 627.5,278.4 L 625.0,275.8 L 634.9,279.6 L 642.3,275.5 L 645.4,277.8 L 651.9,276.6 L 656.6,271.8 L 655.1,268.1 L 669.1,262.2 L 668.4,258.9 L 672.5,253.2 L 688.4,252.1 L 695.8,240.5 L 704.9,236.3 L 706.8,232.9 L 711.3,238.2 L 728.7,241.9 L 732.5,235.4 L 745.3,229.7 L 749.4,236.0 L 753.6,235.6 L 746.2,240.7 L 747.6,245.7 L 757.1,240.7 L 755.8,243.1 L 759.5,249.3 L 750.2,259.9 L 753.7,261.7 L 760.7,258.3 L 780.2,265.9 L 777.8,269.5 L 780.6,271.0 L 779.9,274.7 L 776.4,274.3 L 766.9,282.5 L 773.4,297.4 L 766.0,294.6 L 761.9,289.4 L 749.3,292.1 L 727.7,308.9 L 720.6,311.1 L 718.3,315.9 L 721.3,326.6 L 717.2,331.1 L 717.9,335.6 L 713.9,341.1 L 707.0,345.9 L 705.5,351.2 L 709.7,353.4 L 709.0,359.0 L 698.6,376.2 L 694.2,390.1 L 683.2,385.6 L 677.1,387.3 L 672.3,383.2 L 675.2,394.9 L 673.8,410.4 L 671.4,414.2 L 666.9,413.0 L 666.3,427.7 L 668.9,435.5 L 664.8,437.1 L 663.6,443.4 L 662.2,442.1 L 661.1,444.4 L 656.3,438.6 L 652.8,442.5 L 644.4,393.9 L 638.0,395.8 L 635.7,393.5 L 636.3,400.5 L 631.0,406.4 L 632.5,411.5 L 626.9,415.9 L 622.3,406.8 L 620.2,412.1 L 614.7,397.1 L 620.5,382.7 L 626.0,383.6 L 628.1,379.1 L 630.6,381.7 L 630.3,378.7 L 634.4,381.8 L 635.0,376.0 L 641.5,373.7 L 643.4,360.0 L 650.1,360.9 L 648.2,356.3 L 638.6,351.8 L 595.7,353.1 L 579.5,348.7 L 580.8,330.3 L 575.4,322.0 L 572.6,329.5 L 566.8,328.3 L 561.6,324.6 L 559.7,317.2 L 555.1,317.0 L 558.7,321.6 L 548.7,321.0 L 550.5,318.4 L 541.2,311.0 L 539.9,315.2 L 543.7,315.4 L 544.7,318.4 L 535.6,324.4 L 533.6,333.9 L 537.9,334.0 L 545.4,342.4 L 552.0,342.2 L 553.2,346.7 L 557.6,349.5 L 555.2,352.4 L 542.5,351.4 L 541.3,358.7 L 539.7,360.8 L 534.6,359.1 L 531.1,366.6 L 539.9,374.9 L 550.3,377.6 L 551.3,386.0 L 546.1,389.7 L 545.8,395.8 L 552.0,400.0 L 550.0,407.0 L 557.1,408.0 L 553.8,412.2 L 556.1,425.4 L 553.4,430.5 L 551.2,428.2 L 549.1,427.8 L 556.1,436.4 L 551.8,438.0 L 550.5,436.9 L 547.7,436.8 L 548.4,435.0 L 547.5,436.5 L 546.7,445.5 L 542.0,445.5 L 540.9,448.8 L 539.4,446.8 L 536.5,449.6 L 536.1,438.1 L 532.7,436.9 L 533.5,434.2 L 530.3,435.8 L 529.4,431.4 L 527.9,430.4 L 529.1,435.3 L 535.8,440.0 L 532.4,442.5 L 529.8,439.9 L 532.1,442.5 L 525.8,451.4 L 509.6,456.3 L 502.8,461.4 L 500.0,466.9 L 503.5,477.3 L 500.8,477.3 L 498.9,478.9 L 503.8,477.9 L 501.8,479.8 L 504.6,480.5 L 497.7,485.3 L 498.5,490.7 L 487.4,501.5 L 469.6,507.1 L 449.5,520.5 L 431.9,542.3 L 433.9,541.5 L 428.2,547.1 L 424.5,546.9 L 427.7,548.5 L 412.9,556.8 L 403.8,568.9 L 386.4,578.4 L 379.5,585.0 L 378.2,588.9 L 381.2,590.7 L 380.8,586.5 L 381.5,589.2 L 379.8,598.4 L 363.8,605.6 L 353.3,604.0 L 345.2,621.1 L 341.6,619.4 L 342.7,622.1 L 340.7,622.7 L 338.5,617.7 L 332.0,618.3 L 324.4,627.2 L 323.1,626.5 L 322.0,626.9 L 324.0,628.7 L 319.7,641.4 L 323.3,654.4 L 320.9,656.2 L 323.6,655.3 L 321.9,667.2 L 327.6,691.6 L 322.8,714.9 L 314.7,728.2 L 312.1,739.6 L 315.2,777.4 L 306.1,775.5 L 299.8,778.2 L 298.9,784.7 L 289.1,800.6 L 296.8,806.3 L 288.4,807.0 L 272.9,813.7 L 267.1,832.3 L 253.6,840.6 L 247.3,839.4 L 239.0,832.6 L 226.9,817.2 L 205.4,746.9 L 194.2,729.3 L 191.2,728.5 L 181.2,704.8 L 176.8,682.0 L 179.2,681.6 L 176.5,681.1 L 170.8,663.8 L 172.9,664.6 L 167.0,654.5 L 170.2,653.8 L 166.8,654.0 L 166.2,650.8 L 162.1,649.0 L 165.4,646.5 L 162.2,647.3 L 156.9,640.3 L 156.3,633.2 L 153.6,631.1 L 157.5,630.6 L 153.0,628.6 L 144.9,612.7 L 141.0,598.9 L 143.3,596.6 L 140.8,593.1 L 141.0,583.6 L 127.1,530.1 L 125.3,505.3 L 123.3,504.6 L 124.3,501.1 L 126.7,502.9 L 124.8,497.7 L 129.7,483.7 L 128.0,472.9 L 126.2,473.4 L 125.1,467.4 L 122.8,468.9 L 121.8,462.9 L 124.9,456.3 L 122.3,454.8 L 128.3,452.2 L 120.4,452.4 L 122.8,445.5 L 119.9,446.3 L 119.5,444.0 L 122.0,436.8 L 126.0,437.9 L 130.6,435.2 L 120.4,435.0 L 119.1,437.2 L 119.3,435.9 L 117.7,434.2 L 116.6,434.1 L 117.1,432.6 L 116.3,432.1 L 116.1,434.1 L 117.2,436.4 L 114.4,437.7 L 114.7,439.4 L 113.4,444.8 L 114.2,439.8 L 111.5,442.7 L 114.3,453.5 L 109.2,465.7 L 91.2,475.2 Z"
+  );
+
+  // ---- Akhand Bharat conceptual outline (stylised envelope, not a precise boundary) ----
+  var akhand = [
+    [69.2,34.5],[74.5,37.0],[78.0,37.0],[82.0,36.0],[88.0,34.5],[95.0,33.5],
+    [98.5,29.0],[97.5,27.0],[99.5,23.0],[99.0,18.0],[98.5,10.5],[98.2,10.0],
+    [94.0,15.0],[92.3,21.5],[89.0,22.0],[80.3,8.0],[80.5,5.9],[79.7,8.5],
+    [76.0,10.0],[73.0,15.0],[72.8,21.0],[66.9,24.7],[61.8,25.1],[61.0,29.5],[61.2,34.3]
+  ];
+  var akhandGroup = document.getElementById('akhandBharat');
+  akhandGroup.appendChild(el('path', {class:'akhand-fill', d: pathFromPoints(akhand, true)}));
+  var akhandLabelXY = proj(88.5, 15.0);
+  var akhandLabel = el('text', {class:'akhand-label', x: akhandLabelXY[0], y: akhandLabelXY[1],
+    'text-anchor':'middle', transform:'rotate(-8 ' + akhandLabelXY[0] + ' ' + akhandLabelXY[1] + ')'});
+  akhandLabel.textContent = 'AKHAND BHARAT';
+  akhandLabel.id = 'akhandLabelText';
+  akhandGroup.appendChild(akhandLabel);
+
+  // ---- rough Sri Lanka shape, for context around the Lanka marker ----
+  var lanka = [[80.3,9.8],[81.9,9.7],[81.9,8.5],[81.5,7.0],[81.0,6.2],[80.3,5.9],[79.8,6.9],[79.7,8.0],[80.0,9.3]];
+  document.getElementById('lankaShape').appendChild(el('path', {class:'lanka-shape', d: pathFromPoints(lanka, true)}));
+
+  // ---- rivers ----
+  var gangaRiver = {
+    points: [[79.08,30.99],[78.16,29.95],[80.33,26.45],[81.84,25.43],[83.01,25.32],
+      [85.14,25.61],[86.97,25.25],[87.93,24.80],[88.15,21.65]],
+    labelAt: [83.6,25.9],
+    en:{modern:"Ganga", old:null}, mr:{modern:"गंगा", old:null}
+  };
+  document.getElementById('riverGanga').appendChild(el('path', {class:'river ganga', d: pathFromPoints(gangaRiver.points, false)}));
+
+  var yamunaRiver = {
+    points: [[78.45,31.01],[77.23,28.61],[77.67,27.49],[78.02,27.18],[79.02,26.78],[81.84,25.43]],
+    labelAt: [78.1,27.9],
+    en:{modern:"Yamuna", old:null}, mr:{modern:"यमुना", old:null}
+  };
+  document.getElementById('riverYamuna').appendChild(el('path', {class:'river yamuna', d: pathFromPoints(yamunaRiver.points, false)}));
+
+  var saraswati = [
+    [77.45,30.47],[77.02,30.23],[76.87,29.97],[76.20,29.75],[75.63,29.55],
+    [75.03,29.53],[73.90,29.32],[73.21,29.19],[71.50,28.60],[70.80,27.20],
+    [70.20,25.50],[70.10,24.20],[69.60,23.90],[69.10,23.60]
+  ];
+  document.getElementById('riverSaraswati').appendChild(el('path', {class:'river saraswati', d: pathFromPoints(saraswati, false)}));
+
+  var indusRiver = {
+    points: [[80.8,31.0],[78.2,34.3],[76.0,34.6],[74.3,34.9],[73.2,34.0],[72.6,33.6],
+      [71.5,33.0],[70.5,31.5],[68.9,29.0],[68.3,27.7],[67.9,26.2],[67.4,24.8],[67.0,24.0]],
+    labelAt: [68.6,28.6],
+    en:{modern:"Indus", old:"Sindhu"}, mr:{modern:"सिंधू", old:null}
+  };
+  document.getElementById('riverIndus').appendChild(el('path', {class:'river indus', d: pathFromPoints(indusRiver.points, false)}));
+
+  var punjabTributaries = [
+    { points:[[78.0,31.7],[76.4,31.0],[74.9,31.05],[74.6,30.9],[71.9,29.3]], labelAt:[78.0,31.7],
+      en:{modern:"Sutlej", old:"Shatadru"}, mr:{modern:"सतलज", old:"शतद्रु"} },
+    { points:[[77.1,32.0],[75.8,31.5],[74.9,31.2]], labelAt:[77.1,32.0],
+      en:{modern:"Beas", old:"Vipasha"}, mr:{modern:"बियास", old:"विपाशा"} },
+    { points:[[76.5,32.3],[75.0,31.6],[73.9,31.4],[71.9,29.3]], labelAt:[76.5,32.3],
+      en:{modern:"Ravi", old:"Iravati"}, mr:{modern:"रावी", old:"इरावती"} },
+    { points:[[76.9,32.9],[74.9,32.5],[72.5,30.2],[71.9,29.3]], labelAt:[76.9,32.9],
+      en:{modern:"Chenab", old:"Chandrabhaga"}, mr:{modern:"चिनाब", old:"चंद्रभागा"} },
+    { points:[[75.1,34.3],[73.7,33.0],[72.4,31.2],[71.9,29.3]], labelAt:[75.1,34.3],
+      en:{modern:"Jhelum", old:"Vitasta"}, mr:{modern:"झेलम", old:"वितस्ता"} }
+  ];
+  var punjabGroup = document.getElementById('riverPunjab');
+  punjabTributaries.forEach(function(t){
+    punjabGroup.appendChild(el('path', {class:'river punjab', d: pathFromPoints(t.points, false)}));
+  });
+
+  var allRiverLabelNodes = []; // {data, tspanModern, tspanOld}
+  function addRiverLabel(entry, groupEl, dyOffset){
+    var xy = proj(entry.labelAt[0], entry.labelAt[1]);
+    var t = el('text', {x:xy[0], y:xy[1] + (dyOffset||0), class:'river-label'});
+    var tspanModern = el('tspan', {x:xy[0], dy:0});
+    var tspanOld = el('tspan', {x:xy[0], dy:12, class:'old-name'});
+    t.appendChild(tspanModern);
+    t.appendChild(tspanOld);
+    groupEl.appendChild(t);
+    allRiverLabelNodes.push({data:entry, tspanModern:tspanModern, tspanOld:tspanOld});
+  }
+  addRiverLabel(indusRiver, document.getElementById('riverIndus'), -10);
+  punjabTributaries.forEach(function(t){ addRiverLabel(t, punjabGroup, -8); });
+  addRiverLabel(gangaRiver, document.getElementById('riverGanga'), -12);
+  addRiverLabel(yamunaRiver, document.getElementById('riverYamuna'), -10);
+
+  // ---- mountains ----
+  var mountainRanges = [
+    { points: [[74.3,34.9],[76.5,32.5],[79.0,31.0],[81.5,30.2],[85.3,28.0],[88.0,27.7],[91.5,27.5],[94.5,28.3]],
+      labelAt:[83.0,29.5], labelDy:-16,
+      en:{name:"Himalaya"}, mr:{name:"हिमालय"} },
+    { points: [[73.5,24.0],[75.8,23.5],[78.0,23.6],[80.5,24.3],[82.8,24.6]],
+      labelAt:[78.0,23.6], labelDy:-14,
+      en:{name:"Vindhya Range"}, mr:{name:"विंध्य पर्वत"} },
+    { points: [[84.24,18.97]],
+      labelAt:[84.24,18.97], labelDy:-14,
+      en:{name:"Mahendragiri"}, mr:{name:"महेंद्रगिरी"} }
+  ];
+  var allMountainLabelNodes = []; // {data, labelEl}
+  var mountainsGroup = document.getElementById('mountains');
+  function addMountainRange(entry){
+    entry.points.forEach(function(pt){
+      var xy = proj(pt[0], pt[1]);
+      var tri = el('polygon', {
+        class:'mountain-peak',
+        points: xy[0] + ',' + (xy[1]-9) + ' ' + (xy[0]-9) + ',' + (xy[1]+5) + ' ' + (xy[0]+9) + ',' + (xy[1]+5)
+      });
+      mountainsGroup.appendChild(tri);
+    });
+    var lxy = proj(entry.labelAt[0], entry.labelAt[1]);
+    var label = el('text', {x:lxy[0], y:lxy[1] + entry.labelDy, class:'mountain-label'});
+    label.textContent = entry.en.name;
+    mountainsGroup.appendChild(label);
+    allMountainLabelNodes.push({data:entry, labelEl:label});
+  }
+  mountainRanges.forEach(addMountainRange);
+
+
+  // ---- bilingual city data ----
+  var mahaCities = [
+    {lon:78.02, lat:29.17, en:{name:"Hastinapur", loc:"Meerut district, Uttar Pradesh", desc:"Capital of the Kuru dynasty, ruled in turn by the Pandavas and Kauravas; archaeological excavations here found Painted Grey Ware settlement layers."},
+      mr:{name:"हस्तिनापूर", loc:"मेरठ जिल्हा, उत्तर प्रदेश", desc:"कुरु वंशाची राजधानी, जिथे पांडव व कौरव यांनी आळीपाळीने राज्य केले; येथील उत्खननात चित्रित करड्या मृद्भांड्यांच्या वस्तीचे स्तर सापडले आहेत."}},
+    {lon:77.23, lat:28.61, en:{name:"Indraprastha", loc:"Purana Qila, Delhi", desc:"Capital raised by the Pandavas on the banks of the Yamuna after Khandavaprastha was cleared."},
+      mr:{name:"इंद्रप्रस्थ", loc:"पुराणा किल्ला, दिल्ली", desc:"खांडवप्रस्थ साफ केल्यानंतर पांडवांनी यमुनेच्या काठी उभारलेली राजधानी."}},
+    {lon:76.87, lat:29.97, en:{name:"Kurukshetra", loc:"Haryana", desc:"The field of the eighteen-day war between the Pandavas and Kauravas, and setting of the Bhagavad Gita."},
+      mr:{name:"कुरुक्षेत्र", loc:"हरियाणा", desc:"पांडव व कौरव यांच्यातील अठरा दिवसांच्या युद्धाचे रणक्षेत्र आणि भगवद्गीतेचे निरूपणस्थळ."}},
+    {lon:77.67, lat:27.49, en:{name:"Mathura", loc:"Uttar Pradesh", desc:"Birthplace of Krishna and capital of the Surasena region, on the Yamuna."},
+      mr:{name:"मथुरा", loc:"उत्तर प्रदेश", desc:"यमुनेकाठी वसलेले, कृष्णाचे जन्मस्थान व शूरसेन प्रदेशाची राजधानी."}},
+    {lon:68.97, lat:22.24, en:{name:"Dwarka", loc:"Gujarat", desc:"Krishna's coastal kingdom; tradition holds it was later reclaimed by the sea, and submerged structures have been surveyed offshore."},
+      mr:{name:"द्वारका", loc:"गुजरात", desc:"कृष्णाचे समुद्रकिनाऱ्यावरील राज्य; परंपरेनुसार नंतर हे नगर समुद्राने गिळंकृत केले, आणि किनाऱ्याजवळ बुडालेल्या रचनांचे सर्वेक्षण करण्यात आले आहे."}},
+    {lon:79.20, lat:27.58, en:{name:"Kampilya", loc:"Farrukhabad district, Uttar Pradesh", desc:"Capital of southern Panchala and the traditional home kingdom of Draupadi."},
+      mr:{name:"कांपिल्य", loc:"फर्रुखाबाद जिल्हा, उत्तर प्रदेश", desc:"दक्षिण पांचालची राजधानी आणि द्रौपदीचे पारंपरिक माहेरचे राज्य."}},
+    {lon:81.38, lat:25.33, en:{name:"Kaushambi", loc:"near Prayagraj, Uttar Pradesh", desc:"Capital of the Vatsa kingdom, an important city in the later Vedic and Mahajanapada period."},
+      mr:{name:"कौशांबी", loc:"प्रयागराजजवळ, उत्तर प्रदेश", desc:"वत्स राज्याची राजधानी, उत्तर वैदिक व महाजनपद कालखंडातील एक महत्त्वाचे नगर."}},
+    {lon:75.78, lat:23.18, en:{name:"Ujjayini", loc:"Ujjain, Madhya Pradesh", desc:"Capital of the Avanti kingdom, one of the great kingdoms named in the epic."},
+      mr:{name:"उज्जयिनी", loc:"उज्जैन, मध्य प्रदेश", desc:"अवंती राज्याची राजधानी, महाभारतात उल्लेखलेल्या प्रमुख राज्यांपैकी एक."}},
+    {lon:85.42, lat:25.03, en:{name:"Girivraja", loc:"Rajgir, Bihar", desc:"Early hill-girt capital of Magadha, seat of the powerful king Jarasandha."},
+      mr:{name:"गिरिव्रज", loc:"राजगीर, बिहार", desc:"मगधची प्रारंभिक, डोंगरांनी वेढलेली राजधानी; बलाढ्य राजा जरासंधाचे आसनस्थान."}},
+    {lon:77.75, lat:20.93, en:{name:"Kundinapur", loc:"near Amravati, Maharashtra", desc:"Capital of the Vidarbha kingdom and traditional home of Rukmini, Krishna's queen."},
+      mr:{name:"कुंडिनपूर", loc:"अमरावतीजवळ, महाराष्ट्र", desc:"विदर्भ राज्याची राजधानी आणि कृष्णाची पट्टराणी रुक्मिणीचे माहेर."}},
+    {lon:70.401, lat:20.888, en:{name:"Somnath", loc:"Prabhas Patan, Gujarat", desc:"Site of the Somnath Jyotirlinga; tradition holds it lies near where Krishna departed his mortal life at the end of the Mahābhārata era."},
+      mr:{name:"सोमनाथ", loc:"प्रभास पाटण, गुजरात", desc:"सोमनाथ ज्योतिर्लिंगाचे स्थान; परंपरेनुसार महाभारत कालखंडाच्या अंती कृष्णाने याच्या जवळपास देहत्याग केला असे मानले जाते."}}
+  ];
+
+  var ramaCities = [
+    {lon:82.20, lat:26.80, en:{name:"Ayodhya", loc:"Uttar Pradesh", desc:"Capital of the Kosala kingdom; birthplace and royal seat of Rama on the Sarayu river."},
+      mr:{name:"अयोध्या", loc:"उत्तर प्रदेश", desc:"कोसल राज्याची राजधानी; शरयू नदीकाठी वसलेले रामाचे जन्मस्थान व राजधानी."}},
+    {lon:85.92, lat:26.73, outside:true, en:{name:"Mithila", loc:"Janakpur, Nepal", desc:"Capital of the Videha kingdom, ruled by King Janaka; Sita's birthplace."},
+      mr:{name:"मिथिला", loc:"जनकपूर, नेपाळ", desc:"राजा जनकाच्या विदेह राज्याची राजधानी; सीतेचे जन्मस्थान."}},
+    {lon:80.87, lat:25.20, en:{name:"Chitrakoot", loc:"Uttar Pradesh–Madhya Pradesh border", desc:"Forest retreat where Rama, Sita and Lakshmana spent part of their fourteen-year exile."},
+      mr:{name:"चित्रकूट", loc:"उत्तर प्रदेश–मध्य प्रदेश सीमा", desc:"राम, सीता आणि लक्ष्मण यांनी चौदा वर्षांच्या वनवासातील काही काळ घालवलेले वनक्षेत्र."}},
+    {lon:81.84, lat:25.43, en:{name:"Prayag", loc:"Prayagraj, Uttar Pradesh", desc:"Site of sage Bharadwaj's ashram, at the confluence of the Ganga and Yamuna."},
+      mr:{name:"प्रयाग", loc:"प्रयागराज, उत्तर प्रदेश", desc:"गंगा-यमुनेच्या संगमावरील ऋषी भारद्वाजांच्या आश्रमाचे स्थान."}},
+    {lon:73.79, lat:19.99, en:{name:"Panchavati", loc:"Nashik, Maharashtra", desc:"Forest dwelling of the exiled trio on the Godavari; setting of Surpanakha's encounter with Lakshmana."},
+      mr:{name:"पंचवटी", loc:"नाशिक, महाराष्ट्र", desc:"गोदावरीकाठी वनवासातील तिघांचे वास्तव्यस्थान; शूर्पणखा-लक्ष्मण भेटीचे स्थळ."}},
+    {lon:76.46, lat:15.33, en:{name:"Kishkindha", loc:"near Hampi, Karnataka", desc:"Vanara kingdom ruled by Sugriva, home of Hanuman."},
+      mr:{name:"किष्किंधा", loc:"हंपीजवळ, कर्नाटक", desc:"सुग्रीवाच्या अधिपत्याखालील वानर राज्य, हनुमानाचे मूळस्थान."}},
+    {lon:79.31, lat:9.29, en:{name:"Rameswaram", loc:"Tamil Nadu", desc:"Traditional point from which Rama's forces are said to have built the bridge (Setu) to Lanka."},
+      mr:{name:"रामेश्वरम", loc:"तमिळनाडू", desc:"रामाच्या सैन्याने लंकेपर्यंत सेतू बांधल्याचे पारंपरिकरीत्या मानले जाणारे स्थळ."}},
+    {lon:80.77, lat:7.87, outside:true, en:{name:"Lanka", loc:"identified with Sri Lanka", desc:"Ravana's island kingdom, where Sita was held; popularly identified with present-day Sri Lanka."},
+      mr:{name:"लंका", loc:"श्रीलंकेशी संबंधित", desc:"रावणाचे बेटावरील राज्य, जिथे सीतेला बंदी बनवण्यात आले; सर्वसाधारणपणे आजच्या श्रीलंकेशी ओळखले जाते."}}
+  ];
+
+  var ivcCities = [
+    {lon:72.87, lat:30.63, outside:true, en:{name:"Harappa", loc:"Punjab, Pakistan", desc:"Type site of the civilization on the old Ravi channel; excavated first, it gave the culture its name."},
+      mr:{name:"हडप्पा", loc:"पंजाब, पाकिस्तान", desc:"रावी नदीच्या प्राचीन प्रवाहावरील संस्कृतीचे मूळ स्थळ; सर्वप्रथम उत्खनन झालेले हे नगर, त्यावरूनच या संस्कृतीला नाव मिळाले."}},
+    {lon:68.14, lat:27.33, outside:true, en:{name:"Mohenjo-daro", loc:"Sindh, Pakistan", desc:"One of the largest Bronze Age cities, on the Indus in Sindh, with a planned grid layout and great bath; a UNESCO World Heritage Site."},
+      mr:{name:"मोहेंजोदडो", loc:"सिंध, पाकिस्तान", desc:"सिंध प्रांतात सिंधू नदीकाठी वसलेले, नियोजित रस्ते व मोठ्या स्नानगृहासह कांस्ययुगातील सर्वांत मोठ्या नगरांपैकी एक; युनेस्को जागतिक वारसा स्थळ."}},
+    {lon:70.21, lat:23.89, en:{name:"Dholavira", loc:"Kutch, Gujarat", desc:"A major fortified city on Khadir island with sophisticated stepwells and water-harvesting systems."},
+      mr:{name:"धोलावीरा", loc:"कच्छ, गुजरात", desc:"खादिर बेटावरील, प्रगत पायऱ्यांच्या विहिरी व जलसंचय व्यवस्थेसह मोठे तटबंदीयुक्त नगर."}},
+    {lon:72.25, lat:22.52, en:{name:"Lothal", loc:"Gujarat", desc:"A planned port town with an artificial dockyard, linking it to maritime trade across the Arabian Sea."},
+      mr:{name:"लोथल", loc:"गुजरात", desc:"कृत्रिम गोदी असलेले नियोजित बंदरनगर, जे अरबी समुद्रापलीकडील सागरी व्यापाराशी जोडलेले होते."}},
+    {lon:76.11, lat:29.29, en:{name:"Rakhigarhi", loc:"Haryana", desc:"The largest known Indus Valley site, on the now-dry Sarasvati–Drishadvati plain."},
+      mr:{name:"राखीगढी", loc:"हरियाणा", desc:"आता कोरड्या पडलेल्या सरस्वती–दृषद्वती मैदानावरील, आजवर ज्ञात असलेले सर्वांत मोठे सिंधू संस्कृती स्थळ."}},
+    {lon:74.13, lat:29.47, en:{name:"Kalibangan", loc:"Rajasthan", desc:"Known for its fire altars and among the earliest ploughed fields found; sits on the Ghaggar (Sarasvati)."},
+      mr:{name:"कालीबंगा", loc:"राजस्थान", desc:"घग्गर (सरस्वती) नदीकाठी वसलेले, अग्निवेद्या व सर्वांत प्राचीन नांगरलेल्या शेतांपैकी एकासाठी प्रसिद्ध."}},
+    {lon:70.50, lat:28.55, outside:true, en:{name:"Ganeriwala", loc:"Cholistan, Punjab, Pakistan", desc:"A large, largely unexcavated site in the Cholistan desert, on the ancient Hakra course."},
+      mr:{name:"गनेरीवाला", loc:"चोलिस्तान, पंजाब, पाकिस्तान", desc:"चोलिस्तान वाळवंटातील, हाक्राच्या प्राचीन प्रवाहावरील मोठे परंतु मोठ्या प्रमाणात उत्खनन न झालेले स्थळ."}},
+    {lon:75.40, lat:29.61, en:{name:"Banawali", loc:"Haryana", desc:"A fortified settlement showing a transitional layout between pre-Harappan and mature Harappan town planning."},
+      mr:{name:"बनावली", loc:"हरियाणा", desc:"पूर्व-हडप्पा व प्रगत हडप्पा नगररचनेतील संक्रमणकालीन आराखडा दर्शवणारी तटबंदीयुक्त वस्ती."}}
+  ];
+
+  var nwCities = [
+    {lon:72.79, lat:33.74, outside:true, en:{name:"Gandhara", loc:"Taxila, Punjab, Pakistan", desc:"Kingdom of Shakuni, Duryodhana's maternal uncle; its capital Takshashila was a renowned center of learning."},
+      mr:{name:"गांधार", loc:"तक्षशिला, पंजाब, पाकिस्तान", desc:"दुर्योधनाचा मामा शकुनी याचे राज्य; राजधानी तक्षशिला हे विद्येचे प्रसिद्ध केंद्र होते."}},
+    {lon:70.90, lat:35.30, outside:true, en:{name:"Kamboja", loc:"Nuristan region, Afghanistan", desc:"A northwestern kingdom famed in the epic for its horses and cavalry warriors."},
+      mr:{name:"कंबोज", loc:"नुरिस्तान प्रदेश, अफगाणिस्तान", desc:"महाकाव्यात घोडे व अश्वदळासाठी प्रसिद्ध असलेले वायव्येकडील राज्य."}},
+    {lon:66.90, lat:36.75, outside:true, en:{name:"Bahlika", loc:"Balkh, northern Afghanistan", desc:"Ancient Bactria; home of King Bahlika, Bhishma's maternal uncle."},
+      mr:{name:"बाल्हिक", loc:"बल्ख, उत्तर अफगाणिस्तान", desc:"प्राचीन बाख्त्री प्रदेश; भीष्मांचे मामा राजा बाह्लिक यांचे मूळस्थान."}},
+    {lon:74.53, lat:32.49, outside:true, en:{name:"Madra", loc:"Sagala (Sialkot), Punjab, Pakistan", desc:"Kingdom of Shalya, maternal uncle of Nakula and Sahadeva; its capital Sagala was famed for horses."},
+      mr:{name:"मद्र", loc:"साकल (सियालकोट), पंजाब, पाकिस्तान", desc:"नकुल-सहदेवांचे मामा शल्य यांचे राज्य; राजधानी साकल घोड्यांसाठी प्रसिद्ध होती."}},
+    {lon:73.00, lat:32.00, outside:true, en:{name:"Kekaya", loc:"western Punjab, Pakistan", desc:"Homeland of Kaikeyi in the Rāmāyaṇa; also allied with the Pandavas in the Mahābhārata."},
+      mr:{name:"केकय", loc:"पश्चिम पंजाब, पाकिस्तान", desc:"रामायणातील कैकेयीचे माहेर; महाभारतातही पांडवांचे मित्रराज्य."}},
+    {lon:68.40, lat:25.40, outside:true, en:{name:"Sindhu-Sauvira", loc:"lower Sindh, Pakistan", desc:"Kingdom of Jayadratha, husband of Dushala, the Kauravas' sister."},
+      mr:{name:"सिंधु-सौवीर", loc:"खालचा सिंध प्रदेश, पाकिस्तान", desc:"कौरवांची बहीण दुःशला हिचे पती जयद्रथ याचे राज्य."}}
+  ];
+
+  var allCityNodes = []; // {data, labelEl, groupEl, cls}
+
+  function addCities(list, groupId, cls){
+    var group = document.getElementById(groupId);
+    list.forEach(function(c){
+      var xy = proj(c.lon, c.lat);
+      var g = el('g', {class:'city-dot ' + cls});
+      if (c.outside){ g.appendChild(el('circle', {cx:xy[0], cy:xy[1], r:9, class:'outside-mark'})); }
+      g.appendChild(el('circle', {cx:xy[0], cy:xy[1], r:5.5}));
+      var label = el('text', {x:xy[0]+8, y:xy[1]+4, class:'city-label'});
+      label.textContent = c.en.name;
+      g.appendChild(label);
+      g.addEventListener('pointerdown', function(e){ e.stopPropagation(); });
+      g.addEventListener('click', function(){ selectCity(c, cls, g); });
+      group.appendChild(g);
+      allCityNodes.push({data:c, labelEl:label, groupEl:g, cls:cls});
+    });
+  }
+  addCities(mahaCities, 'citiesMaha', 'maha');
+  addCities(ramaCities, 'citiesRama', 'rama');
+  addCities(ivcCities, 'citiesIVC', 'ivc');
+  addCities(nwCities, 'citiesNW', 'nw');
+
+  // ---- legend toggles ----
+  var layerMap = {
+    saraswati: document.getElementById('riverSaraswati'),
+    ganga: document.getElementById('riverGanga'),
+    yamuna: document.getElementById('riverYamuna'),
+    indus: document.getElementById('riverIndus'),
+    punjab: document.getElementById('riverPunjab'),
+    mountains: document.getElementById('mountains'),
+    maha: document.getElementById('citiesMaha'),
+    rama: document.getElementById('citiesRama'),
+    ivc: document.getElementById('citiesIVC'),
+    nw: document.getElementById('citiesNW'),
+    akhand: document.getElementById('akhandBharat')
+  };
+  document.querySelectorAll('.legend-item input[type=checkbox]').forEach(function(box){
+    box.addEventListener('change', function(){
+      var key = box.getAttribute('data-layer');
+      layerMap[key].classList.toggle('layer-hidden', !box.checked);
+      if (key === 'rama'){ document.getElementById('lankaShape').classList.toggle('layer-hidden', !box.checked); }
+      if (key === 'akhand'){
+        mapSvg.setAttribute('viewBox', box.checked ? VIEWBOX_WIDE : VIEWBOX_COMPACT);
+        resetZoom();
+      }
+    });
+  });
+
+  // ---- info panel ----
+  var panel = document.getElementById('infoPanel');
+  var lastSelected = null;
+  var currentSelection = null; // {data, cls}
+  function selectCity(c, cls, node){
+    if (lastSelected) lastSelected.classList.remove('selected');
+    node.classList.add('selected');
+    lastSelected = node;
+    currentSelection = {data:c, cls:cls};
+    renderInfoPanel();
+    panel.classList.add('visible');
+  }
+  function renderInfoPanel(){
+    if (!currentSelection) return;
+    var c = currentSelection.data, cls = currentSelection.cls;
+    var t = c[lang];
+    document.getElementById('infoTag').className = 'tag ' + cls;
+    var tagKeyMap = {maha:'mahaTagShort', rama:'ramaTagShort', ivc:'ivcTagShort', nw:'nwTagShort'};
+    document.getElementById('infoTag').textContent = i18n[lang][tagKeyMap[cls]];
+    document.getElementById('infoName').textContent = t.name;
+    document.getElementById('infoLoc').textContent = t.loc + (c.outside ? i18n[lang].outsideSuffix : '');
+    document.getElementById('infoDesc').textContent = t.desc;
+  }
+  document.getElementById('infoClose').addEventListener('click', function(){
+    panel.classList.remove('visible');
+    if (lastSelected) lastSelected.classList.remove('selected');
+    lastSelected = null; currentSelection = null;
+  });
+
+  // ---- mobile legend toggle ----
+  var legendPanel = document.getElementById('legendPanel');
+  document.getElementById('legendToggle').addEventListener('click', function(){ legendPanel.classList.toggle('collapsed'); });
+  if (window.innerWidth <= 780){ legendPanel.classList.add('collapsed'); }
+
+  // ---- i18n ----
+  var i18n = {
+    en: {
+      title: "Ancient India: Lost Rivers &amp; Legendary Cities",
+      subtitle: "A geographic reading of the Sarasvatī paleochannel, the Sapta Sindhu river system, and the cities of the Mahābhārata and Rāmāyaṇa, placed against their most widely accepted modern locations.",
+      legendRivers: "Old River Courses",
+      legendCities: "Legendary Cities",
+      legendExtent: "Historical Extent",
+      gangaTitle: "Ganga (Ganges)",
+      gangaDesc: "India's principal sacred river, from Gangotri to the Bay of Bengal — central to both epics' geography",
+      yamunaTitle: "Yamuna",
+      yamunaDesc: "Krishna's river, past Delhi, Mathura & Agra, joining the Ganga at Prayag",
+      saraswatiTitle: "Sarasvatī Paleochannel",
+      saraswatiDesc: "Himalayan course through Kurukshetra & the Thar, now dry (Ghaggar–Hakra)",
+      indusTitle: "Indus (Sindhu)",
+      indusDesc: "Modern Indus, from the ancient Sindhu of Vedic geography — Ladakh to the Arabian Sea",
+      punjabTitle: "Punjab Rivers",
+      punjabDesc: "Sutlej (Shatadru), Beas (Vipasha), Ravi (Iravati), Chenab (Chandrabhaga) & Jhelum (Vitasta) — with the Sindhu, the Sapta Sindhu of Vedic texts",
+      legendMountains: "Mountains",
+      mountainsTitle: "Himalaya, Vindhya &amp; Mahendragiri",
+      mountainsDesc: "The great northern range, the central Vindhya range, and Mahendragiri — among the Kulaparvatas of Puranic geography",
+      mahaTitle: "Mahābhārata",
+      mahaDesc: "Kingdoms and capitals of the epic — Hastinapur, Indraprastha, Dwarka…",
+      mahaTagShort: "Mahābhārata",
+      ramaTitle: "Rāmāyaṇa",
+      ramaDesc: "Places of Rama's story — Ayodhya, Mithila, Kishkindha, Lanka…",
+      ramaTagShort: "Rāmāyaṇa",
+      legendNW: "Northwest Region",
+      nwTitle: "Gandhara &amp; the Northwest",
+      nwDesc: "Kingdoms of the epic's northwest frontier — Gandhara, Kamboja, Bahlika, Madra, Kekaya, Sindhu-Sauvira",
+      nwTagShort: "Northwest Region",
+      legendIVC: "Indus Valley Civilization",
+      ivcTitle: "Sindhu Basin Cities",
+      ivcDesc: "Bronze Age sites (c. 2600–1900 BCE) on the Indus &amp; Sarasvati plains — Harappa, Mohenjo-daro, Dholavira…",
+      ivcTagShort: "Indus Valley",
+      akhandTitle: "Akhand Bharat",
+      akhandDesc: "Civilisational concept of an undivided subcontinent — a cultural-historical idea, not a statement of current international borders",
+      note: "Marker positions follow the most common scholarly and traditional identifications; several sites are debated or purely legendary, and some (marked with a dashed ring) lie outside present-day India. The river courses are simplified from archaeological and geomorphological reconstructions and should be read as approximate. The Akhand Bharat outline is a civilisational-cultural concept found in some historical and political narratives — it is not a statement about current international borders, and it remains a matter of debate. Scroll or pinch to zoom, drag to pan, and use the +/− controls or double-click to reset. Click any city marker for details.",
+      legendToggleBtn: "Show / hide legend",
+      outsideSuffix: " — beyond present-day India"
+    },
+    mr: {
+      title: "प्राचीन भारत: लुप्त नद्या आणि पौराणिक नगरे",
+      subtitle: "सरस्वती नदीचा प्राचीन प्रवाहमार्ग, सप्तसिंधू नदीप्रणाली, आणि महाभारत व रामायणातील नगरांचे, त्यांच्या सर्वाधिक मान्यताप्राप्त आधुनिक स्थानांसह भौगोलिक अवलोकन.",
+      legendRivers: "प्राचीन नदीमार्ग",
+      legendCities: "पौराणिक नगरे",
+      legendExtent: "ऐतिहासिक व्याप्ती",
+      gangaTitle: "गंगा",
+      gangaDesc: "गंगोत्री येथील उगमापासून बंगालच्या उपसागरापर्यंत वाहणारी भारताची प्रमुख पवित्र नदी — दोन्ही महाकाव्यांच्या भूगोलाच्या केंद्रस्थानी",
+      yamunaTitle: "यमुना",
+      yamunaDesc: "दिल्ली, मथुरा व आग्रा येथून वाहत जाऊन प्रयागमध्ये गंगेला मिळणारी, कृष्णाशी संबंधित नदी",
+      saraswatiTitle: "सरस्वती नदीचा प्राचीन प्रवाह",
+      saraswatiDesc: "हिमालयातून कुरुक्षेत्र व थारमधून वाहणारा, आता कोरडा पडलेला प्रवाह (घग्गर–हाक्रा)",
+      indusTitle: "सिंधू नदी",
+      indusDesc: "वैदिक भूगोलातील सिंधू नदी, लडाखपासून अरबी समुद्रापर्यंत",
+      punjabTitle: "पंजाबच्या नद्या",
+      punjabDesc: "सतलज (शतद्रु), बियास (विपाशा), रावी (इरावती), चिनाब (चंद्रभागा) व झेलम (वितस्ता) — सिंधूसह मिळून वैदिक ग्रंथांतील सप्तसिंधू",
+      legendMountains: "पर्वतरांगा",
+      mountainsTitle: "हिमालय, विंध्य व महेंद्रगिरी",
+      mountainsDesc: "उत्तरेकडील विशाल हिमालय पर्वतरांग, मध्य भारतातील विंध्य पर्वतरांग, आणि पुराणोक्त सप्त कुलपर्वतांपैकी एक असलेला महेंद्रगिरी",
+      mahaTitle: "महाभारत",
+      mahaDesc: "महाकाव्यातील राज्ये व राजधान्या — हस्तिनापूर, इंद्रप्रस्थ, द्वारका…",
+      mahaTagShort: "महाभारत",
+      ramaTitle: "रामायण",
+      ramaDesc: "रामकथेतील स्थळे — अयोध्या, मिथिला, किष्किंधा, लंका…",
+      ramaTagShort: "रामायण",
+      legendNW: "वायव्य प्रदेश",
+      nwTitle: "गांधार व वायव्य प्रदेश",
+      nwDesc: "महाकाव्यातील वायव्य सीमाप्रांतांतील राज्ये — गांधार, कंबोज, बाल्हिक, मद्र, केकय, सिंधु-सौवीर",
+      nwTagShort: "वायव्य प्रदेश",
+      legendIVC: "सिंधू संस्कृती",
+      ivcTitle: "सिंधू खोऱ्यातील नगरे",
+      ivcDesc: "सिंधू व सरस्वती मैदानांवरील कांस्ययुगीन स्थळे (इ.स.पू. सुमारे २६००–१९००) — हडप्पा, मोहेंजोदडो, धोलावीरा…",
+      ivcTagShort: "सिंधू संस्कृती",
+      akhandTitle: "अखंड भारत",
+      akhandDesc: "अखंड भारतीय उपखंडाची सांस्कृतिक-ऐतिहासिक संकल्पना — ही सध्याच्या आंतरराष्ट्रीय सीमांचे विधान नाही",
+      note: "बहुतांश मार्कर स्थाने विद्वत्तापूर्ण व पारंपरिक ओळखींवर आधारित आहेत; काही स्थळांबाबत मतभेद आहेत किंवा ती पूर्णतः पौराणिक आहेत, आणि काही (ठिपकेदार वर्तुळाने दर्शवलेली) सध्याच्या भारताबाहेर आहेत. नदीमार्ग पुरातत्त्वीय व भूवैज्ञानिक पुनर्रचनांवरून सरलीकृत केले असून ते अंदाजे समजावेत. अखंड भारताची सीमारेषा ही काही ऐतिहासिक व राजकीय विचारधारांमध्ये मांडली जाणारी सांस्कृतिक-सभ्यताविषयक संकल्पना आहे — ती सध्याच्या आंतरराष्ट्रीय सीमांचे विधान नाही, आणि याबाबत मतभेद आहेत. झूम करण्यासाठी स्क्रोल किंवा दोन बोटांनी पिंच करा, हलवण्यासाठी ड्रॅग करा, आणि +/− बटणे किंवा डबल-क्लिकने मूळ स्थितीत परत या. अधिक माहितीसाठी कोणत्याही नगराच्या चिन्हावर क्लिक करा.",
+      legendToggleBtn: "सूची दाखवा / लपवा",
+      outsideSuffix: " — सध्याच्या भारताबाहेर"
+    }
+  };
+
+  var lang = 'en';
+  function applyLanguage(){
+    document.querySelectorAll('[data-i18n]').forEach(function(elx){
+      var key = elx.getAttribute('data-i18n');
+      if (i18n[lang][key] !== undefined) elx.innerHTML = i18n[lang][key];
+    });
+    document.getElementById('akhandLabelText').textContent = i18n[lang].akhandTitle.toUpperCase();
+    allCityNodes.forEach(function(node){ node.labelEl.textContent = node.data[lang].name; });
+    allRiverLabelNodes.forEach(function(node){
+      var t = node.data[lang];
+      node.tspanModern.textContent = t.modern;
+      node.tspanOld.textContent = t.old ? '(' + t.old + ')' : '';
+    });
+    allMountainLabelNodes.forEach(function(node){ node.labelEl.textContent = node.data[lang].name; });
+    document.body.classList.toggle('lang-mr', lang === 'mr');
+    document.querySelectorAll('.lang-switch button').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+    renderInfoPanel();
+  }
+  document.querySelectorAll('.lang-switch button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      lang = btn.getAttribute('data-lang');
+      applyLanguage();
+    });
+  });
+  applyLanguage();
+})();
+</script>
+</body>
+</html>
