@@ -7,6 +7,11 @@
     },
     {
       "rootPath": "",
+      "text": "भारत नकाशा",
+      "href": "./map"
+    },
+    {
+      "rootPath": "",
       "text": "सामान्यकाल-पूर्व",
       "href": "./hindu-BCE.html"
     },
