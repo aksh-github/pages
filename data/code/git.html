@@ -16,7 +16,7 @@
     </header>
     <div class="main-layout">
       <nav class="real-menu" role="navigation"><ul class="list">
-      <li><a href="/pages">&lt; Back to Home</a></li><li><a href="./css-page-layout.html">Css page Layout 100%</a></li><li><a href="./git.html">Git</a></li><li><a href="./react.html">React</a></li><li><a href="./nodejs.html">Node Js</a></li><li><a href="./ts.html">TypeScript</a></li><li><a href="./python.html">Python</a></li><li><a href="./nginx.html">Nginx</a></li>
+      <li><a href="/pages">&lt; Back to Home</a></li><li><a href="./css-page-layout.html">Css page Layout 100%</a></li><li><a href="./git.html">Git</a></li><li><a href="./react.html">React</a></li><li><a href="./nodejs.html">Node Js</a></li><li><a href="./ts.html">TypeScript</a></li><li><a href="./python.html">Python</a></li><li><a href="./Nginx.html">Nginx</a></li>
     </ul></nav>
       <main>      
         <section class="main-section"><h2>Git</h2>
@@ -129,7 +129,13 @@ git merge
 <pre><code>git checkout master
 git merge feat/abc
 </code></pre>
-<h3>11. Delete remote branch</h3>
+<h3>11. Rename branch</h3>
+<p>This will rename the branch and then push to origin</p>
+<pre><code>git branch -m new-name
+
+git push origin -u new-name
+</code></pre>
+<h3>12. Delete remote branch</h3>
 <pre><code>git push reomote-name --delete br-name
 
 In most cases remote name is origin.
