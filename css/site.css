@@ -61,6 +61,7 @@ main {
   display: flex;
   flex-grow: 2;
   margin: 0 auto;
+  background: #fff;
 }
 
 main .main-section {
@@ -160,6 +161,7 @@ img {
 
 .gist {
   width: 100%;
+  border: 2px dashed lightgray;
 
   .gist-data {
     max-height: 400px;
