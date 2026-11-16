@@ -27,6 +27,9 @@
         --ganga: #1e6fa6;
         --yamuna: #2b2f5e;
         --sarayu: #9c7a2e;
+        --godavari: #4f8a3a;
+        --narmada: #b04a7e;
+        --brahmaputra: #7a3b8c;
         --drishadvati: #3d8f86;
         --maha: #8c2a32;
         --mountain: #6e5a3d;
@@ -339,6 +342,21 @@
       .river.yamuna {
         stroke: var(--yamuna);
         stroke-width: 3;
+        stroke-dasharray: none;
+      }
+      .river.godavari {
+        stroke: var(--godavari);
+        stroke-width: 3.6;
+        stroke-dasharray: none;
+      }
+      .river.narmada {
+        stroke: var(--narmada);
+        stroke-width: 3.6;
+        stroke-dasharray: none;
+      }
+      .river.brahmaputra {
+        stroke: var(--brahmaputra);
+        stroke-width: 4;
         stroke-dasharray: none;
       }
       .river.sarayu {
@@ -707,6 +725,48 @@
             </span>
           </label>
           <label class="legend-item">
+            <input type="checkbox" data-layer="godavari" checked />
+            <span
+              class="swatch line solid"
+              style="border-color: #4f8a3a"
+            ></span>
+            <span class="legend-label">
+              <b data-i18n="godavariTitle">Godavari</b>
+              <span data-i18n="godavariDesc"
+                >Dakshina Ganga, from Trimbak near Nashik to the Bay of Bengal —
+                Rama's Panchavati lies on its banks</span
+              >
+            </span>
+          </label>
+          <label class="legend-item">
+            <input type="checkbox" data-layer="narmada" checked />
+            <span
+              class="swatch line solid"
+              style="border-color: #b04a7e"
+            ></span>
+            <span class="legend-label">
+              <b data-i18n="narmadaTitle">Narmada</b>
+              <span data-i18n="narmadaDesc"
+                >Sacred Reva, from Amarkantak west between the Vindhya &amp;
+                Satpura ranges to the Gulf of Khambhat</span
+              >
+            </span>
+          </label>
+          <label class="legend-item">
+            <input type="checkbox" data-layer="brahmaputra" checked />
+            <span
+              class="swatch line solid"
+              style="border-color: #7a3b8c"
+            ></span>
+            <span class="legend-label">
+              <b data-i18n="brahmaputraTitle">Brahmaputra</b>
+              <span data-i18n="brahmaputraDesc"
+                >The Lauhitya of Sanskrit texts — from Tibet (Yarlung Tsangpo)
+                through Assam to the Ganga delta</span
+              >
+            </span>
+          </label>
+          <label class="legend-item">
             <input type="checkbox" data-layer="saraswati" checked />
             <span class="swatch line" style="border-color: #1f6e75"></span>
             <span class="legend-label">
@@ -865,6 +925,9 @@
             <g id="riverGanga" class="layer-group"></g>
             <g id="riverYamuna" class="layer-group"></g>
             <g id="riverSarayu" class="layer-group"></g>
+            <g id="riverGodavari" class="layer-group"></g>
+            <g id="riverBrahmaputra" class="layer-group"></g>
+            <g id="riverNarmada" class="layer-group"></g>
             <g id="riverPunjab" class="layer-group"></g>
             <g id="mountains" class="layer-group"></g>
             <g id="citiesMaha" class="layer-group"></g>
@@ -1245,6 +1308,133 @@
           }),
         );
 
+        var godavariRiver = {
+          points: [
+            [73.53, 19.93],
+            [73.79, 19.99],
+            [74.6, 19.85],
+            [75.38, 19.48],
+            [76.2, 19.2],
+            [77.32, 19.15],
+            [77.97, 18.87],
+            [79.0, 18.75],
+            [79.67, 18.65],
+            [80.4, 18.3],
+            [80.88, 17.67],
+            [81.4, 17.35],
+            [81.78, 17.0],
+            [82.3, 16.62],
+          ],
+          labelAt: [75.8, 19.55],
+          markerAt: [75.08, 19.67],
+          colorVar: "var(--godavari)",
+          tagKey: "riverTagGeneral",
+          nameLabelKey: "alsoKnownLabel",
+          en: {
+            modern: "Godavari",
+            old: "Gautami",
+            desc: "The longest river of peninsular India, rising at Trimbak near Nashik and flowing east to the Bay of Bengal; called Dakshina Ganga. In the Rāmāyaṇa, Rama, Sita and Lakshmana lived on its banks at Panchavati in the Dandaka forest.",
+          },
+          mr: {
+            modern: "गोदावरी",
+            old: "गौतमी",
+            desc: "द्वीपकल्पीय भारतातील सर्वांत लांब नदी; नाशिकजवळील त्र्यंबक येथे उगम पावून पूर्वेकडे बंगालच्या उपसागराला मिळते; तिला दक्षिण गंगा म्हणतात. रामायणात राम, सीता व लक्ष्मण दंडकारण्यातील पंचवटी येथे तिच्या काठी राहिले.",
+          },
+        };
+        document.getElementById("riverGodavari").appendChild(
+          el("path", {
+            class: "river godavari",
+            d: pathFromPoints(godavariRiver.points, false),
+          }),
+        );
+
+        var brahmaputraRiver = {
+          points: [
+            [82.1, 30.3],
+            [83.5, 29.4],
+            [84.9, 29.25],
+            [87.5, 29.25],
+            [89.7, 29.3],
+            [91.1, 29.4],
+            [93.5, 29.4],
+            [94.9, 29.7],
+            [95.3, 29.1],
+            [94.95, 28.2],
+            [95.33, 28.07],
+            [95.65, 27.83],
+            [94.9, 27.48],
+            [94.2, 26.85],
+            [92.8, 26.63],
+            [91.75, 26.18],
+            [90.62, 26.17],
+            [90.0, 26.02],
+            [89.7, 25.5],
+            [89.75, 24.4],
+            [89.75, 23.8],
+            [90.5, 23.3],
+            [90.75, 22.6],
+          ],
+          labelAt: [85.6, 29.7],
+          markerAt: [84.9, 29.28],
+          colorVar: "var(--brahmaputra)",
+          tagKey: "riverTagGeneral",
+          nameLabelKey: "alsoKnownLabel",
+          en: {
+            modern: "Brahmaputra",
+            old: "Lauhitya",
+            desc: "Rises as the Yarlung Tsangpo in Tibet, curves around Namcha Barwa, then crosses Arunachal Pradesh and Assam and meets the Ganga in Bangladesh. Sanskrit texts call it Lauhitya, and tradition regards it as a 'male' river.",
+          },
+          mr: {
+            modern: "ब्रह्मपुत्रा",
+            old: "लौहित्य",
+            desc: "तिबेटमध्ये यार्लुंग सांगपो म्हणून उगम पावते, नामचा बरवाला वळसा घालून अरुणाचल प्रदेश व आसाममधून वाहते आणि बांगलादेशात गंगेला मिळते. संस्कृत ग्रंथांत तिला लौहित्य म्हणतात, आणि परंपरेत ती 'नद' (पुल्लिंगी) मानली जाते.",
+          },
+        };
+        document.getElementById("riverBrahmaputra").appendChild(
+          el("path", {
+            class: "river brahmaputra",
+            d: pathFromPoints(brahmaputraRiver.points, false),
+          }),
+        );
+
+        var narmadaRiver = {
+          points: [
+            [81.75, 22.67],
+            [80.37, 22.6],
+            [79.95, 23.15],
+            [79.2, 22.95],
+            [77.72, 22.75],
+            [76.9, 22.45],
+            [76.15, 22.24],
+            [75.6, 22.18],
+            [74.9, 22.03],
+            [73.75, 21.83],
+            [73.0, 21.7],
+            [72.6, 21.65],
+          ],
+          labelAt: [82.2, 22.85],
+          markerAt: [81.55, 22.74],
+          colorVar: "var(--narmada)",
+          tagKey: "riverTagGeneral",
+          nameLabelKey: "alsoKnownLabel",
+          en: {
+            modern: "Narmada",
+            old: "Reva",
+            desc: "Sacred river of central India, rising at Amarkantak and flowing west between the Vindhya and Satpura ranges to the Gulf of Khambhat. Omkareshwar and Maheshwar lie on its banks, and pilgrims traditionally circumambulate it (Narmada parikrama).",
+          },
+          mr: {
+            modern: "नर्मदा",
+            old: "रेवा",
+            desc: "मध्य भारतातील पवित्र नदी; अमरकंटक येथे उगम पावून विंध्य व सातपुडा पर्वतरांगांमधून पश्चिमेकडे वाहत खंभातच्या आखाताला मिळते. ओंकारेश्वर व महेश्वर तिच्या काठावर आहेत, आणि भाविक परंपरेने तिची परिक्रमा (नर्मदा परिक्रमा) करतात.",
+          },
+        };
+        document.getElementById("riverNarmada").appendChild(
+          el("path", {
+            class: "river narmada",
+            d: pathFromPoints(narmadaRiver.points, false),
+          }),
+        );
+
         var saraswati = [
           [77.45, 30.47],
           [77.02, 30.23],
@@ -1451,7 +1641,8 @@
         // always-on text labels, to avoid overlapping names.
         var allRiverMarkerNodes = []; // {data, titleEl, groupEl}
         function addRiverMarker(entry, groupEl) {
-          var xy = proj(entry.labelAt[0], entry.labelAt[1]);
+          var at = entry.markerAt || entry.labelAt;
+          var xy = proj(at[0], at[1]);
           var g = el("g", { class: "river-marker" });
           g.appendChild(
             el("circle", {
@@ -1484,6 +1675,12 @@
           drishadvatiRiver,
           document.getElementById("riverDrishadvati"),
         );
+        addRiverMarker(godavariRiver, document.getElementById("riverGodavari"));
+        addRiverMarker(narmadaRiver, document.getElementById("riverNarmada"));
+        addRiverMarker(
+          brahmaputraRiver,
+          document.getElementById("riverBrahmaputra"),
+        );
 
         var allRiverLabelNodes = []; // {data, tspanModern, tspanOld} — used for the uncongested Ganga/Yamuna labels
         function addRiverLabel(entry, groupEl, dyOffset) {
@@ -1507,6 +1704,21 @@
         addRiverLabel(gangaRiver, document.getElementById("riverGanga"), -12);
         addRiverLabel(yamunaRiver, document.getElementById("riverYamuna"), -10);
         addRiverLabel(sarayuRiver, document.getElementById("riverSarayu"), -10);
+        addRiverLabel(
+          godavariRiver,
+          document.getElementById("riverGodavari"),
+          15,
+        );
+        addRiverLabel(
+          narmadaRiver,
+          document.getElementById("riverNarmada"),
+          20,
+        );
+        addRiverLabel(
+          brahmaputraRiver,
+          document.getElementById("riverBrahmaputra"),
+          -10,
+        );
 
         // ---- mountains ----
         var mountainRanges = [
@@ -2119,6 +2331,9 @@
           ganga: document.getElementById("riverGanga"),
           yamuna: document.getElementById("riverYamuna"),
           sarayu: document.getElementById("riverSarayu"),
+          godavari: document.getElementById("riverGodavari"),
+          brahmaputra: document.getElementById("riverBrahmaputra"),
+          narmada: document.getElementById("riverNarmada"),
           indus: document.getElementById("riverIndus"),
           punjab: document.getElementById("riverPunjab"),
           mountains: document.getElementById("mountains"),
@@ -2181,10 +2396,12 @@
             var r = currentSelection.data[lang];
             document.getElementById("infoTag").className = "tag river";
             document.getElementById("infoTag").textContent =
-              i18n[lang].riverTagShort;
+              i18n[lang][currentSelection.data.tagKey || "riverTagShort"];
             document.getElementById("infoName").textContent = r.modern;
             document.getElementById("infoLoc").textContent = r.old
-              ? i18n[lang].vedicNameLabel + r.old
+              ? i18n[lang][
+                  currentSelection.data.nameLabelKey || "vedicNameLabel"
+                ] + r.old
               : "";
             document.getElementById("infoDesc").textContent = r.desc;
             return;
@@ -2238,6 +2455,17 @@
             sarayuTitle: "Sarayu",
             sarayuDesc:
               "The river of Ayodhya in the Rāmāyaṇa, joining the Ganga near Chhapra, Bihar",
+            godavariTitle: "Godavari",
+            godavariDesc:
+              "Dakshina Ganga, from Trimbak near Nashik to the Bay of Bengal — Rama's Panchavati lies on its banks",
+            brahmaputraTitle: "Brahmaputra",
+            brahmaputraDesc:
+              "The Lauhitya of Sanskrit texts — from Tibet (Yarlung Tsangpo) through Assam to the Ganga delta",
+            narmadaTitle: "Narmada",
+            narmadaDesc:
+              "Sacred Reva, from Amarkantak west between the Vindhya & Satpura ranges to the Gulf of Khambhat",
+            riverTagGeneral: "Sacred River",
+            alsoKnownLabel: "Also known as: ",
             drishadvatiTitle: "Dṛṣadvatī (Chautang)",
             drishadvatiDesc:
               "Paired with the Sarasvatī as the bounds of sacred Brahmāvarta; identified with the seasonal Chautang stream",
@@ -2297,6 +2525,17 @@
             sarayuTitle: "शरयू",
             sarayuDesc:
               "रामायणातील अयोध्येची नदी, बिहारमधील छपराजवळ गंगेला मिळणारी",
+            godavariTitle: "गोदावरी",
+            godavariDesc:
+              "दक्षिण गंगा; नाशिकजवळील त्र्यंबकपासून बंगालच्या उपसागरापर्यंत — रामाची पंचवटी तिच्या काठावर आहे",
+            brahmaputraTitle: "ब्रह्मपुत्रा",
+            brahmaputraDesc:
+              "संस्कृत ग्रंथांतील लौहित्य — तिबेट (यार्लुंग सांगपो) पासून आसाममार्गे गंगेच्या मुखप्रदेशापर्यंत",
+            narmadaTitle: "नर्मदा",
+            narmadaDesc:
+              "पवित्र रेवा; अमरकंटकपासून विंध्य व सातपुडा पर्वतरांगांमधून पश्चिमेकडे खंभातच्या आखातापर्यंत",
+            riverTagGeneral: "पवित्र नदी",
+            alsoKnownLabel: "इतर नाव: ",
             drishadvatiTitle: "दृषद्वती (चौतांग)",
             drishadvatiDesc:
               "सरस्वतीसह ब्रह्मावर्त या पवित्र भूमीची सीमा दर्शवणारी; सध्याच्या हंगामी चौतांग प्रवाहाशी ओळखली जाणारी",
